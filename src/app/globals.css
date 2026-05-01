@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f6f4;
+  --foreground: #303030;
+
+  --gray-soft: #eee9e6;
+  --gray-mid: #aaa39e;
+  --gray-dark: #383838;
+
+  --pink: #f2aebe;
+  --pink-soft: #fde8ee;
+
+  --seafoam: #9dd7c7;
+  --seafoam-soft: #e4f6f1;
+
+  --white: #ffffff;
+  --border: rgba(56, 56, 56, 0.12);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+a {
+  transition: 0.2s ease;
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
+}
+
+.font-heading {
+  font-family: var(--font-heading), serif;
+}
+
+.container-custom {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding: 6rem 1.25rem;
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 70px rgba(56, 56, 56, 0.08);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  background: var(--gray-dark);
+  color: white;
+  padding: 0.9rem 1.45rem;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: #222;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  background: var(--pink-soft);
+  color: var(--gray-dark);
+  padding: 0.9rem 1.45rem;
+  font-weight: 800;
+  border: 1px solid var(--pink);
+  transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background: var(--seafoam-soft);
+  border-color: var(--seafoam);
+}
+
+.input-style {
+  width: 100%;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 0.9rem 1rem;
+  outline: none;
+}
+
+.input-style:focus {
+  border-color: var(--seafoam);
+  box-shadow: 0 0 0 4px rgba(157, 215, 199, 0.25);
 }
