@@ -10,6 +10,8 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+type SectionKey = "unique" | "includes" | "details" | "bestFor" | "links" | "faq";
+
 export async function generateStaticParams() {
   return services.map((service) => ({
     slug: service.slug,
@@ -35,6 +37,189 @@ export default async function ServicePage({ params }: Props) {
   if (!service) notFound();
 
   const Icon = service.icon;
+
+  const relatedServices = services.filter((item) =>
+    service.relatedServiceSlugs?.includes(item.slug)
+  );
+
+  const sectionMap: Record<SectionKey, React.ReactNode> = {
+    unique: (
+      <section className="section-padding bg-white">
+        <div className="container-custom px-5">
+          <div className="max-w-4xl">
+            <p className="font-script text-4xl text-[var(--pink)]">
+              What to expect
+            </p>
+
+            <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
+              {service.uniqueSectionTitle}
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-black/70">
+              {service.uniqueSectionBody}
+            </p>
+
+            <p className="mt-5 text-base font-semibold leading-7 text-black/60">
+              Focused on {service.pageFocus}.
+            </p>
+          </div>
+        </div>
+      </section>
+    ),
+
+    includes: (
+      <section className="bg-[var(--seafoam-soft)] py-20">
+        <div className="container-custom px-5">
+          <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
+            Commonly included with {service.title.toLowerCase()}
+          </h2>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {service.includes.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white p-5 font-bold shadow-sm"
+              >
+                <FaCheck className="mb-3 text-[var(--pink)]" />
+                {item}
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-6 max-w-3xl text-sm leading-6 text-black/55">
+            Exact details depend on the size, condition, and needs of the space.
+            We keep the quote clear before getting started.
+          </p>
+        </div>
+      </section>
+    ),
+
+    details: (
+      <section className="section-padding bg-white">
+        <div className="container-custom px-5">
+          <div className="soft-card max-w-4xl bg-white p-8">
+            <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
+              When this service makes sense
+            </h2>
+
+            <div className="mt-6 space-y-5 text-lg leading-8 text-black/70">
+              {service.details?.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+
+            {service.notUsuallyIncluded?.length ? (
+              <div className="mt-8 rounded-2xl bg-[var(--pink-soft)] p-6">
+                <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
+                  Not usually included
+                </h3>
+
+                <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+                  {service.notUsuallyIncluded.map((item) => (
+                    <li key={item} className="text-sm font-semibold text-black/65">
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </section>
+    ),
+
+    bestFor: (
+      <section className="section-padding bg-[var(--pink-soft)]">
+        <div className="container-custom px-5">
+          <div className="max-w-3xl">
+            <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
+              Best for
+            </h2>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {service.bestFor.map((item) => (
+              <div key={item} className="soft-card bg-white p-6">
+                <div className="flex gap-3 text-black/70">
+                  <FaCheck className="mt-1 shrink-0 text-[var(--pink)]" />
+                  <p className="font-semibold leading-7">{item}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ),
+
+    links: (
+      <section className="bg-white py-16">
+        <div className="container-custom px-5">
+          <h2 className="font-heading text-3xl font-bold text-[var(--gray-dark)]">
+            Related cleaning services and areas
+          </h2>
+
+          <div className="mt-6 grid gap-3 md:grid-cols-3">
+            {service.relatedLocationAnchors?.map((link) => (
+              <Link
+                key={link.href + link.text}
+                href={link.href}
+                className="rounded-2xl bg-[var(--seafoam-soft)] px-5 py-4 font-bold text-[var(--gray-dark)] transition hover:-translate-y-1 hover:text-[var(--pink)]"
+              >
+                {link.text}
+              </Link>
+            ))}
+
+            {relatedServices.map((related) => (
+              <Link
+                key={related.slug}
+                href={`/services/${related.slug}`}
+                className="rounded-2xl bg-[var(--seafoam-soft)] px-5 py-4 font-bold text-[var(--gray-dark)] transition hover:-translate-y-1 hover:text-[var(--pink)]"
+              >
+                {related.title}
+              </Link>
+            ))}
+          </div>
+
+          {service.localKeywords?.length ? (
+            <p className="mt-6 max-w-3xl text-sm leading-6 text-black/55">
+              People often search for help with{" "}
+              {service.localKeywords.join(", ")}.
+            </p>
+          ) : null}
+        </div>
+      </section>
+    ),
+
+    faq: (
+      <section className="section-padding bg-white">
+        <div className="container-custom max-w-4xl px-5">
+          <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
+            Questions about {service.title.toLowerCase()}
+          </h2>
+
+          <div className="mt-8 space-y-6">
+            {service.faq?.map((item) => (
+              <div key={item.q} className="border-b border-black/10 pb-6">
+                <h3 className="text-lg font-bold text-[var(--gray-dark)]">
+                  {item.q}
+                </h3>
+                <p className="mt-2 leading-7 text-black/70">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    ),
+  };
+
+  const layoutOrder = (service.layoutOrder ?? [
+    "unique",
+    "includes",
+    "details",
+    "bestFor",
+    "links",
+    "faq",
+  ]) as SectionKey[];
 
   return (
     <>
@@ -71,67 +256,17 @@ export default async function ServicePage({ params }: Props) {
               <p className="mt-6 max-w-2xl text-lg leading-8 text-black/70">
                 {service.heroText}
               </p>
-            </div>
-          </div>
-        </section>
 
-        <section className="section-padding">
-          <div className="container-custom grid gap-10 px-5 lg:grid-cols-[1fr_0.8fr]">
-            <div>
-              <p className="font-script text-4xl text-[var(--pink)]">
-                What to expect
-              </p>
-
-              <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
-                A clear service with no runaround.
-              </h2>
-
-              <p className="mt-5 text-lg leading-8 text-black/70">
+              <p className="mt-5 max-w-2xl text-base leading-7 text-black/60">
                 {service.intro}
               </p>
-
-              <p className="mt-5 text-lg leading-8 text-black/70">
-                Every home and building is a little different, so final pricing
-                depends on size, condition, location, and any add-ons requested.
-                We keep quotes simple and clear before getting started.
-              </p>
-            </div>
-
-            <div className="soft-card bg-white p-7">
-              <h3 className="font-heading text-3xl font-bold text-[var(--gray-dark)]">
-                Best for
-              </h3>
-
-              <ul className="mt-5 space-y-3">
-                {service.bestFor.map((item) => (
-                  <li key={item} className="flex gap-3 text-black/65">
-                    <FaCheck className="mt-1 text-[var(--pink)]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </section>
 
-        <section className="bg-white py-20">
-          <div className="container-custom px-5">
-            <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
-              Commonly included
-            </h2>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {service.includes.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-[var(--seafoam-soft)] p-5 font-bold"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {layoutOrder.map((section) => (
+          <div key={section}>{sectionMap[section]}</div>
+        ))}
 
         <section className="section-padding bg-[var(--gray-dark)] text-white">
           <div className="container-custom px-5">

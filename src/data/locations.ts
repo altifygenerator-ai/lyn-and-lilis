@@ -3,41 +3,276 @@ export const locations = [
     slug: "amity-ar",
     city: "Amity",
     state: "AR",
-    headline: "Home cleaning services in Amity, Arkansas",
+    headline: "House Cleaning Services in Amity, Arkansas",
+    pageFocus: "small-town homes, rural properties, and move-out cleaning",
     intro:
-      "Lyn & Lili’s provides reliable home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and small building cleaning for customers in and around Amity.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and small building cleaning for homes and properties in Amity, Arkansas and nearby areas.",
     localAngle:
-      "Amity is a small community where trust and word of mouth matter. Our goal is to make it easy for local families and property owners to get dependable cleaning help without dealing with a big-company feel.",
+      "In a small town like Amity, people usually choose cleaning help through trust, referrals, and word of mouth. We keep the process simple for homeowners, families, landlords, and property owners who want reliable help without a big-company feel.",
+
+    uniqueSectionTitle: "Cleaning for small-town homes and nearby properties",
+    uniqueSectionBody:
+      "Amity cleaning needs are usually practical: keeping a family home caught up, resetting a rental, cleaning before or after a move, or getting a part-time property ready to use. We focus on dependable work, clear communication, and cleaning that fits the actual space instead of forcing every job into the same package.",
+
+    priorityServiceSlugs: [
+      "standard-cleaning",
+      "deep-cleaning",
+      "move-in-move-out-cleaning",
+    ],
+
+    nearbyAreas: ["Alpine", "Point Cedar", "Rosboro", "Glenwood", "Caddo Gap"],
+
+    details: [
+      "Standard house cleaning is a good fit for Amity families who just need help staying ahead of bathrooms, kitchens, floors, dusting, and regular upkeep.",
+      "Deep cleaning works well when a home has gotten behind or needs a stronger reset before starting regular service.",
+      "Move-out cleaning is useful for landlords, renters, sellers, and property owners who need a home cleaned up before someone else moves in.",
+    ],
+
+    internalLinks: [
+      {
+        text: "standard house cleaning in Amity",
+        href: "/services/standard-cleaning",
+      },
+      {
+        text: "deep cleaning services in Amity",
+        href: "/services/deep-cleaning",
+      },
+      {
+        text: "move-out cleaning in Amity",
+        href: "/services/move-in-move-out-cleaning",
+      },
+    ],
+
+    localKeywords: [
+      "house cleaning Amity AR",
+      "deep cleaning Amity Arkansas",
+      "move out cleaning Amity AR",
+      "cleaning service near Amity Arkansas",
+    ],
+
+    layoutOrder: ["unique", "services", "details", "links", "faq"],
+
+    faq: [
+      {
+        q: "How much does house cleaning cost in Amity, AR?",
+        a: "Most homes fall somewhere between $100 and $350 depending on the size, condition, and type of cleaning needed. We give a clear quote based on your space.",
+      },
+      {
+        q: "Do you offer move-out cleaning in Amity?",
+        a: "Yes. We clean homes, rentals, and apartments before move-out, after move-out, or before a new tenant moves in.",
+      },
+      {
+        q: "Do you offer one-time cleaning or regular cleaning?",
+        a: "Both. Some customers book one deep clean, while others schedule weekly, biweekly, or occasional cleaning.",
+      },
+    ],
   },
+
   {
     slug: "glenwood-ar",
     city: "Glenwood",
     state: "AR",
-    headline: "Home cleaning services in Glenwood, Arkansas",
+    headline: "House Cleaning Services in Glenwood, Arkansas",
+    pageFocus: "family homes, rental properties, and lake-area cleaning",
     intro:
-      "We help Glenwood homeowners, renters, landlords, and local businesses keep their spaces clean, comfortable, and easier to manage.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Glenwood, Arkansas and surrounding areas.",
     localAngle:
-      "From everyday homes to rentals and nearby properties, Glenwood has a mix of cleaning needs. Lyn & Lili’s keeps the process simple with clear communication and honest work.",
+      "Glenwood has a mix of everyday homes, rental properties, weekend visitors, and nearby lake-area places. We help homeowners and property owners keep things clean without making them chase down help or deal with confusing pricing.",
+
+    uniqueSectionTitle: "Cleaning for Glenwood homes, rentals, and lake-area stays",
+    uniqueSectionBody:
+      "Around Glenwood, cleaning needs often come from busy households, rentals, weekend properties, and homes that need a reset after a busy season. Whether it is a regular house cleaning, a deep clean, or a rental turnover, we keep the work straightforward and dependable.",
+
+    priorityServiceSlugs: [
+      "standard-cleaning",
+      "airbnb-cleaning",
+      "deep-cleaning",
+    ],
+
+    nearbyAreas: ["Caddo Gap", "Bonnerdale", "Amity", "Mount Ida", "Lake Greeson"],
+
+    details: [
+      "Routine cleaning is common for Glenwood homes where families want help keeping kitchens, bathrooms, floors, and main living areas under control.",
+      "Rental and Airbnb turnover cleaning helps property owners get spaces guest-ready without scrambling between stays.",
+      "Deep cleaning is useful for homes, cabins, and part-time properties that need extra attention beyond a regular cleaning.",
+    ],
+
+    internalLinks: [
+      {
+        text: "routine house cleaning in Glenwood",
+        href: "/services/standard-cleaning",
+      },
+      {
+        text: "Airbnb cleaning in Glenwood",
+        href: "/services/airbnb-cleaning",
+      },
+      {
+        text: "deep cleaning in Glenwood AR",
+        href: "/services/deep-cleaning",
+      },
+    ],
+
+    localKeywords: [
+      "house cleaning Glenwood AR",
+      "Airbnb cleaning Glenwood Arkansas",
+      "deep cleaning Glenwood AR",
+      "rental cleaning Glenwood Arkansas",
+    ],
+
+    layoutOrder: ["services", "unique", "details", "faq", "links"],
+
+    faq: [
+      {
+        q: "Do you clean Airbnb properties in Glenwood?",
+        a: "Yes. We handle Airbnb and rental turnover cleaning so properties are clean and ready between guests.",
+      },
+      {
+        q: "Do you clean around Lake Greeson?",
+        a: "Yes. We can help with homes, cabins, rentals, and part-time properties in and around the Glenwood area.",
+      },
+      {
+        q: "What is the difference between standard cleaning and deep cleaning?",
+        a: "Standard cleaning is regular upkeep. Deep cleaning is more detailed and focuses on buildup, bathrooms, kitchens, baseboards, and areas that need extra time.",
+      },
+    ],
   },
+
   {
     slug: "arkadelphia-ar",
     city: "Arkadelphia",
     state: "AR",
-    headline: "Home cleaning services in Arkadelphia, Arkansas",
+    headline: "House Cleaning Services in Arkadelphia, Arkansas",
+    pageFocus: "apartments, rentals, student housing, and small offices",
     intro:
-      "Lyn & Lili’s offers standard cleaning, deep cleaning, move-in and move-out cleaning, rental turnover service, and office cleaning for Arkadelphia and nearby areas.",
+      "Lyn & Lili’s offers house cleaning, apartment cleaning, deep cleaning, move-out cleaning, rental turnover cleaning, and office cleaning in Arkadelphia, Arkansas and nearby areas.",
     localAngle:
-      "Arkadelphia has families, rentals, students, landlords, and small businesses that all need dependable cleaning from time to time. We offer flexible options based on the space and what needs done.",
+      "Arkadelphia has families, students, rentals, apartments, and small businesses, so cleaning needs can look different from one job to the next. We offer flexible cleaning help without making the process harder than it needs to be.",
+
+    uniqueSectionTitle: "Cleaning for apartments, rentals, homes, and offices",
+    uniqueSectionBody:
+      "Arkadelphia cleaning work often includes apartment cleaning, student rental resets, move-out cleaning, family home cleaning, and small office cleaning. We help with both one-time jobs and ongoing cleaning depending on what the space needs.",
+
+    priorityServiceSlugs: [
+      "move-in-move-out-cleaning",
+      "standard-cleaning",
+      "professional-building-cleaning",
+    ],
+
+    nearbyAreas: ["Caddo Valley", "Gum Springs", "Friendship", "DeGray Lake", "Hollywood"],
+
+    details: [
+      "Apartment and rental cleaning is common in Arkadelphia, especially when people are moving in, moving out, or preparing a place for a new tenant.",
+      "House cleaning helps busy families and working homeowners keep their main living spaces fresh and manageable.",
+      "Small office and professional building cleaning helps local businesses keep bathrooms, waiting areas, breakrooms, and workspaces presentable.",
+    ],
+
+    internalLinks: [
+      {
+        text: "apartment cleaning in Arkadelphia",
+        href: "/services/standard-cleaning",
+      },
+      {
+        text: "move-out cleaning Arkadelphia AR",
+        href: "/services/move-in-move-out-cleaning",
+      },
+      {
+        text: "office cleaning in Arkadelphia",
+        href: "/services/professional-building-cleaning",
+      },
+    ],
+
+    localKeywords: [
+      "house cleaning Arkadelphia AR",
+      "apartment cleaning Arkadelphia",
+      "move out cleaning Arkadelphia AR",
+      "office cleaning Arkadelphia Arkansas",
+    ],
+
+    layoutOrder: ["unique", "details", "services", "links", "faq"],
+
+    faq: [
+      {
+        q: "Do you clean apartments and rentals in Arkadelphia?",
+        a: "Yes. We clean apartments, rentals, and move-out spaces for tenants, landlords, and property owners.",
+      },
+      {
+        q: "Do you offer office cleaning in Arkadelphia?",
+        a: "Yes. We clean small offices, professional spaces, bathrooms, breakrooms, waiting areas, and common areas.",
+      },
+      {
+        q: "Can I book a one-time cleaning?",
+        a: "Yes. A lot of customers start with a one-time deep clean or move-out clean before deciding if they need ongoing service.",
+      },
+    ],
   },
+
   {
     slug: "hot-springs-ar",
     city: "Hot Springs",
     state: "AR",
-    headline: "Home and rental cleaning services in Hot Springs, Arkansas",
+    headline: "Home and Rental Cleaning Services in Hot Springs, Arkansas",
+    pageFocus: "vacation rentals, Airbnb turnovers, lake homes, and guest-ready spaces",
     intro:
-      "We provide cleaning services for homes, rentals, Airbnbs, offices, and professional spaces in Hot Springs and surrounding areas.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, Airbnb turnover cleaning, vacation rental cleaning, move-out cleaning, and office cleaning in Hot Springs, Arkansas and surrounding areas.",
     localAngle:
-      "Hot Springs has a strong mix of homes, vacation rentals, lake-area properties, and businesses. Our cleaning services are built to help property owners and families keep things guest-ready and comfortable.",
+      "Hot Springs has more rentals, vacation homes, lake-area properties, and guest traffic than smaller towns nearby. Cleaning needs often move faster here, especially for hosts and property owners who need a space ready before the next stay.",
+
+    uniqueSectionTitle: "Cleaning for vacation rentals, lake homes, and guest-ready spaces",
+    uniqueSectionBody:
+      "Hot Springs cleaning often means more than basic house cleaning. Many properties need to be reset between guests, cleaned before a weekend stay, deep cleaned after heavy use, or kept presentable for visitors. We help homeowners, rental hosts, and small businesses keep spaces clean, comfortable, and ready.",
+
+    priorityServiceSlugs: [
+      "airbnb-cleaning",
+      "deep-cleaning",
+      "move-in-move-out-cleaning",
+    ],
+
+    nearbyAreas: ["Lake Hamilton", "Rockwell", "Hot Springs Village", "Lake Catherine", "Piney"],
+
+    details: [
+      "Airbnb and vacation rental cleaning is one of the biggest needs around Hot Springs because guest-ready spaces have to be cleaned quickly and consistently.",
+      "Deep cleaning is useful for lake homes, part-time homes, and properties that need a stronger reset before guests, family, or renters arrive.",
+      "Standard house cleaning is available for full-time homes where families want help keeping up with regular mess and upkeep.",
+    ],
+
+    internalLinks: [
+      {
+        text: "Airbnb cleaning in Hot Springs AR",
+        href: "/services/airbnb-cleaning",
+      },
+      {
+        text: "deep cleaning Hot Springs Arkansas",
+        href: "/services/deep-cleaning",
+      },
+      {
+        text: "house cleaning in Hot Springs",
+        href: "/services/standard-cleaning",
+      },
+    ],
+
+    localKeywords: [
+      "Airbnb cleaning Hot Springs AR",
+      "vacation rental cleaning Hot Springs",
+      "house cleaning Hot Springs Arkansas",
+      "deep cleaning Hot Springs AR",
+    ],
+
+    layoutOrder: ["services", "unique", "details", "faq", "links"],
+
+    faq: [
+      {
+        q: "Do you handle vacation rental cleaning in Hot Springs?",
+        a: "Yes. We clean Airbnb and vacation rental properties so they are ready for the next guest.",
+      },
+      {
+        q: "Do you clean lake houses?",
+        a: "Yes. We clean lake homes, part-time homes, and guest properties, including deeper resets when needed.",
+      },
+      {
+        q: "Can you clean between guest stays?",
+        a: "Yes. We work with the schedule you give us and focus on getting the rental cleaned and ready as efficiently as possible.",
+      },
+    ],
   },
 ];
 
