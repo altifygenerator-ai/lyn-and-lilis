@@ -36,7 +36,73 @@ export default async function LocationPage({ params }: Props) {
   const location = locations.find((item) => item.slug === slug);
 
   if (!location) notFound();
+const locationSchema = {
+  "@context": "https://schema.org",
+  "@type": "CleaningService",
+  name: `Lyn & Lili’s Tidy House Home Services - ${location.city}`,
+  url: `https://www.lynandlilistidyhouse.com/locations/${slug}`,
+  telephone: "8702604536",
 
+  areaServed: {
+    "@type": "City",
+    name: `${location.city}, ${location.state}`,
+  },
+
+  serviceType: [
+    "House Cleaning",
+    "Deep Cleaning",
+    "Move-In Cleaning",
+    "Move-Out Cleaning",
+    "Airbnb Turnover Cleaning",
+    "Professional Building Cleaning",
+  ],
+
+  description: location.intro,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+
+  mainEntity:
+    location.faq?.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })) || [],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.lynandlilistidyhouse.com/",
+    },
+
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Service Areas",
+      item: "https://www.lynandlilistidyhouse.com/#areas",
+    },
+
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: `${location.city}, ${location.state}`,
+      item: `https://www.lynandlilistidyhouse.com/locations/${slug}`,
+    },
+  ],
+};
   const priorityServices = services.filter((service) =>
     location.priorityServiceSlugs?.includes(service.slug)
   );
@@ -48,6 +114,7 @@ export default async function LocationPage({ params }: Props) {
   const orderedServices = [...priorityServices, ...otherServices];
 
   const sectionMap: Record<SectionKey, React.ReactNode> = {
+    
     unique: (
       <section className="section-padding bg-white">
         <div className="container-custom px-5">
@@ -208,6 +275,16 @@ export default async function LocationPage({ params }: Props) {
       <Header />
 
       <main className="pt-20">
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      locationSchema,
+      faqSchema,
+      breadcrumbSchema,
+    ]),
+  }}
+/>
         <section className="bg-[var(--seafoam-soft)] px-5 py-24">
           <div className="container-custom">
             <Link

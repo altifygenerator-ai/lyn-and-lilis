@@ -17,6 +17,23 @@ export default function FAQPage() {
       <Header />
 
       <main className="pt-20">
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    }),
+  }}
+/>
         <section className="bg-[var(--seafoam-soft)] px-5 py-24">
           <div className="container-custom">
             <Link

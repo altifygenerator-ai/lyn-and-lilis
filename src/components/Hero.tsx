@@ -36,8 +36,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-black/70">
-            Simple, reliable cleaning for homes, rentals, offices, and small
-            professional spaces across southwest Arkansas.
+            House cleaning, deep cleaning, Airbnb turnover cleaning, and move-out cleaning services across Amity, Glenwood, Arkadelphia, Hot Springs, and nearby Arkansas areas.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
