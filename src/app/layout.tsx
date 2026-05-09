@@ -20,15 +20,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lynandlilistidyhouse.com"), // update if different
+  metadataBase: new URL("https://www.lynandlilistidyhouse.com"),
 
   title: {
-    default: "Lyn & Lili’s Tidy House Home Services",
+    default:
+      "Lyn & Lili’s Tidy House Home Services | Cleaning Services in Southwest Arkansas",
     template: "%s | Lyn & Lili’s Cleaning Services",
   },
 
   description:
-    "Local home cleaning, deep cleaning, move-out cleaning, Airbnb turnover, and small business cleaning services in Amity, Glenwood, Arkadelphia, Hot Springs, and surrounding Arkansas areas.",
+    "Local home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small business cleaning services in Amity, Glenwood, Arkadelphia, Hot Springs, and surrounding Arkansas areas.",
 
   keywords: [
     "home cleaning Amity AR",
@@ -38,6 +39,7 @@ export const metadata: Metadata = {
     "deep cleaning Arkansas",
     "move out cleaning Arkansas",
     "Airbnb cleaning Arkansas",
+    "vacation rental cleaning Arkansas",
     "house cleaners near me",
     "local cleaning service Arkansas",
   ],
@@ -47,11 +49,12 @@ export const metadata: Metadata = {
   publisher: "Lyn & Lili’s",
 
   openGraph: {
-    title: "Lyn & Lili’s Tidy House Home Services",
+    title:
+      "Lyn & Lili’s Tidy House Home Services | Cleaning Services in Southwest Arkansas",
     description:
-      "Reliable local cleaning services for homes, rentals, and businesses in southwest Arkansas.",
-    url: "https://lynandlilistidyhouse.com",
-    siteName: "Lyn & Lili’s",
+      "Reliable local cleaning services for homes, rentals, vacation properties, and small businesses in southwest Arkansas.",
+    url: "https://www.lynandlilistidyhouse.com",
+    siteName: "Lyn & Lili’s Tidy House Home Services",
     locale: "en_US",
     type: "website",
   },
@@ -60,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lyn & Lili’s Cleaning Services",
     description:
-      "Home cleaning, deep cleaning, and rental cleaning in Amity, Glenwood, Arkadelphia, and Hot Springs.",
+      "Home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and rental cleaning in Amity, Glenwood, Arkadelphia, and Hot Springs.",
   },
 
   robots: {
@@ -76,7 +79,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://lynandlilistidyhouse.com",
+    canonical: "https://www.lynandlilistidyhouse.com",
   },
 };
 
@@ -90,8 +93,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${dancing.variable} ${playfair.variable}`}
     >
-      <body>{children}</body>
-      <Analytics />
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

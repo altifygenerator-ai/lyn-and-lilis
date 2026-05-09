@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { locations } from "@/data/locations";
+import { services } from "@/data/services";
 import { FaLocationDot, FaArrowRight } from "react-icons/fa6";
 
 export default function ServiceAreas() {
@@ -50,6 +51,23 @@ export default function ServiceAreas() {
                   Home cleaning, deep cleaning, move-out cleaning, Airbnb
                   turnovers, and small business cleaning.
                 </p>
+
+                <div className="mt-4 space-y-2 text-sm font-bold text-[var(--gray-dark)]">
+                  {location.priorityServiceSlugs?.slice(0, 3).map((serviceSlug) => {
+                    const service = services.find((item) => item.slug === serviceSlug);
+                    if (!service) return null;
+
+                    return (
+                      <span
+                        key={service.slug}
+                        className="block hover:text-[var(--pink)]"
+                      >
+                        {service.title} in {location.city}
+                      </span>
+                    );
+                  })}
+                </div>
+
                 <p className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
                   View {location.city} Services <FaArrowRight />
                 </p>

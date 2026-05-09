@@ -168,27 +168,44 @@ const breadcrumbSchema = {
             </p>
           </div>
 
-          <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {orderedServices.map((service) => (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                className="soft-card block bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
-              >
-                <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
-                  {service.title} in {location.city}
-                </h3>
+      <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+  {orderedServices.map((service) => (
+    <Link
+      key={service.slug}
+      href={`/locations/${location.slug}/${service.slug}`}
+      className="soft-card block bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
+    >
+      <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
+        {service.title} in {location.city}, {location.state}
+      </h3>
 
-                <p className="mt-2 text-sm font-bold text-[var(--seafoam)]">
-                  {service.price}
-                </p>
+      <p className="mt-2 text-sm font-bold text-[var(--seafoam)]">
+        {service.price}
+      </p>
 
-                <p className="mt-3 text-sm leading-6 text-black/60">
-                  {service.description}
-                </p>
-              </Link>
-            ))}
-          </div>
+      <p className="mt-3 text-sm leading-6 text-black/60">
+        Local {service.title.toLowerCase()} for {location.pageFocus} in{" "}
+        {location.city} and nearby Arkansas areas.
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {service.includes.slice(0, 3).map((item) => (
+          <span
+            key={item}
+            className="rounded-full bg-[var(--pink-soft)] px-3 py-1 text-xs font-bold text-[var(--gray-dark)]"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <p className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
+        View {service.title} in {location.city}
+        <FaArrowRight />
+      </p>
+    </Link>
+  ))}
+</div>
         </div>
       </section>
     ),

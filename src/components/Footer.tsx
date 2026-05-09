@@ -107,24 +107,58 @@ export default function Footer() {
                   Hot Springs
                 </Link>
               </div>
+
+              <div className="pt-3">
+                <p className="mb-2 font-bold text-[var(--gray-dark)]">
+                  Popular Local Services
+                </p>
+
+                <Link
+                  href="/locations/glenwood-ar/deep-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Deep Cleaning in Glenwood
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/airbnb-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Airbnb Cleaning in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/arkadelphia-ar/move-in-move-out-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Move-Out Cleaning in Arkadelphia
+                </Link>
+
+                <Link
+                  href="/locations/amity-ar/standard-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  House Cleaning in Amity
+                </Link>
+              </div>
             </div>
           </div>
         </div>
 
-       <div className="mt-10 border-t border-black/10 pt-6 text-sm text-black/40 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-  <span>
-    © {new Date().getFullYear()} Lyn & Lili’s Tidy House Home Services.
-  </span>
+        <div className="mt-10 border-t border-black/10 pt-6 text-sm text-black/40 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+          <span>
+            © {new Date().getFullYear()} Lyn & Lili’s Tidy House Home Services.
+          </span>
 
-  <a
-    href="https://hometownwebservicesar.cc"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-[var(--pink)] transition"
-  >
-    Website by Hometown Web
-  </a>
-</div>
+          <a
+            href="https://hometownwebservicesar.cc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[var(--pink)] transition"
+          >
+            Website by Hometown Web
+          </a>
+        </div>
       </div>
     </footer>
   );
