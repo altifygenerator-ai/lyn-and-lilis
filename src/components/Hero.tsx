@@ -6,13 +6,12 @@ import { FaPhone, FaArrowRight, FaWandMagicSparkles } from "react-icons/fa6";
 export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden pt-24">
-      <div
-        className="absolute inset-0 -z-20 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1800&auto=format&fit=crop')",
-        }}
-      />
+     <div
+  className="absolute inset-0 -z-20 bg-cover bg-center"
+  style={{
+    backgroundImage: "url('/images/hero.png')",
+  }}
+/>
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(248,246,244,0.97),rgba(248,246,244,0.82),rgba(248,246,244,0.25))]" />
 
       <div className="container-custom px-5">

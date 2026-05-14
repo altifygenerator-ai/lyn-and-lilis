@@ -45,7 +45,7 @@ export default function QuoteForm() {
           <div className="mt-8 space-y-4 text-white/75">
             <p className="flex items-center gap-3">
               <FaPhone className="text-[var(--pink)]" /> Lili (870) 260-4536
-              <FaPhone className="text-[var(--pink)]" /> Lyn  (870) 9977-7893
+              <FaPhone className="text-[var(--pink)]" /> Lyn  (870) 997-7893
             </p>
             <p className="flex items-center gap-3">
               <FaEnvelope className="text-[var(--pink)]" /> lynandlilistidyhouse@gmail.com

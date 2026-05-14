@@ -3,10 +3,18 @@
 import { motion } from "framer-motion";
 
 const images = [
-  "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=900&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=900&auto=format&fit=crop",
+  
+  "/images/after-1.png",
+  "/images/after-2.png",
+  "/images/after-3.png",
+  "/images/bathroom-1.png",
+  "/images/bathroom-2.png",
+  "/images/before-1.png",
+  "/images/before-2.png",
+  "/images/before-3.png",
+  "/images/livingroom-1.png",
+  "/images/livingroom-2.png",
+  
 ];
 
 export default function GallerySection() {

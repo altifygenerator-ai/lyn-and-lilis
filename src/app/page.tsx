@@ -9,6 +9,7 @@ import QuoteForm from "@/components/QuoteForm";
 import Footer from "@/components/Footer";
 import AboutPreview from "@/components/AboutPreview";
 import { faqs } from "@/data/faqs";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
 
 export default function Home() {
   return (
@@ -70,6 +71,7 @@ export default function Home() {
         <ServicesSection />
         <AddOnsSection />
         <GallerySection />
+        <BeforeAfterSection />
         <AboutPreview />
         <ServiceAreas />
         <QuoteForm />
