@@ -10,7 +10,8 @@ import Footer from "@/components/Footer";
 import AboutPreview from "@/components/AboutPreview";
 import { faqs } from "@/data/faqs";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
-
+import ReviewsSection from "@/components/ReviewsSection";
+import SeniorPricingSection from "@/components/SeniorPricingSection";
 export default function Home() {
   return (
     <>
@@ -67,14 +68,17 @@ export default function Home() {
         />
 
         <Hero />
-        <TrustBar />
-        <ServicesSection />
-        <AddOnsSection />
-        <GallerySection />
-        <BeforeAfterSection />
-        <AboutPreview />
-        <ServiceAreas />
-        <QuoteForm />
+     
+<TrustBar />
+<ServicesSection />
+<AddOnsSection />
+<SeniorPricingSection />
+<GallerySection />
+<BeforeAfterSection />
+<ReviewsSection />
+<AboutPreview />
+<ServiceAreas />
+<QuoteForm />
       </main>
 
       <Footer />
