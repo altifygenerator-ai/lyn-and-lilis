@@ -1,44 +1,32 @@
-import { MetadataRoute } from "next";
-import { services } from "@/data/services";
+import type { MetadataRoute } from "next";
 import { locations } from "@/data/locations";
+import { services } from "@/data/services";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.lynandlilistidyhouse.com";
 
-  const staticPages = ["", "/about", "/faq"].map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.7,
-  }));
+  const staticPages = [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 1,
+    },
+  ];
 
   const servicePages = services.map((service) => ({
     url: `${baseUrl}/services/${service.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
-    priority: 0.85,
+    priority: 0.8,
   }));
 
   const locationPages = locations.map((location) => ({
-    url: `${baseUrl}/locations/${location.slug}`,
+    url: `${baseUrl}${location.href}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.85,
   }));
 
-  const localServicePages = locations.flatMap((location) =>
-    location.priorityServiceSlugs.map((serviceSlug) => ({
-      url: `${baseUrl}/locations/${location.slug}/${serviceSlug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-    }))
-  );
-
-  return [
-    ...staticPages,
-    ...servicePages,
-    ...locationPages,
-    ...localServicePages,
-  ];
+  return [...staticPages, ...servicePages, ...locationPages];
 }

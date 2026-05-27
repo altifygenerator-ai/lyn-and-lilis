@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { locations } from "@/data/locations";
@@ -16,13 +18,18 @@ export default function ServiceAreas() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.5 }}
         >
-          <p className="font-script text-4xl text-[var(--pink)]">Local service</p>
+          <p className="font-script text-4xl text-[var(--pink)]">
+            Local service
+          </p>
+
           <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
             Proudly serving southwest Arkansas.
           </h2>
+
           <p className="mt-4 text-black/65">
-            Based around Amity and Glenwood, serving nearby homes, rentals,
-            offices, and professional buildings.
+            Based around Amity and Glenwood, with cleaning help available for
+            nearby homes, rentals, small businesses, and local properties across
+            the area.
           </p>
 
           <Link href="/#quote" className="btn-secondary mt-6">
@@ -40,32 +47,38 @@ export default function ServiceAreas() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
             >
               <Link
-                href={`/locations/${location.slug}`}
+                href={location.href}
                 className="soft-card block h-full p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
               >
                 <FaLocationDot className="mb-4 text-2xl text-[var(--pink)]" />
+
                 <h3 className="font-heading text-2xl font-bold">
                   {location.city}, {location.state}
                 </h3>
+
                 <p className="mt-2 text-sm text-black/60">
-                  Home cleaning, deep cleaning, move-out cleaning, Airbnb
-                  turnovers, and small business cleaning.
+                  {location.pageFocus}
                 </p>
 
                 <div className="mt-4 space-y-2 text-sm font-bold text-[var(--gray-dark)]">
-                  {location.priorityServiceSlugs?.slice(0, 3).map((serviceSlug) => {
-                    const service = services.find((item) => item.slug === serviceSlug);
-                    if (!service) return null;
+                  {location.priorityServiceSlugs
+                    ?.slice(0, 3)
+                    .map((serviceSlug) => {
+                      const service = services.find(
+                        (item) => item.slug === serviceSlug
+                      );
 
-                    return (
-                      <span
-                        key={service.slug}
-                        className="block hover:text-[var(--pink)]"
-                      >
-                        {service.title} in {location.city}
-                      </span>
-                    );
-                  })}
+                      if (!service) return null;
+
+                      return (
+                        <span
+                          key={service.slug}
+                          className="block hover:text-[var(--pink)]"
+                        >
+                          {service.title} in {location.city}
+                        </span>
+                      );
+                    })}
                 </div>
 
                 <p className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
@@ -79,14 +92,18 @@ export default function ServiceAreas() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.4, delay: locations.length * 0.05 }}
             className="soft-card bg-[var(--pink-soft)] p-6"
           >
             <FaLocationDot className="mb-4 text-2xl text-[var(--seafoam)]" />
+
             <h3 className="font-heading text-2xl font-bold">Nearby Areas</h3>
+
             <p className="mt-2 text-sm text-black/60">
-              If you’re close by, reach out and ask. We’re happy to let you know
-              if your location is in range.
+              Close by but not listed? Reach out and ask. We’re happy to let you
+              know if your home, rental, or business is in range.
             </p>
+
             <Link
               href="/#quote"
               className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]"

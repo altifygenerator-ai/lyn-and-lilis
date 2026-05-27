@@ -1,14 +1,14 @@
 const beforeAfterItems = [
   {
     title: "Kitchen reset",
-    before: "/images/before-1.png",
-    after: "/images/after-1.png",
+    before: "/images/sink-1.jpg",
+    after: "/images/sink-2.jpg",
     text: "Counters cleared, dishes handled, surfaces wiped down, floors cleaned, and the kitchen brought back to a fresh usable space.",
   },
   {
     title: "Bathroom refresh",
-    before: "/images/before-2.png",
-    after: "/images/after-2.png",
+    before: "/images/bathroom-1.jpg",
+    after: "/images/bathroom-2.jpg",
     text: "Sinks, mirrors, tubs, toilets, counters, and floors cleaned so the bathroom feels fresh again.",
   },
   {

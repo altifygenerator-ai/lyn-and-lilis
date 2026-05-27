@@ -1,6 +1,7 @@
 export const locations = [
   {
     slug: "amity-ar",
+    href: "/house-cleaning-amity-ar",
     city: "Amity",
     state: "AR",
     headline: "House Cleaning Services in Amity, Arkansas",
@@ -70,6 +71,7 @@ export const locations = [
 
   {
     slug: "glenwood-ar",
+    href: "/house-cleaning-glenwood-ar",
     city: "Glenwood",
     state: "AR",
     headline: "House Cleaning Services in Glenwood, Arkansas",
@@ -138,7 +140,84 @@ export const locations = [
   },
 
   {
+    slug: "malvern-ar",
+    href: "/house-cleaning-malvern-ar",
+    city: "Malvern",
+    state: "AR",
+    headline: "House Cleaning Services in Malvern, Arkansas",
+    pageFocus: "homes, rentals, move-out cleaning, and small business cleaning",
+    intro:
+      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Malvern, Arkansas and nearby areas.",
+    localAngle:
+      "Malvern has a mix of family homes, rentals, apartments, small businesses, and people who just need dependable cleaning help without making it complicated. We keep quoting simple, talk through what the space actually needs, and build the cleaning around the job instead of pretending every home is the same.",
+
+    uniqueSectionTitle: "Cleaning for Malvern homes, rentals, and local spaces",
+    uniqueSectionBody:
+      "Cleaning needs in Malvern can be anything from regular house upkeep to a full move-out clean, rental reset, deep clean, or small office cleaning. Some spaces just need a fresh weekly or biweekly routine, while others need more time and detail. We look at the job, talk through the details, and give a clear quote before getting started.",
+
+    priorityServiceSlugs: [
+      "standard-cleaning",
+      "deep-cleaning",
+      "move-in-move-out-cleaning",
+    ],
+
+    nearbyAreas: [
+      "Rockport",
+      "Magnet Cove",
+      "Perla",
+      "Donaldson",
+      "Arkadelphia",
+    ],
+
+    details: [
+      "Standard house cleaning is a good fit for Malvern homeowners who want help keeping bathrooms, kitchens, floors, dusting, and main living areas under control.",
+      "Deep cleaning works well when a home needs a stronger reset, especially before starting regular cleaning or after things have gotten behind.",
+      "Move-in and move-out cleaning is useful for renters, landlords, sellers, buyers, and property owners who need a space cleaned before the next person moves in.",
+    ],
+
+    internalLinks: [
+      {
+        text: "house cleaning in Malvern",
+        href: "/services/standard-cleaning",
+      },
+      {
+        text: "deep cleaning services in Malvern",
+        href: "/services/deep-cleaning",
+      },
+      {
+        text: "move-out cleaning in Malvern AR",
+        href: "/services/move-in-move-out-cleaning",
+      },
+    ],
+
+    localKeywords: [
+      "house cleaning Malvern AR",
+      "deep cleaning Malvern Arkansas",
+      "move out cleaning Malvern AR",
+      "cleaning service near Malvern Arkansas",
+    ],
+
+    layoutOrder: ["unique", "services", "details", "links", "faq"],
+
+    faq: [
+      {
+        q: "Do you offer house cleaning in Malvern, AR?",
+        a: "Yes. We offer house cleaning, deep cleaning, move-in and move-out cleaning, and small business cleaning in Malvern and nearby areas.",
+      },
+      {
+        q: "How much does cleaning cost in Malvern?",
+        a: "Most homes fall somewhere between $100 and $350 depending on the size, condition, and type of cleaning needed. We give a clear quote based on the actual space.",
+      },
+      {
+        q: "Can I book a one-time clean in Malvern?",
+        a: "Yes. One-time cleaning is available for deep cleans, move-out cleans, rental resets, or when you just need help getting caught up.",
+      },
+    ],
+  },
+
+  {
     slug: "arkadelphia-ar",
+    href: "/house-cleaning-arkadelphia-ar",
     city: "Arkadelphia",
     state: "AR",
     headline: "House Cleaning Services in Arkadelphia, Arkansas",
@@ -208,6 +287,7 @@ export const locations = [
 
   {
     slug: "hot-springs-ar",
+    href: "/house-cleaning-hot-springs-ar",
     city: "Hot Springs",
     state: "AR",
     headline: "Home and Rental Cleaning Services in Hot Springs, Arkansas",
