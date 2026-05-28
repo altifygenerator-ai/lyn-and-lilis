@@ -12,10 +12,10 @@ const beforeAfterItems = [
     text: "Sinks, mirrors, tubs, toilets, counters, and floors cleaned so the bathroom feels fresh again.",
   },
   {
-    title: "Living room cleanup",
-    before: "/images/before-3.png",
-    after: "/images/after-3.png",
-    text: "Clutter picked up, surfaces cleaned, pillows and blankets reset, and the room brought back to a comfortable clean space.",
+    title: "Stove deep clean",
+    before: "/images/stove-dirty.jpeg",
+    after: "/images/stove-clean.jpeg",
+    text: "Stove tops can get really grimy, but we make sure to get into all the nooks and crannies to get it back to a clean state.",
   },
 ];
 

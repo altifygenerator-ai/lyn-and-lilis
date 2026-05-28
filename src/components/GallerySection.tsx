@@ -4,20 +4,23 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
+  "/images/shower-clean.jpeg",
+  "/images/shower-dirty.jpeg",
+  "/images/shower-clean2.jpeg",
+
+  "/images/lazy-susan-clean.jpeg",
+  "/images/lazy-susan-clean2.jpeg",
+  "/images/lazy-susan-dirty.jpeg",
+  "/images/lazy-susan-dirty2.jpeg",
+
+  "/images/stove-clean.jpeg",
+  "/images/stove-dirty.jpeg",
+
   "/images/bathroom-2.jpg",
   "/images/sink-2.jpg",
-  "/images/after-1.png",
-  "/images/after-2.png",
-  "/images/after-3.png",
-  "/images/bathroom-1.png",
-  "/images/bathroom-2.png",
-  "/images/before-1.png",
-  "/images/before-2.png",
-  "/images/before-3.png",
   "/images/livingroom-1.png",
   "/images/livingroom-2.png",
 ];
-
 export default function GallerySection() {
   const [activeIndex, setActiveIndex] = useState(0);
 

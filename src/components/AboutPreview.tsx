@@ -7,48 +7,89 @@ import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const images = [
   {
-    src: "/images/hero.png",
-    alt: "Freshly cleaned home interior by Lyn and Lili's Tidy House",
+    src: "/images/bathroom-1.jpg",
+    alt: "Bathroom cleaning before and after example",
   },
   {
-    src: "/images/after-1.png",
-    alt: "Clean kitchen after house cleaning service",
-  },
-  {
-    src: "/images/after-2.png",
+    src: "/images/bathroom-2.jpg",
     alt: "Clean bathroom after house cleaning service",
   },
   {
-    src: "/images/after-3.png",
-    alt: "Clean living room after house cleaning service",
+    src: "/images/sink-1.jpg",
+    alt: "Sink before cleaning",
   },
   {
-    src: "/images/bathroom-1.png",
-    alt: "Bathroom before cleaning",
+    src: "/images/sink-2.jpg",
+    alt: "Sink after cleaning",
   },
   {
-    src: "/images/bathroom-2.png",
-    alt: "Bathroom after cleaning",
+    src: "/images/shower-dirty.jpeg",
+    alt: "Shower before cleaning",
   },
   {
-    src: "/images/before-1.png",
-    alt: "Kitchen before cleaning",
+    src: "/images/shower-clean.jpeg",
+    alt: "Shower after cleaning",
   },
   {
-    src: "/images/before-2.png",
-    alt: "Bathroom before cleaning",
+    src: "/images/shower-clean2.jpeg",
+    alt: "Clean shower detail after house cleaning",
   },
   {
-    src: "/images/before-3.png",
-    alt: "Living room before cleaning",
+    src: "/images/lazy-susan-dirty.jpeg",
+    alt: "Lazy Susan cabinet before cleaning",
   },
   {
-    src: "/images/livingroom-1.png",
-    alt: "Living room before cleaning",
+    src: "/images/lazy-susan-dirty2.jpeg",
+    alt: "Lazy Susan cabinet before deep cleaning",
   },
   {
-    src: "/images/livingroom-2.png",
-    alt: "Living room after cleaning",
+    src: "/images/lazy-susan-clean.jpeg",
+    alt: "Lazy Susan cabinet after cleaning",
+  },
+  {
+    src: "/images/lazy-susan-clean2.jpeg",
+    alt: "Clean Lazy Susan cabinet detail",
+  },
+  {
+    src: "/images/stove-dirty.jpeg",
+    alt: "Stove top before cleaning",
+  },
+  {
+    src: "/images/stove-clean.jpeg",
+    alt: "Stove top after cleaning",
+  },
+ 
+  {
+    src: "/images/image2 (1).jpeg",
+    alt: "House cleaning service photo",
+  },
+  {
+    src: "/images/image3 (1).jpeg",
+    alt: "Residential cleaning photo",
+  },
+  {
+    src: "/images/image4 (2).jpeg",
+    alt: "Home cleaning detail photo",
+  },
+  {
+    src: "/images/image5 (1).jpeg",
+    alt: "Clean home interior photo",
+  },
+  {
+    src: "/images/image6 (1).jpeg",
+    alt: "House cleaning result photo",
+  },
+  {
+    src: "/images/image7 (1).jpeg",
+    alt: "Residential cleaning result photo",
+  },
+  {
+    src: "/images/image8 (1).jpeg",
+    alt: "Clean room after house cleaning",
+  },
+  {
+    src: "/images/image9 (1).jpeg",
+    alt: "Home cleaning project image",
   },
 ];
 
