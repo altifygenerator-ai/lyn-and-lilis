@@ -207,7 +207,7 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
               {orderedServices.map((service) => (
                 <Link
                   key={service.slug}
-                  href={`/services/${service.slug}`}
+                  href={`/locations/${location.slug}/${service.slug}`}
                   className="soft-card block bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
                 >
                   <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
@@ -235,7 +235,7 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
                   </div>
 
                   <p className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
-                    View {service.title} <FaArrowRight />
+                    View {service.title} in {location.city} <FaArrowRight />
                   </p>
                 </Link>
               ))}

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa6";
+import { getServiceImages } from "@/data/routeMaps";
 
 export default function ServicePageContent({ service }: { service: any }) {
   const Icon = service.icon;
+  const images = getServiceImages(service.slug);
 
   return (
     <>
@@ -16,26 +18,36 @@ export default function ServicePageContent({ service }: { service: any }) {
             Back to Services
           </Link>
 
-          <div className="max-w-4xl">
-            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-2xl text-[var(--gray-dark)]">
-              <Icon />
+          <div className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+            <div className="max-w-4xl">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-2xl text-[var(--gray-dark)]">
+                <Icon />
+              </div>
+
+              <p className="font-script text-4xl text-[var(--pink)]">
+                Lyn & Lili’s
+              </p>
+
+              <h1 className="font-heading mt-3 text-5xl font-bold leading-tight text-[var(--gray-dark)] md:text-6xl">
+                {service.seoHeadline ?? service.title}
+              </h1>
+
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-black/70">
+                {service.heroText}
+              </p>
+
+              <Link href="/#quote" className="btn-primary mt-8">
+                Request a Quote <FaArrowRight />
+              </Link>
             </div>
 
-            <p className="font-script text-4xl text-[var(--pink)]">
-              Lyn & Lili’s
-            </p>
-
-            <h1 className="font-heading mt-3 text-5xl font-bold leading-tight text-[var(--gray-dark)] md:text-6xl">
-              {service.seoHeadline ?? service.title}
-            </h1>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-black/70">
-              {service.heroText}
-            </p>
-
-            <Link href="/#quote" className="btn-primary mt-8">
-              Request a Quote <FaArrowRight />
-            </Link>
+            <div className="soft-card overflow-hidden bg-white p-3">
+              <img
+                src={images[0].src}
+                alt={images[0].alt}
+                className="h-[360px] w-full rounded-[1.35rem] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -60,6 +72,22 @@ export default function ServicePageContent({ service }: { service: any }) {
           </div>
         </section>
       ) : null}
+
+      <section className="bg-[var(--seafoam-soft)] py-20">
+        <div className="container-custom px-5">
+          <div className="grid gap-5 md:grid-cols-3">
+            {images.map((image) => (
+              <div key={image.src} className="soft-card overflow-hidden bg-white p-3">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="h-64 w-full rounded-[1.15rem] object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {service.localProblems?.length ? (
         <section className="bg-[var(--seafoam-soft)] py-20">
@@ -146,6 +174,28 @@ export default function ServicePageContent({ service }: { service: any }) {
         </section>
       ) : null}
 
+      {service.relatedLocationAnchors?.length ? (
+        <section className="bg-[var(--pink-soft)] py-16">
+          <div className="container-custom px-5">
+            <h2 className="font-heading text-3xl font-bold text-[var(--gray-dark)]">
+              Popular local pages for this service
+            </h2>
+
+            <div className="mt-6 grid gap-3 md:grid-cols-3">
+              {service.relatedLocationAnchors.map((link: any) => (
+                <Link
+                  key={link.href + link.text}
+                  href={link.href}
+                  className="rounded-2xl bg-white px-5 py-4 font-bold text-[var(--gray-dark)] shadow-sm transition hover:-translate-y-1 hover:text-[var(--pink)]"
+                >
+                  {link.text}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {service.faq?.length ? (
         <section className="section-padding bg-[var(--seafoam-soft)]">
           <div className="container-custom max-w-4xl px-5">
@@ -179,8 +229,8 @@ export default function ServicePageContent({ service }: { service: any }) {
             </h2>
 
             <p className="mt-4 leading-8 text-white/70">
-              Serving Amity, Glenwood, Arkadelphia, Hot Springs, Lake Greeson,
-              Lake Hamilton, and nearby Arkansas areas.
+              Serving Amity, Glenwood, Arkadelphia, Hot Springs, Malvern, Lake
+              Greeson, Lake Hamilton, and nearby Arkansas areas.
             </p>
 
             <Link href="/#quote" className="btn-secondary mt-6">

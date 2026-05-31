@@ -28,5 +28,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages];
+  const hotSpringsServicePages = [
+    "airbnb-cleaning",
+    "deep-cleaning",
+    "move-in-move-out-cleaning",
+  ].map((serviceSlug) => ({
+    url: `${baseUrl}/locations/hot-springs-ar/${serviceSlug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.82,
+  }));
+
+  return [
+    ...staticPages,
+    ...servicePages,
+    ...locationPages,
+    ...hotSpringsServicePages,
+  ];
 }

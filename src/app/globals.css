@@ -111,3 +111,217 @@ a {
   border-color: var(--seafoam);
   box-shadow: 0 0 0 4px rgba(157, 215, 199, 0.25);
 }
+
+/* -------------------------------------------------------------------------- */
+/* Hard-coded Hot Springs service pages                                       */
+/* Used by:                                                                   */
+/* /locations/hot-springs-ar/airbnb-cleaning                                  */
+/* /locations/hot-springs-ar/deep-cleaning                                    */
+/* /locations/hot-springs-ar/move-in-move-out-cleaning                        */
+/* -------------------------------------------------------------------------- */
+
+.section {
+  padding: 6rem 1.25rem;
+}
+
+.container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.section-soft {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(242, 174, 190, 0.2),
+      transparent 32rem
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(157, 215, 199, 0.24),
+      transparent 34rem
+    ),
+    var(--gray-soft);
+}
+
+.eyebrow {
+  margin-bottom: 0.85rem;
+  color: var(--gray-mid);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--gray-dark);
+  font-family: var(--font-heading), serif;
+  font-size: clamp(2.35rem, 5vw, 4.75rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.section-lead {
+  margin-top: 1.25rem;
+  max-width: 44rem;
+  color: rgba(48, 48, 48, 0.72);
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+  line-height: 1.8;
+}
+
+.section-text {
+  color: rgba(48, 48, 48, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.section-heading {
+  margin-bottom: 2.25rem;
+  max-width: 54rem;
+}
+
+.section-heading .section-title {
+  max-width: 52rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 1.35rem;
+  color: rgba(48, 48, 48, 0.72);
+  box-shadow: 0 16px 45px rgba(56, 56, 56, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(242, 174, 190, 0.55);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 20px 60px rgba(56, 56, 56, 0.09);
+}
+
+.card h3,
+.card .font-semibold,
+.card p.font-semibold {
+  color: var(--gray-dark);
+}
+
+.card p {
+  line-height: 1.7;
+}
+
+.soft-card {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 1.75rem;
+  box-shadow: 0 20px 70px rgba(56, 56, 56, 0.08);
+}
+
+.section .soft-card,
+.section-soft .soft-card {
+  padding: 2rem;
+}
+
+.soft-card .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.soft-card h2 {
+  color: var(--gray-dark);
+  font-family: var(--font-heading), serif;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.soft-card p {
+  color: rgba(48, 48, 48, 0.72);
+  line-height: 1.75;
+}
+
+.btn {
+  text-decoration: none;
+}
+
+.section .btn-primary,
+.section-soft .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  background: var(--gray-dark);
+  color: white;
+  padding: 0.9rem 1.45rem;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.section .btn-primary:hover,
+.section-soft .btn-primary:hover {
+  transform: translateY(-2px);
+  background: #222;
+}
+
+.section .btn-secondary,
+.section-soft .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border-radius: 999px;
+  background: var(--pink-soft);
+  color: var(--gray-dark);
+  padding: 0.9rem 1.45rem;
+  font-weight: 800;
+  border: 1px solid var(--pink);
+  transition: 0.2s ease;
+}
+
+.section .btn-secondary:hover,
+.section-soft .btn-secondary:hover {
+  transform: translateY(-2px);
+  background: var(--seafoam-soft);
+  border-color: var(--seafoam);
+}
+
+.rounded-full.border {
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.72);
+  color: rgba(48, 48, 48, 0.72);
+  font-weight: 800;
+  box-shadow: 0 10px 28px rgba(56, 56, 56, 0.05);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4.5rem 1rem;
+  }
+
+  .section-padding {
+    padding: 4.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: clamp(2.1rem, 12vw, 3.25rem);
+  }
+
+  .section-lead {
+    font-size: 1.05rem;
+  }
+
+  .section .soft-card,
+  .section-soft .soft-card {
+    padding: 1.5rem;
+  }
+
+  .card {
+    border-radius: 1.25rem;
+    padding: 1.15rem;
+  }
+}

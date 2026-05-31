@@ -221,10 +221,19 @@ export const services = [
       "Post-construction debris removal",
     ],
 
-    relatedLocationAnchors: [
-      { text: "deep cleaning in Amity", href: "/locations/amity-ar/deep-cleaning" },
-      { text: "deep cleaning in Glenwood", href: "/locations/glenwood-ar/deep-cleaning" },
-      { text: "deep cleaning in Hot Springs", href: "/locations/hot-springs-ar/deep-cleaning" },
+      relatedLocationAnchors: [
+      {
+        text: "deep cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/deep-cleaning",
+      },
+      {
+        text: "deep cleaning in Amity",
+        href: "/locations/amity-ar/deep-cleaning",
+      },
+      {
+        text: "deep cleaning in Glenwood",
+        href: "/locations/glenwood-ar/deep-cleaning",
+      },
     ],
 
     relatedServiceSlugs: ["standard-cleaning", "move-in-move-out-cleaning"],
@@ -349,10 +358,23 @@ export const services = [
       "Major damage repair",
     ],
 
-    relatedLocationAnchors: [
-      { text: "move-out cleaning in Amity", href: "/locations/amity-ar/move-in-move-out-cleaning" },
-      { text: "move-out cleaning in Arkadelphia", href: "/locations/arkadelphia-ar/move-in-move-out-cleaning" },
-      { text: "move-in cleaning in Hot Springs", href: "/locations/hot-springs-ar/move-in-move-out-cleaning" },
+      relatedLocationAnchors: [
+      {
+        text: "move-out cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/move-in-move-out-cleaning",
+      },
+      {
+        text: "move-in cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/move-in-move-out-cleaning",
+      },
+      {
+        text: "move-out cleaning in Amity",
+        href: "/locations/amity-ar/move-in-move-out-cleaning",
+      },
+      {
+        text: "move-out cleaning in Arkadelphia",
+        href: "/locations/arkadelphia-ar/move-in-move-out-cleaning",
+      },
     ],
 
     relatedServiceSlugs: ["deep-cleaning", "standard-cleaning"],
@@ -476,11 +498,23 @@ export const services = [
       "Emergency maintenance",
       "Property management services",
     ],
-
     relatedLocationAnchors: [
-      { text: "Airbnb cleaning in Hot Springs", href: "/locations/hot-springs-ar/airbnb-cleaning" },
-      { text: "Airbnb cleaning in Glenwood", href: "/locations/glenwood-ar/airbnb-cleaning" },
-      { text: "rental cleaning near Amity", href: "/locations/amity-ar/airbnb-cleaning" },
+      {
+        text: "Airbnb cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/airbnb-cleaning",
+      },
+      {
+        text: "vacation rental cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/airbnb-cleaning",
+      },
+      {
+        text: "Airbnb cleaning in Glenwood",
+        href: "/locations/glenwood-ar/airbnb-cleaning",
+      },
+      {
+        text: "rental cleaning near Amity",
+        href: "/locations/amity-ar/airbnb-cleaning",
+      },
     ],
 
     relatedServiceSlugs: ["deep-cleaning", "move-in-move-out-cleaning"],
