@@ -3,8 +3,16 @@ import { FaPhone } from "react-icons/fa6";
 export default function Header() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-black/5 bg-white/85 backdrop-blur-xl">
+      <div className="bg-[var(--pink)] px-4 py-2 text-center text-sm font-bold text-white">
+        New customers get 15% off their first cleaning. Message us today to get on the schedule.
+      </div>
+
       <div className="container-custom flex h-20 items-center justify-between px-5">
-        <a href="/" className="leading-none" aria-label="Lyn and Lili's Tidy House Home Services">
+        <a
+          href="/"
+          className="leading-none"
+          aria-label="Lyn and Lili's Tidy House Home Services"
+        >
           <div className="font-script text-3xl text-[var(--gray-dark)]">
             Lyn & Lili’s
           </div>

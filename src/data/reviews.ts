@@ -1,5 +1,11 @@
 export const reviews = [
   {
+    name: "Norma Nooner",
+    rating: 5,
+    date: "7 days ago",
+    text: "Lyn and Lili did a very good job cleaning my home, they are very professional, friendly, and hardworking.",
+  },
+  {
     name: "Custom Crafts by Bruce Slaton",
     rating: 5,
     date: "Yesterday",
