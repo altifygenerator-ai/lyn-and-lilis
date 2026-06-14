@@ -1,14 +1,16 @@
 import Link from "next/link";
 import { FaArrowRight, FaCheck } from "react-icons/fa6";
 import { getLocalServiceDetails, getServiceImages } from "@/data/routeMaps";
+import type { Location } from "@/data/locations";
+import type { Service } from "@/data/services";
 
 export default function LocalServicePageContent({
   location,
   service,
   faq,
 }: {
-  location: any;
-  service: any;
+  location: Location;
+  service: Service;
   faq: { q: string; a: string }[];
 }) {
   const Icon = service.icon;

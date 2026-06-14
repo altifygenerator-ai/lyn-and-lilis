@@ -296,44 +296,55 @@ export const locations = [
     href: "/house-cleaning-hot-springs-ar",
     city: "Hot Springs",
     state: "AR",
-    headline: "Airbnb, Vacation Rental & House Cleaning in Hot Springs, Arkansas",
+    headline: "House Cleaning Services in Hot Springs, Arkansas",
     pageFocus:
-      "Airbnb turnovers, vacation rental cleaning, lake homes, move-out cleaning, and guest-ready spaces",
+      "full-time homes, lake homes, Airbnb rentals, move-out cleaning, deep cleaning, and small office spaces",
     intro:
-      "Lyn & Lili’s provides Airbnb turnover cleaning, vacation rental cleaning, house cleaning, deep cleaning, move-out cleaning, and office cleaning in Hot Springs, Arkansas and surrounding lake-area communities.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
     localAngle:
-      "Hot Springs has more vacation rentals, lake homes, short-term stays, move-outs, and guest traffic than many smaller towns nearby. Cleaning needs can move fast here, especially for Airbnb hosts, rental owners, lake-area property owners, and homeowners who need dependable help getting a space clean and ready.",
+      "Hot Springs has a mix of full-time homes, lake houses, short-term rentals, apartments, small offices, and weekend properties. Some customers need recurring house cleaning to keep up with everyday mess. Others need a deep clean before company comes in, a move-out clean after a tenant leaves, or a fast rental reset between guests.",
 
     uniqueSectionTitle:
-      "Cleaning for Hot Springs rentals, lake homes, move-outs, and guest-ready spaces",
+      "Cleaning help for Hot Springs homes, lake houses, rentals, and busy families",
     uniqueSectionBody:
-      "Cleaning in Hot Springs often means more than a quick wipe-down. Vacation rentals need to be reset between guests, lake homes may need deeper cleaning after weekends or busy seasons, and move-out spaces need to be ready for the next person walking in. We help homeowners, hosts, landlords, and small businesses keep properties clean, comfortable, and ready without making the process complicated.",
+      "Around Hot Springs, cleaning needs can look different from one property to the next. A family home near town may need regular upkeep. A Lake Hamilton or Lake Catherine property may need a stronger reset after guests or a busy weekend. A short-term rental may need to be cleaned, checked, and guest-ready on a tighter schedule. We help homeowners, hosts, landlords, rental owners, and small businesses get dependable cleaning without a big-company feel.",
 
     priorityServiceSlugs: [
-      "airbnb-cleaning",
+      "standard-cleaning",
       "deep-cleaning",
-      "move-in-move-out-cleaning",
+      "airbnb-cleaning",
     ],
 
     nearbyAreas: [
       "Lake Hamilton",
       "Rockwell",
-      "Hot Springs Village",
-      "Lake Catherine",
       "Piney",
+      "Lake Catherine",
+      "Hot Springs Village",
       "Royal",
       "Mountain Pine",
+      "Pearcy",
+      "Oaklawn area",
+      "Central Avenue area",
     ],
 
     details: [
-      "Airbnb and vacation rental cleaning is one of the biggest needs around Hot Springs because rentals have to be cleaned, reset, and guest-ready before the next stay.",
-      "Lake homes and part-time properties often need deeper resets after weekends, family visits, busy seasons, pollen, outdoor traffic, and lake-area use.",
-      "Move-in and move-out cleaning helps renters, landlords, homeowners, sellers, and property owners get a space cleaned before the next person arrives.",
       "Standard house cleaning is available for full-time Hot Springs homes where families want help keeping bathrooms, kitchens, floors, dusting, and everyday upkeep under control.",
-      "Office and small business cleaning is available for local professional spaces, bathrooms, waiting areas, breakrooms, and customer-facing areas that need to stay presentable.",
+      "Deep cleaning is useful for homes, lake houses, rentals, and part-time properties that need a stronger reset before guests, after a busy season, or before starting recurring cleaning.",
+      "Airbnb and vacation rental cleaning helps Hot Springs hosts, cabin owners, lake-house owners, and rental owners get spaces cleaned and guest-ready between stays.",
+      "Move-in and move-out cleaning helps renters, landlords, sellers, buyers, and property owners get a space cleaned before the next person arrives.",
+      "Small office and professional building cleaning is available for local spaces that need bathrooms, waiting areas, breakrooms, and customer-facing areas kept clean.",
     ],
 
     internalLinks: [
+      {
+        text: "house cleaning in Hot Springs AR",
+        href: "/locations/hot-springs-ar/standard-cleaning",
+      },
+      {
+        text: "deep cleaning in Hot Springs Arkansas",
+        href: "/locations/hot-springs-ar/deep-cleaning",
+      },
       {
         text: "Airbnb cleaning in Hot Springs AR",
         href: "/locations/hot-springs-ar/airbnb-cleaning",
@@ -343,49 +354,48 @@ export const locations = [
         href: "/locations/hot-springs-ar/airbnb-cleaning",
       },
       {
-        text: "deep cleaning Hot Springs Arkansas",
-        href: "/locations/hot-springs-ar/deep-cleaning",
-      },
-      {
         text: "move-out cleaning in Hot Springs AR",
         href: "/locations/hot-springs-ar/move-in-move-out-cleaning",
       },
       {
-        text: "standard house cleaning in Hot Springs",
-        href: "/services/standard-cleaning",
+        text: "office cleaning in Hot Springs AR",
+        href: "/locations/hot-springs-ar/professional-building-cleaning",
       },
     ],
 
     localKeywords: [
-      "Airbnb cleaning Hot Springs AR",
-      "vacation rental cleaning Hot Springs AR",
-      "rental turnover cleaning Hot Springs Arkansas",
       "house cleaning Hot Springs AR",
+      "home cleaning Hot Springs Arkansas",
+      "residential cleaning Hot Springs AR",
+      "maid service Hot Springs AR",
+      "cleaning service Hot Springs AR",
       "deep cleaning Hot Springs AR",
       "move out cleaning Hot Springs AR",
+      "Airbnb cleaning Hot Springs AR",
+      "vacation rental cleaning Hot Springs AR",
       "Lake Hamilton cleaning service",
-      "lake house cleaning Hot Springs AR",
+      "Lake Catherine house cleaning",
       "office cleaning Hot Springs AR",
     ],
 
-    layoutOrder: ["services", "unique", "details", "faq", "links"],
+    layoutOrder: ["unique", "services", "details", "faq", "links"],
 
     faq: [
       {
-        q: "Do you handle Airbnb cleaning in Hot Springs, AR?",
-        a: "Yes. We clean Airbnb and short-term rental properties in Hot Springs and nearby lake-area communities so the space is ready for the next guest.",
+        q: "Do you offer house cleaning in Hot Springs, AR?",
+        a: "Yes. We offer house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs and nearby lake-area communities.",
       },
       {
-        q: "Do you offer vacation rental turnover cleaning in Hot Springs?",
-        a: "Yes. We help vacation rental owners and hosts with turnover cleaning, guest resets, bathrooms, kitchens, floors, trash, and basic restock if supplies and expectations are agreed on ahead of time.",
+        q: "Do you clean homes around Lake Hamilton or Lake Catherine?",
+        a: "Yes. We clean full-time homes, lake homes, rental properties, guest spaces, and part-time properties around Hot Springs, Lake Hamilton, Lake Catherine, and nearby areas when scheduling allows.",
       },
       {
-        q: "Do you clean lake homes around Lake Hamilton or Lake Catherine?",
-        a: "Yes. We clean lake homes, part-time homes, guest properties, and rental spaces around Hot Springs, Lake Hamilton, Lake Catherine, and nearby areas when scheduling allows.",
+        q: "Do you handle Airbnb cleaning in Hot Springs?",
+        a: "Yes. We help with Airbnb and vacation rental turnover cleaning so properties can be cleaned, reset, and ready for the next guest.",
       },
       {
-        q: "Can you clean between guest stays?",
-        a: "Yes. We can work with the schedule you give us and focus on getting the rental cleaned and ready as efficiently as possible between check-out and check-in.",
+        q: "Can I book a one-time deep clean in Hot Springs?",
+        a: "Yes. Many Hot Springs customers book one-time deep cleaning before guests arrive, after a busy season, before moving, or when the home needs help getting caught back up.",
       },
       {
         q: "Do you offer move-out cleaning in Hot Springs?",

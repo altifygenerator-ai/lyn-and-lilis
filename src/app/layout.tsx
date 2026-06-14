@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Local home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small business cleaning services in Amity, Glenwood, Arkadelphia, Hot Springs, and surrounding Arkansas areas.",
+    "House cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs, Amity, Glenwood, Arkadelphia, Malvern, and surrounding Arkansas areas.",
 
  keywords: [
   // Primary local cleaning terms
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     title:
       "Lyn & Lili’s Tidy House Home Services | Cleaning Services in Southwest Arkansas",
     description:
-      "Reliable local cleaning services for homes, rentals, vacation properties, and small businesses in southwest Arkansas.",
+      "Reliable local cleaning services for homes, rentals, vacation properties, and small businesses in Hot Springs, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
     url: "https://www.lynandlilistidyhouse.com",
     siteName: "Lyn & Lili’s Tidy House Home Services",
     locale: "en_US",
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lyn & Lili’s Cleaning Services",
     description:
-      "Home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and rental cleaning in Amity, Glenwood, Arkadelphia, and Hot Springs.",
+      "Home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and rental cleaning in Hot Springs, Amity, Glenwood, and Arkadelphia.",
   },
 
   robots: {

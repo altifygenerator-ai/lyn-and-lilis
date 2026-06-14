@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
 import {
   absoluteUrl,
@@ -78,7 +80,9 @@ export default function HotSpringsAirbnbCleaningPage() {
         }}
       />
 
-      <main>
+      <Header />
+
+      <main className="pt-20">
         <section className="section">
           <div className="container">
             <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -99,7 +103,7 @@ export default function HotSpringsAirbnbCleaningPage() {
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Link href="/contact" className="btn btn-primary">
+                  <Link href="/#quote" className="btn btn-primary">
                     Request a Quote
                   </Link>
 
@@ -282,7 +286,7 @@ export default function HotSpringsAirbnbCleaningPage() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/contact" className="btn btn-primary">
+                <Link href="/#quote" className="btn btn-primary">
                   Request a Quote
                 </Link>
 
@@ -297,6 +301,8 @@ export default function HotSpringsAirbnbCleaningPage() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }

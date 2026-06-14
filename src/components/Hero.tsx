@@ -42,7 +42,7 @@ export default function Hero() {
             <a href="#quote" className="btn-primary">
               Request a Quote <FaArrowRight />
             </a>
-            <a href="tel:8700000000" className="btn-secondary">
+            <a href="tel:8702604536" className="btn-secondary">
               <FaPhone /> Call or Text
             </a>
           </div>

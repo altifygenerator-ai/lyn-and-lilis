@@ -27,7 +27,7 @@ export default function ServiceAreas() {
           </h2>
 
           <p className="mt-4 text-black/65">
-            Based around Amity and Glenwood, with cleaning help available for
+            Serving Amity, Glenwood, Arkadelphia, Hot Springs, Malvern, and
             nearby homes, rentals, small businesses, and local properties across
             the area.
           </p>

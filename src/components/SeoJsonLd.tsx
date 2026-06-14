@@ -1,4 +1,6 @@
-export default function SeoJsonLd({ data }: { data: any | any[] }) {
+type JsonLdItem = Record<string, unknown> | null | undefined | false;
+
+export default function SeoJsonLd({ data }: { data: JsonLdItem | JsonLdItem[] }) {
   const items = Array.isArray(data) ? data.filter(Boolean) : [data].filter(Boolean);
 
   return (

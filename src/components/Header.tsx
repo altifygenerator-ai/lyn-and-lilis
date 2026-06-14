@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 
 export default function Header() {
@@ -8,7 +9,7 @@ export default function Header() {
       </div>
 
       <div className="container-custom flex h-20 items-center justify-between px-5">
-        <a
+        <Link
           href="/"
           className="leading-none"
           aria-label="Lyn and Lili's Tidy House Home Services"
@@ -19,27 +20,27 @@ export default function Header() {
           <div className="text-xs font-bold uppercase tracking-[0.22em] text-[var(--gray-mid)]">
             Tidy House Home Services
           </div>
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-8 text-sm font-semibold text-black/70 md:flex">
-          <a href="/#services" className="hover:text-[var(--pink)]">
+          <Link href="/#services" className="hover:text-[var(--pink)]">
             Services
-          </a>
-          <a href="/about" className="hover:text-[var(--pink)]">
+          </Link>
+          <Link href="/about" className="hover:text-[var(--pink)]">
             About
-          </a>
-          <a href="/#gallery" className="hover:text-[var(--pink)]">
+          </Link>
+          <Link href="/#gallery" className="hover:text-[var(--pink)]">
             Gallery
-          </a>
-          <a href="/#areas" className="hover:text-[var(--pink)]">
+          </Link>
+          <Link href="/#areas" className="hover:text-[var(--pink)]">
             Areas
-          </a>
-          <a href="/faq" className="hover:text-[var(--pink)]">
+          </Link>
+          <Link href="/faq" className="hover:text-[var(--pink)]">
             FAQ
-          </a>
-          <a href="/#quote" className="btn-primary">
+          </Link>
+          <Link href="/#quote" className="btn-primary">
             Get a Quote
-          </a>
+          </Link>
         </nav>
 
         <a href="tel:8702604536" className="btn-primary md:hidden">

@@ -33,8 +33,14 @@ export default function Home() {
                   "Glenwood, Arkansas",
                   "Arkadelphia, Arkansas",
                   "Hot Springs, Arkansas",
-                  "Lake Greeson",
                   "Lake Hamilton",
+                  "Lake Catherine",
+                  "Hot Springs Village",
+                  "Rockwell, Arkansas",
+                  "Piney, Arkansas",
+                  "Royal, Arkansas",
+                  "Mountain Pine, Arkansas",
+                  "Lake Greeson",
                   "Southwest Arkansas",
                 ],
                 serviceType: [
@@ -49,7 +55,7 @@ export default function Home() {
                   "Professional Building Cleaning",
                 ],
                 description:
-                  "Home cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small business cleaning services in Amity, Glenwood, Arkadelphia, Hot Springs, and nearby southwest Arkansas areas.",
+                  "House cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning services in Hot Springs, Lake Hamilton, Lake Catherine, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
               },
               {
                 "@context": "https://schema.org",

@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa6";
 import { getServiceImages } from "@/data/routeMaps";
+import type { Service } from "@/data/services";
 
-export default function ServicePageContent({ service }: { service: any }) {
+export default function ServicePageContent({ service }: { service: Service }) {
   const Icon = service.icon;
   const images = getServiceImages(service.slug);
 
@@ -182,7 +183,7 @@ export default function ServicePageContent({ service }: { service: any }) {
             </h2>
 
             <div className="mt-6 grid gap-3 md:grid-cols-3">
-              {service.relatedLocationAnchors.map((link: any) => (
+              {service.relatedLocationAnchors.map((link: { text: string; href: string }) => (
                 <Link
                   key={link.href + link.text}
                   href={link.href}
@@ -204,7 +205,7 @@ export default function ServicePageContent({ service }: { service: any }) {
             </h2>
 
             <div className="mt-8 space-y-6">
-              {service.faq.map((item: any) => (
+              {service.faq.map((item: { q: string; a: string }) => (
                 <div key={item.q} className="border-b border-black/10 pb-6">
                   <h3 className="text-lg font-bold text-[var(--gray-dark)]">
                     {item.q}

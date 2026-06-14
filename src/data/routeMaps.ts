@@ -18,7 +18,7 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
     { src: "/images/sink-1.jpg", alt: "Clean sink and counter after empty-home cleaning" },
   ],
   "airbnb-cleaning": [
-    { src: "/images/image1.jpeg", alt: "Guest-ready space after vacation rental cleaning" },
+    { src: "/images/image2 (1).jpeg", alt: "Guest-ready space after vacation rental cleaning" },
     { src: "/images/image2 (1).jpeg", alt: "Clean rental property prepared for guests" },
     { src: "/images/image3 (1).jpeg", alt: "Freshly cleaned room for Airbnb guests" },
   ],
@@ -32,9 +32,9 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
 export const localServiceDetails: Record<string, Record<string, string[]>> = {
   "hot-springs-ar": {
     "standard-cleaning": [
-      "Standard house cleaning in Hot Springs is a good fit for full-time homes, lake-area houses, and busy households that need help keeping bathrooms, kitchens, floors, dusting, and main living areas under control.",
-      "This service gives homeowners a dependable upkeep option without jumping straight into a full deep clean every visit.",
-      "For homes near Lake Hamilton, Lake Catherine, and nearby communities, routine cleaning can help keep outdoor traffic, pollen, pet hair, and everyday mess from piling up between heavier resets.",
+      "House cleaning in Hot Springs is a good fit for full-time homes, lake-area houses, apartments, and busy households that need help keeping bathrooms, kitchens, floors, dusting, and main living areas under control.",
+      "This service gives Hot Springs homeowners a dependable upkeep option without jumping straight into a full deep clean every visit.",
+      "For homes near Lake Hamilton, Lake Catherine, Oaklawn, Central Avenue, Rockwell, Piney, and nearby communities, routine cleaning can help keep outdoor traffic, pollen, pet hair, and everyday mess from piling up between heavier resets.",
     ],
     "deep-cleaning": [
       "Deep cleaning is a strong fit for Hot Springs homes, rentals, lake houses, and part-time properties that need more than regular upkeep.",

@@ -1,5 +1,7 @@
 import { services } from "@/data/services";
 import { locations } from "@/data/locations";
+import type { Service } from "@/data/services";
+import type { Location } from "@/data/locations";
 
 export const siteUrl = "https://www.lynandlilistidyhouse.com";
 
@@ -46,6 +48,12 @@ export function localBusinessSchema() {
       { "@type": "Place", name: "Lake Greeson" },
       { "@type": "Place", name: "Lake Hamilton" },
       { "@type": "Place", name: "Lake Catherine" },
+      { "@type": "Place", name: "Hot Springs Village, Arkansas" },
+      { "@type": "Place", name: "Rockwell, Arkansas" },
+      { "@type": "Place", name: "Piney, Arkansas" },
+      { "@type": "Place", name: "Royal, Arkansas" },
+      { "@type": "Place", name: "Mountain Pine, Arkansas" },
+      { "@type": "Place", name: "Pearcy, Arkansas" },
     ],
     serviceType: [
       "House Cleaning",
@@ -62,7 +70,7 @@ export function localBusinessSchema() {
   };
 }
 
-export function serviceSchema(service: any, location?: any) {
+export function serviceSchema(service: Service, location?: Location) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",

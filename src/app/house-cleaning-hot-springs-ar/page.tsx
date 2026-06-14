@@ -6,9 +6,9 @@ import { locations } from "@/data/locations";
 const location = locations.find((item) => item.slug === "hot-springs-ar");
 
 export const metadata: Metadata = {
-  title: "Home and Rental Cleaning Services in Hot Springs, AR | Lyn & Lili’s",
+  title: "House Cleaning Services in Hot Springs, AR | Lyn & Lili’s",
   description:
-    "House cleaning, deep cleaning, Airbnb turnover cleaning, vacation rental cleaning, move-out cleaning, and office cleaning in Hot Springs, Arkansas.",
+    "House cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs, Lake Hamilton, Lake Catherine, and nearby Arkansas areas.",
   alternates: {
     canonical: "/house-cleaning-hot-springs-ar",
   },

@@ -139,10 +139,10 @@ export default function Footer() {
                 </p>
 
                 <Link
-                  href="/locations/hot-springs-ar/airbnb-cleaning"
+                  href="/locations/hot-springs-ar/standard-cleaning"
                   className="block hover:text-[var(--pink)]"
                 >
-                  Airbnb Cleaning in Hot Springs
+                  House Cleaning in Hot Springs
                 </Link>
 
                 <Link
@@ -153,10 +153,24 @@ export default function Footer() {
                 </Link>
 
                 <Link
+                  href="/locations/hot-springs-ar/airbnb-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Airbnb Cleaning in Hot Springs
+                </Link>
+
+                <Link
                   href="/locations/hot-springs-ar/move-in-move-out-cleaning"
                   className="block hover:text-[var(--pink)]"
                 >
                   Move-Out Cleaning in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/professional-building-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Office Cleaning in Hot Springs
                 </Link>
               </div>
             </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { services } from "@/data/services";
+import { reviews } from "@/data/reviews";
 import { FaArrowLeft, FaArrowRight, FaLocationDot } from "react-icons/fa6";
 
 type LocationPageProps = {
@@ -33,6 +34,39 @@ type LocationPageProps = {
 
 const baseUrl = "https://www.lynandlilistidyhouse.com";
 
+const hotSpringsNeedCards = [
+  {
+    title: "House Cleaning in Hot Springs",
+    href: "/locations/hot-springs-ar/standard-cleaning",
+    text: "Regular home cleaning for bathrooms, kitchens, floors, dusting, and the everyday mess that builds up in busy Hot Springs homes.",
+  },
+  {
+    title: "Deep Cleaning in Hot Springs",
+    href: "/locations/hot-springs-ar/deep-cleaning",
+    text: "A stronger reset for homes, lake houses, rentals, and lived-in spaces that need extra time, detail, and attention.",
+  },
+  {
+    title: "Airbnb Cleaning in Hot Springs",
+    href: "/locations/hot-springs-ar/airbnb-cleaning",
+    text: "Turnover cleaning for short-term rentals, guest spaces, lake-area properties, and hosts who need spaces ready between stays.",
+  },
+  {
+    title: "Move-Out Cleaning in Hot Springs",
+    href: "/locations/hot-springs-ar/move-in-move-out-cleaning",
+    text: "Move-in and move-out cleaning for renters, landlords, sellers, buyers, and property owners preparing an empty space.",
+  },
+  {
+    title: "Office Cleaning in Hot Springs",
+    href: "/locations/hot-springs-ar/professional-building-cleaning",
+    text: "Cleaning for small offices, professional spaces, waiting areas, breakrooms, bathrooms, and customer-facing areas.",
+  },
+  {
+    title: "Lake-Area Cleaning Help",
+    href: "/#quote",
+    text: "Cleaning support for homes and properties around Lake Hamilton, Lake Catherine, Rockwell, Piney, Royal, and nearby areas.",
+  },
+];
+
 export default function LocationLandingPage({ location }: LocationPageProps) {
   const priorityServices = services.filter((service) =>
     location.priorityServiceSlugs?.includes(service.slug)
@@ -43,6 +77,8 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
   );
 
   const orderedServices = [...priorityServices, ...otherServices];
+  const isHotSprings = location.slug === "hot-springs-ar";
+  const hotSpringsReviews = reviews.slice(0, 3);
 
   const locationSchema = {
     "@context": "https://schema.org",
@@ -259,6 +295,52 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
           </div>
         </section>
 
+        {isHotSprings ? (
+          <section className="section-padding bg-[var(--seafoam-soft)]">
+            <div className="container-custom px-5">
+              <div className="max-w-4xl">
+                <p className="font-script text-4xl text-[var(--pink)]">
+                  Hot Springs focus
+                </p>
+
+                <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
+                  Cleaning help for the way Hot Springs homes and rentals are actually used.
+                </h2>
+
+                <p className="mt-5 text-lg leading-8 text-black/70">
+                  Hot Springs has regular family homes, lake-area houses, rentals,
+                  apartments, Airbnb stays, small offices, and properties that get
+                  busy around weekends, holidays, events, and guest traffic. These
+                  local pages help explain the exact type of cleaning people are
+                  usually searching for in the Hot Springs area.
+                </p>
+              </div>
+
+              <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {hotSpringsNeedCards.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="soft-card block bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
+                  >
+                    <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
+                      {item.title}
+                    </h3>
+
+                    <p className="mt-3 text-sm leading-6 text-black/60">
+                      {item.text}
+                    </p>
+
+                    <p className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
+                      View service <FaArrowRight />
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        ) : null}
+
         <section className="bg-[var(--pink-soft)] py-16">
           <div className="container-custom px-5">
             <h2 className="font-heading text-3xl font-bold text-[var(--gray-dark)]">
@@ -285,6 +367,53 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
             ) : null}
           </div>
         </section>
+
+        {isHotSprings ? (
+          <section className="section-padding bg-white">
+            <div className="container-custom px-5">
+              <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+                <div>
+                  <p className="font-script text-4xl text-[var(--pink)]">
+                    Local trust
+                  </p>
+
+                  <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
+                    Multiple 5-star Google reviews from customers who trusted us in their homes.
+                  </h2>
+
+                  <p className="mt-5 text-lg leading-8 text-black/70">
+                    Hot Springs is a competitive cleaning market, so trust matters.
+                    Lyn & Lili’s Tidy House is building that trust through friendly
+                    service, detailed work, clear communication, and reviews from
+                    real customers.
+                  </p>
+
+                  <Link href="/#quote" className="btn-secondary mt-6">
+                    Ask About Hot Springs Cleaning <FaArrowRight />
+                  </Link>
+                </div>
+
+                <div className="grid gap-4">
+                  {hotSpringsReviews.map((review) => (
+                    <div key={review.name} className="soft-card bg-[var(--pink-soft)] p-6">
+                      <p className="text-sm font-black tracking-[0.18em] text-[var(--pink)]">
+                        ★★★★★
+                      </p>
+
+                      <h3 className="mt-2 font-heading text-2xl font-bold text-[var(--gray-dark)]">
+                        {review.name}
+                      </h3>
+
+                      <p className="mt-3 text-sm leading-7 text-black/65">
+                        {review.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="section-padding bg-white">
           <div className="container-custom max-w-4xl px-5">
