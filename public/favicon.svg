@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Lyn and Lili's Tidy House favicon">
+  <rect width="512" height="512" rx="116" fill="#FFF8F3"/>
+  <circle cx="256" cy="256" r="206" fill="#F4A9BB" opacity="0.22"/>
+  <path d="M142 241 L256 150 L370 241" fill="none" stroke="#D86F8B" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 234 v130 h156 V234" fill="none" stroke="#4A4245" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M224 364 v-72 h64 v72" fill="none" stroke="#4A4245" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="256" y="273" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="80" font-weight="700" fill="#4A4245">L&amp;L</text>
+  <path d="M108 132 l12 28 28 12 -28 12 -12 28 -12 -28 -28 -12 28 -12z" fill="#D86F8B" opacity="0.9"/>
+  <path d="M407 104 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8z" fill="#D86F8B" opacity="0.75"/>
+  <path d="M398 337 l10 23 23 10 -23 10 -10 23 -10 -23 -23 -10 23 -10z" fill="#D86F8B" opacity="0.75"/>
+</svg>
