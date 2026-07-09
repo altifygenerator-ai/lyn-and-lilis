@@ -1,21 +1,81 @@
 const beforeAfterItems = [
   {
     title: "Kitchen reset",
-    before: "/images/sink-1.jpg",
-    after: "/images/sink-2.jpg",
-    text: "Counters cleared, dishes handled, surfaces wiped down, floors cleaned, and the kitchen brought back to a fresh usable space.",
+    before: "/images/before-1.png",
+    after: "/images/after-1.png",
+    text: "Counters cleared, dishes handled, surfaces wiped down, and the kitchen brought back to a clean usable space.",
   },
   {
     title: "Bathroom refresh",
-    before: "/images/bathroom-1.jpg",
-    after: "/images/bathroom-2.jpg",
+    before: "/images/before-2.png",
+    after: "/images/after-2.png",
     text: "Sinks, mirrors, tubs, toilets, counters, and floors cleaned so the bathroom feels fresh again.",
+  },
+  {
+    title: "Living room reset",
+    before: "/images/before-3.png",
+    after: "/images/after-3.png",
+    text: "Main living spaces picked up, straightened, and brought back to a calmer, guest-ready feel.",
+  },
+  {
+    title: "Sink detail clean",
+    before: "/images/dirty-sink.jpeg",
+    after: "/images/clean-sink.jpeg",
+    text: "A dirty sink area cleaned back up with attention to the basin, faucet area, and surrounding surface.",
+  },
+  {
+    title: "Tub detail clean",
+    before: "/images/dirty-tub.jpeg",
+    after: "/images/clean-tub.jpeg",
+    text: "Tub buildup handled so the surface looks brighter, cleaner, and ready to use again.",
+  },
+  {
+    title: "Shower clean-up",
+    before: "/images/shower-dirty.jpeg",
+    after: "/images/shower-clean.jpeg",
+    text: "Shower walls, corners, and floor areas cleaned to help remove visible grime and brighten the space.",
   },
   {
     title: "Stove deep clean",
     before: "/images/stove-dirty.jpeg",
     after: "/images/stove-clean.jpeg",
-    text: "Stove tops can get really grimy, but we make sure to get into all the nooks and crannies to get it back to a clean state.",
+    text: "Stove tops can get really grimy, but we make sure to get into the nooks and crannies to get it back to a cleaner state.",
+  },
+  {
+    title: "Dishwasher shine-up",
+    before: "/images/dirty-dishwasher.jpeg",
+    after: "/images/clean-shiney-dishwasher.jpeg",
+    text: "Exterior appliance surfaces wiped down and polished so the kitchen detail looks cleaner overall.",
+  },
+  {
+    title: "Cabinet shelf clean-out",
+    before: "/images/dirty-cupboard.jpeg",
+    after: "/images/cupboard-clean.jpeg",
+    text: "Cabinet and shelf areas cleaned out so stored items have a fresher place to go back into.",
+  },
+  {
+    title: "Cupboard detail clean",
+    before: "/images/dirty-cupboard2.jpeg",
+    after: "/images/cupboard-clean2.jpeg",
+    text: "Small storage areas and cabinet surfaces cleaned up where dust, crumbs, and everyday mess collect.",
+  },
+  {
+    title: "Lazy Susan cabinet clean",
+    before: "/images/lazy-susan-dirty.jpeg",
+    after: "/images/lazy-susan-clean.jpeg",
+    text: "Hard-to-reach cabinet areas cleaned with care so the inside looks and feels usable again.",
+  },
+  {
+    title: "Lazy Susan detail clean",
+    before: "/images/lazy-susan-dirty2.jpeg",
+    after: "/images/lazy-susan-clean2.jpeg",
+    text: "A closer cabinet detail showing the kind of small-area cleaning that can make a big difference.",
+  },
+  {
+    title: "Top of fridge detail",
+    before: "/images/top-of-fridge-dirty.jpeg",
+    after: "/images/top-of-fridge-clean.jpeg",
+    text: "High-touch and high-dust areas like the top of the fridge cleaned so the kitchen feels more finished.",
   },
 ];
 
@@ -38,29 +98,29 @@ export default function BeforeAfterSection() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-10">
-          {beforeAfterItems.map((item, index) => (
+        <div className="mt-14 grid gap-8 xl:grid-cols-2">
+          {beforeAfterItems.map((item) => (
             <div
               key={item.title}
               className="overflow-hidden rounded-[2rem] bg-white p-4 shadow-sm"
             >
-              <div className="grid gap-4 lg:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <div className="mb-3 flex items-center justify-between">
+                  <div className="mb-3 flex items-center justify-between gap-3">
                     <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
                       {item.title}
                     </h3>
 
-                    <span className="rounded-full bg-[var(--pink-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-black/55">
+                    <span className="shrink-0 rounded-full bg-[var(--pink-soft)] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-black/55">
                       Before
                     </span>
                   </div>
 
-                  <div className="relative h-[280px] overflow-hidden rounded-[1.5rem] bg-neutral-100 md:h-[360px]">
+                  <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
                     <img
                       src={item.before}
                       alt={`${item.title} before cleaning`}
-                      className="block h-full w-full object-cover"
+                      className="block h-full w-full object-contain"
                     />
                   </div>
                 </div>
@@ -72,20 +132,18 @@ export default function BeforeAfterSection() {
                     </span>
                   </div>
 
-                  <div className="relative h-[280px] overflow-hidden rounded-[1.5rem] bg-neutral-100 md:h-[360px]">
+                  <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
                     <img
                       src={item.after}
                       alt={`${item.title} after cleaning`}
-                      className="block h-full w-full object-cover"
+                      className="block h-full w-full object-contain"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="mt-5 border-t border-black/10 pt-5">
-                <p className="max-w-3xl leading-8 text-black/65">
-                  {item.text}
-                </p>
+                <p className="leading-8 text-black/65">{item.text}</p>
               </div>
             </div>
           ))}

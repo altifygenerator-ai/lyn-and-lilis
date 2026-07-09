@@ -7,89 +7,52 @@ import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
 const images = [
   {
-    src: "/images/bathroom-1.jpg",
-    alt: "Bathroom cleaning before and after example",
+    src: "/images/after-1.png",
+    alt: "Clean kitchen after house cleaning",
   },
   {
-    src: "/images/bathroom-2.jpg",
-    alt: "Clean bathroom after house cleaning service",
+    src: "/images/after-2.png",
+    alt: "Clean bathroom after house cleaning",
   },
   {
-    src: "/images/sink-1.jpg",
-    alt: "Sink before cleaning",
+    src: "/images/after-3.png",
+    alt: "Clean living room after house cleaning",
   },
   {
-    src: "/images/sink-2.jpg",
-    alt: "Sink after cleaning",
+    src: "/images/clean-sink.jpeg",
+    alt: "Freshly cleaned sink detail",
   },
   {
-    src: "/images/shower-dirty.jpeg",
-    alt: "Shower before cleaning",
+    src: "/images/clean-tub.jpeg",
+    alt: "Clean tub detail after house cleaning",
   },
   {
     src: "/images/shower-clean.jpeg",
-    alt: "Shower after cleaning",
-  },
-  {
-    src: "/images/shower-clean2.jpeg",
-    alt: "Clean shower detail after house cleaning",
-  },
-  {
-    src: "/images/lazy-susan-dirty.jpeg",
-    alt: "Lazy Susan cabinet before cleaning",
-  },
-  {
-    src: "/images/lazy-susan-dirty2.jpeg",
-    alt: "Lazy Susan cabinet before deep cleaning",
-  },
-  {
-    src: "/images/lazy-susan-clean.jpeg",
-    alt: "Lazy Susan cabinet after cleaning",
-  },
-  {
-    src: "/images/lazy-susan-clean2.jpeg",
-    alt: "Clean Lazy Susan cabinet detail",
-  },
-  {
-    src: "/images/stove-dirty.jpeg",
-    alt: "Stove top before cleaning",
+    alt: "Clean shower after detailed cleaning",
   },
   {
     src: "/images/stove-clean.jpeg",
-    alt: "Stove top after cleaning",
-  },
- 
-  {
-    src: "/images/image2 (1).jpeg",
-    alt: "House cleaning service photo",
+    alt: "Clean stove top after kitchen cleaning",
   },
   {
-    src: "/images/image3 (1).jpeg",
-    alt: "Residential cleaning photo",
+    src: "/images/clean-shiney-dishwasher.jpeg",
+    alt: "Shiny dishwasher after kitchen cleaning",
   },
   {
-    src: "/images/image4 (2).jpeg",
-    alt: "Home cleaning detail photo",
+    src: "/images/cupboard-clean.jpeg",
+    alt: "Clean cupboard shelf after detail cleaning",
   },
   {
-    src: "/images/image5 (1).jpeg",
-    alt: "Clean home interior photo",
+    src: "/images/lazy-susan-clean.jpeg",
+    alt: "Clean Lazy Susan cabinet after deep cleaning",
   },
   {
-    src: "/images/image6 (1).jpeg",
-    alt: "House cleaning result photo",
+    src: "/images/fridge-open-clean.jpeg",
+    alt: "Clean refrigerator interior",
   },
   {
-    src: "/images/image7 (1).jpeg",
-    alt: "Residential cleaning result photo",
-  },
-  {
-    src: "/images/image8 (1).jpeg",
-    alt: "Clean room after house cleaning",
-  },
-  {
-    src: "/images/image9 (1).jpeg",
-    alt: "Home cleaning project image",
+    src: "/images/shiney-clean-bathroom.jpeg",
+    alt: "Fresh bathroom after house cleaning",
   },
 ];
 
@@ -145,7 +108,7 @@ export default function AboutPreview() {
               src={currentImage.src}
               alt={currentImage.alt}
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(min-width: 1024px) 55vw, 100vw"
               priority
             />

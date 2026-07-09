@@ -46,7 +46,7 @@ export default function ServicePageContent({ service }: { service: Service }) {
               <img
                 src={images[0].src}
                 alt={images[0].alt}
-                className="h-[360px] w-full rounded-[1.35rem] object-cover"
+                className="h-[360px] w-full rounded-[1.35rem] bg-neutral-50 object-contain"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function ServicePageContent({ service }: { service: Service }) {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="h-64 w-full rounded-[1.15rem] object-cover"
+                  className="h-64 w-full rounded-[1.15rem] bg-neutral-50 object-contain"
                 />
               </div>
             ))}

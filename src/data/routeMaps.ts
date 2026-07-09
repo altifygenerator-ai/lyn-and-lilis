@@ -3,29 +3,29 @@ import { services } from "@/data/services";
 
 export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
   "standard-cleaning": [
-    { src: "/images/livingroom-1.png", alt: "Fresh living room after routine house cleaning" },
+    { src: "/images/after-3.png", alt: "Clean living room after routine house cleaning" },
+    { src: "/images/livingroom-1.png", alt: "Fresh living room after regular cleaning" },
     { src: "/images/livingroom-2.png", alt: "Cleaned living area in an Arkansas home" },
-    { src: "/images/after-1.png", alt: "Finished cleaning result in a local home" },
   ],
   "deep-cleaning": [
     { src: "/images/shower-clean.jpeg", alt: "Clean shower after detailed deep cleaning" },
-    { src: "/images/bathroom-1.jpg", alt: "Bathroom detail cleaning result" },
+    { src: "/images/clean-tub.jpeg", alt: "Clean bathtub after detailed bathroom cleaning" },
     { src: "/images/lazy-susan-clean.jpeg", alt: "Cleaned cabinet area after deep cleaning" },
   ],
   "move-in-move-out-cleaning": [
-    { src: "/images/after-2.png", alt: "Cleaned room ready after move-out cleaning" },
     { src: "/images/stove-clean.jpeg", alt: "Clean stove after move-in or move-out cleaning" },
-    { src: "/images/sink-1.jpg", alt: "Clean sink and counter after empty-home cleaning" },
+    { src: "/images/clean-shiney-dishwasher.jpeg", alt: "Clean appliance surface after empty-home cleaning" },
+    { src: "/images/fridge-open-clean.jpeg", alt: "Clean refrigerator interior after move-in or move-out cleaning" },
   ],
   "airbnb-cleaning": [
-    { src: "/images/image2 (1).jpeg", alt: "Guest-ready space after vacation rental cleaning" },
-    { src: "/images/image2 (1).jpeg", alt: "Clean rental property prepared for guests" },
-    { src: "/images/image3 (1).jpeg", alt: "Freshly cleaned room for Airbnb guests" },
+    { src: "/images/after-2.png", alt: "Clean bathroom ready for guests" },
+    { src: "/images/shiney-clean-bathroom.jpeg", alt: "Fresh bathroom after vacation rental cleaning" },
+    { src: "/images/clean-sink.jpeg", alt: "Clean sink detail for a guest-ready rental" },
   ],
   "professional-building-cleaning": [
-    { src: "/images/after-3.png", alt: "Clean professional space after building cleaning" },
-    { src: "/images/image4 (2).jpeg", alt: "Clean interior space for a local business" },
-    { src: "/images/image5 (1).jpeg", alt: "Tidy room after professional cleaning" },
+    { src: "/images/after-1.png", alt: "Clean kitchen or break area after professional cleaning" },
+    { src: "/images/clean-sink.jpeg", alt: "Clean sink and counter detail after building cleaning" },
+    { src: "/images/top-of-fridge-clean.jpeg", alt: "Clean high-dust surface after detail cleaning" },
   ],
 };
 

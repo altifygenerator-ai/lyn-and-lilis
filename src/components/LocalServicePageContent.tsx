@@ -55,7 +55,7 @@ export default function LocalServicePageContent({
               <img
                 src={images[0].src}
                 alt={`${service.title} in ${location.city}, ${location.state}`}
-                className="h-[360px] w-full rounded-[1.35rem] object-cover"
+                className="h-[360px] w-full rounded-[1.35rem] bg-neutral-50 object-contain"
               />
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function LocalServicePageContent({
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="h-64 w-full rounded-[1.15rem] object-cover"
+                  className="h-64 w-full rounded-[1.15rem] bg-neutral-50 object-contain"
                 />
               </div>
             ))}
