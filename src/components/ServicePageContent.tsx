@@ -6,6 +6,11 @@ import type { Service } from "@/data/services";
 export default function ServicePageContent({ service }: { service: Service }) {
   const Icon = service.icon;
   const images = getServiceImages(service.slug);
+  const isSpecialtyHomeService = [
+    "home-organization",
+    "senior-home-help",
+    "holiday-special-occasion-cleaning",
+  ].includes(service.slug);
 
   return (
     <>
@@ -95,11 +100,13 @@ export default function ServicePageContent({ service }: { service: Service }) {
           <div className="container-custom px-5">
             <div className="max-w-3xl">
               <p className="font-script text-4xl text-[var(--pink)]">
-                Local cleaning needs
+                {isSpecialtyHomeService ? "Local household needs" : "Local cleaning needs"}
               </p>
 
               <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
-                Common cleaning problems around Southwest Arkansas
+                {isSpecialtyHomeService
+                  ? "Common household challenges around Southwest Arkansas"
+                  : "Common cleaning problems around Southwest Arkansas"}
               </h2>
             </div>
 
@@ -222,7 +229,9 @@ export default function ServicePageContent({ service }: { service: Service }) {
         <div className="container-custom px-5">
           <div className="max-w-3xl">
             <p className="font-script text-4xl text-[var(--pink)]">
-              Ready for a cleaner space?
+              {isSpecialtyHomeService
+                ? "Ready for a little help at home?"
+                : "Ready for a cleaner space?"}
             </p>
 
             <h2 className="font-heading mt-2 text-4xl font-bold">

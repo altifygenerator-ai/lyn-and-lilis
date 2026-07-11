@@ -103,6 +103,27 @@ export default function Footer() {
                 Building Cleaning
               </Link>
 
+              <Link
+                href="/services/home-organization"
+                className="block hover:text-[var(--pink)]"
+              >
+                Home Organization
+              </Link>
+
+              <Link
+                href="/services/senior-home-help"
+                className="block hover:text-[var(--pink)]"
+              >
+                Senior Home Help
+              </Link>
+
+              <Link
+                href="/services/holiday-special-occasion-cleaning"
+                className="block hover:text-[var(--pink)]"
+              >
+                Holiday & Occasion Cleaning
+              </Link>
+
               <div className="pt-2">
                 <Link
                   href="/house-cleaning-amity-ar"
@@ -171,6 +192,27 @@ export default function Footer() {
                   className="block hover:text-[var(--pink)]"
                 >
                   Office Cleaning in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/home-organization"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Home Organization in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/senior-home-help"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Senior Home Help in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/holiday-special-occasion-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Holiday Cleaning in Hot Springs
                 </Link>
               </div>
             </div>

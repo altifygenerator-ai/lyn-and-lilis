@@ -4,6 +4,9 @@ import {
   FaHouseChimney,
   FaKey,
   FaBuilding,
+  FaBoxOpen,
+  FaHeart,
+  FaChampagneGlasses,
 } from "react-icons/fa6";
 
 export const services = [
@@ -678,6 +681,387 @@ export const services = [
       },
     ],
   },
+
+  {
+    slug: "home-organization",
+    title: "Home Organization & Decluttering",
+    price: "Starting around $175",
+    icon: FaBoxOpen,
+
+    seoHeadline: "Home Organization & Decluttering for Closets, Pantries & Busy Homes",
+
+    description:
+      "Hands-on help organizing closets, pantries, cabinets, laundry rooms, and everyday spaces that have gotten crowded or hard to manage.",
+
+    metaTitle:
+      "Home Organization & Decluttering in Hot Springs & Southwest Arkansas | Lyn & Lili’s",
+    metaDescription:
+      "Home organization and decluttering for closets, pantries, cabinets, laundry rooms, and busy homes in Hot Springs and nearby Southwest Arkansas areas.",
+
+    heroText:
+      "Practical organizing help for the spaces that collect too much, stop working well, or simply need a fresh start without turning the process into a bigger headache.",
+
+    pageFocus:
+      "closet organization, pantry organization, cabinet resets, light decluttering, donation sorting, and practical home organization",
+
+    intro:
+      "Home organization is for people who are tired of digging through crowded closets, overfilled pantries, cluttered cabinets, or rooms that never seem to stay usable. We help sort, clean, group, and reset the space around how the household actually uses it.",
+
+    uniqueSectionTitle:
+      "Organization that makes the space easier to live with",
+    uniqueSectionBody:
+      "This is not about making every shelf look staged or forcing a one-size-fits-all system into the home. The goal is to make everyday spaces easier to use, easier to keep up with, and less overwhelming. That may mean clearing expired pantry items, grouping what belongs together, wiping down shelves, sorting donations, and putting the space back in a way that makes sense for the customer.",
+
+    whoItsFor: [
+      "Busy families whose closets, pantries, or cabinets have gotten hard to keep up with",
+      "Homeowners who want help sorting and resetting one problem area at a time",
+      "Older adults preparing to simplify, downsize, or make daily spaces easier to use",
+      "People getting ready to move, unpack, or settle into a new home",
+      "Customers who want cleaning and organization handled during the same project",
+      "Anyone who feels stuck because the space has become too overwhelming to start alone",
+    ],
+
+    localProblems: [
+      "Pantries crowded with expired food and hard-to-reach items",
+      "Closets packed with clothes, shoes, linens, and things that no longer belong there",
+      "Kitchen cabinets that need sorting, shelf cleaning, and a better everyday setup",
+      "Laundry rooms becoming catch-all spaces for supplies and household clutter",
+      "Lake homes and part-time properties needing a practical reset between visits",
+      "Families needing help sorting donations before a move, season change, or household transition",
+    ],
+
+    bestFor: [
+      "Closets and walk-in closets",
+      "Pantries and kitchen cabinets",
+      "Laundry rooms and utility spaces",
+      "Light decluttering and donation sorting",
+    ],
+
+    includes: [
+      "Closet organization",
+      "Pantry organization",
+      "Cabinet and shelf resets",
+      "Light decluttering",
+      "Donation sorting",
+      "Shelf wipe-downs",
+      "Grouping and simple labels",
+      "Putting everyday items back in order",
+    ],
+
+    details: [
+      "Organization projects are quoted around the size of the space, how much sorting is needed, whether cleaning is included, and how involved the customer wants to be in decisions.",
+      "A small pantry or reach-in closet may be handled in one visit. Larger walk-in closets, kitchens, multi-room projects, or downsizing work may need more time or more than one appointment.",
+      "We can help sort items into keep, donate, relocate, and discard groups, but final decisions stay with the customer unless clear instructions are provided ahead of time.",
+      "Bins, baskets, hangers, shelf products, and other organizing supplies are not automatically included. Existing containers can be reused, or new products can be discussed before the project begins.",
+    ],
+
+    comparison: {
+      title: "Home Organization vs Regular House Cleaning",
+      body: "House cleaning focuses on removing dust, dirt, grime, and everyday mess. Home organization takes more time for sorting, decision-making, grouping, and setting up the space so it works better. The two services can be combined, but organization is quoted as its own project because it is more hands-on than normal cleaning.",
+    },
+
+    notUsuallyIncluded: [
+      "Hoarding or biohazard cleanup",
+      "Removing hazardous materials",
+      "Heavy furniture moving",
+      "Large junk hauling",
+      "Custom shelving installation",
+      "Making personal keep-or-discard decisions without approval",
+    ],
+
+    relatedLocationAnchors: [
+      {
+        text: "home organization in Hot Springs",
+        href: "/locations/hot-springs-ar/home-organization",
+      },
+    ],
+
+    relatedServiceSlugs: ["deep-cleaning", "senior-home-help"],
+
+    localKeywords: [
+      "home organization Hot Springs AR",
+      "professional organizer Hot Springs Arkansas",
+      "closet organization Hot Springs",
+      "pantry organization Hot Springs",
+      "decluttering help Hot Springs AR",
+      "home organizer Southwest Arkansas",
+    ],
+
+    layoutOrder: ["unique", "includes", "details", "bestFor", "links", "faq"],
+
+    faq: [
+      {
+        q: "Do you organize closets and pantries?",
+        a: "Yes. We help organize closets, pantries, cabinets, laundry rooms, and other everyday spaces that need sorting, cleaning, and a more practical setup.",
+      },
+      {
+        q: "Do I have to be home during the organizing project?",
+        a: "It depends on the job. For projects that require decisions about what stays, gets donated, or moves somewhere else, it helps to have the customer available or provide clear instructions before we begin.",
+      },
+      {
+        q: "Are organizing bins and supplies included?",
+        a: "Organizing products are not automatically included. We can reuse what you already have or talk through any bins, baskets, hangers, or labels that may be helpful before purchasing anything.",
+      },
+      {
+        q: "Can cleaning be added to an organization job?",
+        a: "Yes. Shelf wipe-downs and light cleaning are often part of the reset, and deeper cleaning can be added depending on the space and what needs done.",
+      },
+    ],
+  },
+
+  {
+    slug: "senior-home-help",
+    title: "Senior Home Cleaning & Household Help",
+    price: "Starting around $100–$140",
+    icon: FaHeart,
+
+    seoHeadline: "Senior Home Cleaning & Light Household Help with a Personal Touch",
+
+    description:
+      "Dependable non-medical household help for seniors who need cleaning, laundry, bedding, light organizing, or a little help keeping the home comfortable.",
+
+    metaTitle:
+      "Senior Home Cleaning & Household Help in Hot Springs AR | Lyn & Lili’s",
+    metaDescription:
+      "Non-medical senior home cleaning, laundry, bedding changes, light organization, and household help in Hot Springs and nearby Southwest Arkansas areas.",
+
+    heroText:
+      "Friendly home cleaning and light household help for seniors who want to stay comfortable at home but could use dependable help with the everyday work that gets harder to keep up with.",
+
+    pageFocus:
+      "senior house cleaning, laundry, bedding changes, light organization, kitchen and bathroom upkeep, and non-medical household support",
+
+    intro:
+      "A clean, comfortable home matters at every age, but bathrooms, floors, laundry, bedding, and everyday household work can become harder over time. This service gives seniors and their families a straightforward way to get dependable help without making it feel clinical or complicated.",
+
+    uniqueSectionTitle:
+      "A little extra household help without turning it into home healthcare",
+    uniqueSectionBody:
+      "Lyn & Lili’s provides non-medical household help. That can include routine cleaning, changing bedding, laundry and folding, light pantry or cabinet organization, trash removal, and helping the home feel caught back up. We do not provide bathing, medication help, lifting, transportation, or personal-care services. The focus stays on the home and the work that keeps it comfortable.",
+
+    whoItsFor: [
+      "Seniors who want help keeping bathrooms, kitchens, floors, and living areas clean",
+      "Older adults who could use help with bedding, laundry, or light household organization",
+      "Adult children arranging dependable household help for a parent or grandparent",
+      "People returning home after a hospital stay who need the house cleaned before or after they arrive",
+      "Seniors preparing to downsize or simplify one area at a time",
+      "Households that need a patient, familiar team instead of a large rotating service",
+    ],
+
+    localProblems: [
+      "Bathrooms and floors becoming physically difficult to clean safely",
+      "Laundry, bedding, and everyday household chores piling up",
+      "Adult children living out of town and needing dependable local help for a parent",
+      "Pantries and cabinets needing a simpler, easier-to-reach setup",
+      "Homes needing a reset before family visits or after a recovery period",
+      "Older homeowners wanting regular help without giving up control of their home",
+    ],
+
+    bestFor: [
+      "Routine senior house cleaning",
+      "Laundry and bedding help",
+      "Light organization and household resets",
+      "Families arranging help for an older loved one",
+    ],
+
+    includes: [
+      "Kitchen and bathroom cleaning",
+      "Dusting and floors",
+      "Laundry and folding",
+      "Bedding changes",
+      "Trash removal",
+      "Light pantry organization",
+      "Light closet organization",
+      "Everyday household resets",
+    ],
+
+    details: [
+      "Every household is different, so the visit can be built around the areas that matter most. Some customers need regular cleaning, while others need help with laundry, bedding, light organization, or getting the home caught back up before family arrives.",
+      "Family members can help arrange service when an older loved one lives in Hot Springs or another nearby area. Clear notes about priorities, access, pets, products, and scheduling help keep each visit consistent.",
+      "This service is non-medical and focused on the home. It does not include personal care, medication reminders, transportation, lifting or transferring a person, or other caregiving tasks.",
+      "Senior pricing may be available depending on the type of cleaning and the ongoing schedule. Final pricing is based on the home, condition, travel, and amount of household help requested.",
+    ],
+
+    comparison: {
+      title: "Senior Household Help vs Personal Care",
+      body: "Senior household help focuses on cleaning and the home itself: bathrooms, kitchens, floors, laundry, bedding, light organization, and simple household resets. It is not home healthcare or personal care, and it does not include bathing, medication assistance, transportation, or lifting and transferring a person.",
+    },
+
+    notUsuallyIncluded: [
+      "Bathing or personal hygiene assistance",
+      "Medication help or medical care",
+      "Transportation or errands",
+      "Lifting or transferring a person",
+      "Meal preparation beyond light kitchen cleanup",
+      "Biohazard or unsafe-condition cleanup",
+    ],
+
+    relatedLocationAnchors: [
+      {
+        text: "senior home help in Hot Springs",
+        href: "/locations/hot-springs-ar/senior-home-help",
+      },
+    ],
+
+    relatedServiceSlugs: ["standard-cleaning", "home-organization"],
+
+    localKeywords: [
+      "senior house cleaning Hot Springs AR",
+      "household help for seniors Hot Springs",
+      "elderly home cleaning Hot Springs Arkansas",
+      "senior cleaning service Hot Springs Village",
+      "non medical household help Hot Springs",
+    ],
+
+    layoutOrder: ["unique", "includes", "details", "bestFor", "links", "faq"],
+
+    faq: [
+      {
+        q: "What kind of help do you provide for seniors?",
+        a: "We provide non-medical household help such as house cleaning, laundry and folding, bedding changes, trash removal, and light organization based on what the home needs.",
+      },
+      {
+        q: "Can a family member arrange the cleaning?",
+        a: "Yes. Adult children and other family members can help arrange service, share the household priorities, and stay involved in scheduling and communication.",
+      },
+      {
+        q: "Do you provide personal care or medication help?",
+        a: "No. This service is focused on cleaning and household tasks. We do not provide bathing, medication assistance, transportation, lifting, or medical care.",
+      },
+      {
+        q: "Is senior pricing available?",
+        a: "Senior pricing may be available depending on the service and schedule. We provide a clear quote based on the home and the help requested.",
+      },
+    ],
+  },
+
+  {
+    slug: "holiday-special-occasion-cleaning",
+    title: "Holiday & Special Occasion Cleaning",
+    price: "Starting around $175",
+    icon: FaChampagneGlasses,
+
+    seoHeadline: "Holiday, Guest-Ready & Post-Party Cleaning for Arkansas Homes",
+
+    description:
+      "Before-and-after cleaning for holidays, parties, family visits, reunions, and special gatherings when the home needs to be ready on a deadline.",
+
+    metaTitle:
+      "Holiday & Post-Party Cleaning in Hot Springs AR | Lyn & Lili’s",
+    metaDescription:
+      "Holiday cleaning, guest-ready cleaning, after-party cleanup, and post-holiday home resets in Hot Springs and nearby Southwest Arkansas areas.",
+
+    heroText:
+      "Cleaning help before guests arrive, after everyone leaves, or both, so the home can feel ready for the gathering without the cleanup taking over the whole week.",
+
+    pageFocus:
+      "holiday cleaning, guest-ready cleaning, post-party cleanup, family gatherings, reunions, birthdays, graduations, and post-holiday resets",
+
+    intro:
+      "Hosting people is enough work without trying to deep clean the house before they arrive or facing the whole mess after they leave. Holiday and special occasion cleaning is built around a date, a gathering, and the specific rooms that need to be ready or reset.",
+
+    uniqueSectionTitle:
+      "A cleaner home before the gathering and real help after it is over",
+    uniqueSectionBody:
+      "Some customers need the kitchen, bathrooms, guest room, floors, and main living areas ready before company arrives. Others need help the next morning with trash, floors, bathrooms, kitchen surfaces, bedding, and getting the house back to normal. The service can be booked before the event, after the event, or as a two-visit package when scheduling allows.",
+
+    whoItsFor: [
+      "Families hosting Thanksgiving, Christmas, Easter, or other holiday gatherings",
+      "Homeowners preparing for birthday parties, graduations, showers, or reunions",
+      "Lake-house owners hosting family or group weekends",
+      "Customers who need guest rooms, bathrooms, kitchens, and main areas ready on a deadline",
+      "People who want help cleaning after a party instead of losing the next day to cleanup",
+      "Vacation-rental owners handling a private gathering or larger group stay",
+    ],
+
+    localProblems: [
+      "Guest rooms and bathrooms needing attention before family arrives",
+      "Kitchens getting heavily used during holiday meals and gatherings",
+      "Floors, entryways, and living rooms collecting extra traffic and mess",
+      "Trash, dishes, surfaces, and bathrooms needing a reset after a party",
+      "Lake homes getting busy during holiday weekends, reunions, and group stays",
+      "Customers needing dependable cleaning tied to a specific event date",
+    ],
+
+    bestFor: [
+      "Holiday guest-ready cleaning",
+      "Before-party home cleaning",
+      "After-party cleanup",
+      "Post-holiday household resets",
+    ],
+
+    includes: [
+      "Kitchen surface cleanup",
+      "Bathroom cleaning",
+      "Floors and entryways",
+      "Main living areas",
+      "Guest-room reset",
+      "Trash removal",
+      "Bedding changes by request",
+      "Post-party household reset",
+    ],
+
+    details: [
+      "Holiday and event cleaning is scheduled around a specific date, so booking early gives the best chance of securing the day and time needed. Weekend, same-night, or late cleanup may have limited availability.",
+      "Before-event cleaning usually focuses on the spaces guests will see and use most. After-event cleaning usually focuses on kitchens, bathrooms, floors, trash, guest areas, surfaces, and getting the home back to normal.",
+      "This service is for homes, lake houses, and smaller private gathering spaces. Large public venues, commercial event teardown, heavy hauling, and major catering cleanup may require a separate quote or may not be a fit.",
+      "The final quote depends on the size of the space, number of guests, condition after the gathering, timing, trash volume, and whether the customer needs one visit or both a before-and-after package.",
+    ],
+
+    comparison: {
+      title: "Holiday Cleaning vs Regular House Cleaning",
+      body: "Regular house cleaning is scheduled around ongoing upkeep. Holiday and special occasion cleaning is built around a deadline, guest-ready priorities, heavier kitchen or bathroom use, and sometimes a second cleanup after the gathering. Because timing and condition can vary, occasion cleaning is quoted around the actual event and space.",
+    },
+
+    notUsuallyIncluded: [
+      "Large commercial venue cleanup",
+      "Catering or food-service breakdown",
+      "Heavy furniture moving",
+      "Large-volume junk hauling",
+      "Biohazard cleanup",
+      "Outdoor event grounds cleanup",
+    ],
+
+    relatedLocationAnchors: [
+      {
+        text: "holiday and post-party cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/holiday-special-occasion-cleaning",
+      },
+    ],
+
+    relatedServiceSlugs: ["deep-cleaning", "standard-cleaning"],
+
+    localKeywords: [
+      "holiday cleaning Hot Springs AR",
+      "post party cleaning Hot Springs",
+      "after party cleanup Hot Springs Arkansas",
+      "guest ready cleaning Hot Springs",
+      "Christmas cleaning service Hot Springs",
+      "event cleanup for homes Hot Springs",
+    ],
+
+    layoutOrder: ["unique", "includes", "details", "bestFor", "links", "faq"],
+
+    faq: [
+      {
+        q: "Can I book cleaning before and after a party?",
+        a: "Yes, depending on availability. You can request a guest-ready cleaning before the gathering, an after-party reset, or a two-visit package for both.",
+      },
+      {
+        q: "What does post-party cleanup include?",
+        a: "It can include kitchens, bathrooms, floors, entryways, main living areas, trash removal, guest-room resets, and other agreed household cleanup based on the condition of the space.",
+      },
+      {
+        q: "How early should I book holiday cleaning?",
+        a: "The earlier the better. Holiday and event dates fill faster than normal appointments because the cleaning has to happen within a specific window.",
+      },
+      {
+        q: "Do you clean large event venues?",
+        a: "We focus mainly on homes, lake houses, rentals, and smaller private gathering spaces. Large commercial venues or major event teardown would need to be discussed separately.",
+      },
+    ],
+  },
+
 ];
 
 export type Service = (typeof services)[number];

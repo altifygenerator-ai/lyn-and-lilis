@@ -16,6 +16,14 @@ export default function LocalServicePageContent({
   const Icon = service.icon;
   const images = getServiceImages(service.slug);
   const localDetails = getLocalServiceDetails(location.slug, service.slug);
+  const isSpecialtyHomeService = [
+    "home-organization",
+    "senior-home-help",
+    "holiday-special-occasion-cleaning",
+  ].includes(service.slug);
+  const commonSituationItems = isSpecialtyHomeService
+    ? service.localProblems.slice(0, 3)
+    : location.details.slice(0, 3);
 
   return (
     <>
@@ -36,8 +44,9 @@ export default function LocalServicePageContent({
               </h1>
 
               <p className="mt-6 max-w-3xl text-lg leading-8 text-black/70">
-                Local {service.title.toLowerCase()} for {location.pageFocus} in{" "}
-                {location.city} and nearby areas.
+                {isSpecialtyHomeService
+                  ? service.heroText
+                  : `Local ${service.title.toLowerCase()} for ${location.pageFocus} in ${location.city} and nearby areas.`}
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -83,7 +92,7 @@ export default function LocalServicePageContent({
               </h3>
 
               <div className="mt-6 space-y-4">
-                {location.details.slice(0, 3).map((item: string) => (
+                {commonSituationItems.map((item: string) => (
                   <div key={item} className="flex gap-3">
                     <FaCheck className="mt-1 shrink-0 text-[var(--pink)]" />
                     <p className="leading-7 text-black/70">{item}</p>

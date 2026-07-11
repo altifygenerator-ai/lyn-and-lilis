@@ -61,6 +61,21 @@ const hotSpringsNeedCards = [
     text: "Cleaning for small offices, professional spaces, waiting areas, breakrooms, bathrooms, and customer-facing areas.",
   },
   {
+    title: "Home Organization in Hot Springs",
+    href: "/locations/hot-springs-ar/home-organization",
+    text: "Practical organization and decluttering for closets, pantries, cabinets, laundry rooms, downsizing, and everyday household spaces.",
+  },
+  {
+    title: "Senior Home Help in Hot Springs",
+    href: "/locations/hot-springs-ar/senior-home-help",
+    text: "Non-medical cleaning and light household help for seniors, including laundry, bedding, floors, kitchens, bathrooms, and simple organization.",
+  },
+  {
+    title: "Holiday & Post-Party Cleaning",
+    href: "/locations/hot-springs-ar/holiday-special-occasion-cleaning",
+    text: "Guest-ready cleaning before holidays and gatherings, plus after-party and post-holiday household resets when the home needs to get back to normal.",
+  },
+  {
     title: "Lake-Area Cleaning Help",
     href: "/#quote",
     text: "Cleaning support for homes and properties around Lake Hamilton, Lake Catherine, Rockwell, Piney, Royal, and nearby areas.",
@@ -68,16 +83,27 @@ const hotSpringsNeedCards = [
 ];
 
 export default function LocationLandingPage({ location }: LocationPageProps) {
-  const priorityServices = services.filter((service) =>
+  const isHotSprings = location.slug === "hot-springs-ar";
+  const hotSpringsOnlyServiceSlugs = [
+    "home-organization",
+    "senior-home-help",
+    "holiday-special-occasion-cleaning",
+  ];
+
+  const locationServices = services.filter(
+    (service) =>
+      isHotSprings || !hotSpringsOnlyServiceSlugs.includes(service.slug)
+  );
+
+  const priorityServices = locationServices.filter((service) =>
     location.priorityServiceSlugs?.includes(service.slug)
   );
 
-  const otherServices = services.filter(
+  const otherServices = locationServices.filter(
     (service) => !location.priorityServiceSlugs?.includes(service.slug)
   );
 
   const orderedServices = [...priorityServices, ...otherServices];
-  const isHotSprings = location.slug === "hot-springs-ar";
   const hotSpringsReviews = reviews.slice(0, 3);
 
   const locationSchema = {
@@ -97,6 +123,14 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
       "Move-Out Cleaning",
       "Airbnb Turnover Cleaning",
       "Professional Building Cleaning",
+      ...(isHotSprings
+        ? [
+            "Home Organization and Decluttering",
+            "Senior Home Cleaning and Household Help",
+            "Holiday Cleaning",
+            "Post-Party Cleaning",
+          ]
+        : []),
     ],
     description: location.intro,
   };
@@ -229,11 +263,11 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
           <div className="container-custom px-5">
             <div className="max-w-3xl">
               <h2 className="font-heading text-4xl font-bold text-[var(--gray-dark)]">
-                Cleaning services in {location.city}, {location.state}
+                {isHotSprings ? "Cleaning and home services" : "Cleaning services"} in {location.city}, {location.state}
               </h2>
 
               <p className="mt-4 leading-8 text-black/65">
-                These are the main cleaning services available in{" "}
+                These are the main {isHotSprings ? "cleaning and household" : "cleaning"} services available in{" "}
                 {location.city}. Every home and property is a little different,
                 so quotes are based on the actual space and what needs done.
               </p>
@@ -309,10 +343,11 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
 
                 <p className="mt-5 text-lg leading-8 text-black/70">
                   Hot Springs has regular family homes, lake-area houses, rentals,
-                  apartments, Airbnb stays, small offices, and properties that get
-                  busy around weekends, holidays, events, and guest traffic. These
-                  local pages help explain the exact type of cleaning people are
-                  usually searching for in the Hot Springs area.
+                  apartments, Airbnb stays, small offices, seniors who need a little
+                  household help, and properties that get busy around weekends,
+                  holidays, events, and guest traffic. These local pages explain the
+                  cleaning, organization, and household services people are actually
+                  looking for around the Hot Springs area.
                 </p>
               </div>
 

@@ -35,7 +35,7 @@ export default function QuoteForm() {
         <div>
           <p className="font-script text-4xl text-[var(--pink)]">Get a quote</p>
           <h2 className="font-heading mt-2 text-4xl font-bold md:text-5xl">
-            Tell us what you need cleaned.
+            Tell us what you need help with.
           </h2>
           <p className="mt-4 text-white/70">
             Send a few details and we’ll get back with you as soon as possible.
@@ -69,6 +69,10 @@ export default function QuoteForm() {
               <option>Move-In / Move-Out Cleaning</option>
               <option>Airbnb / Rental Turnover</option>
               <option>Professional Building Cleaning</option>
+              <option>Home Organization & Decluttering</option>
+              <option>Senior Home Cleaning & Household Help</option>
+              <option>Holiday / Special Occasion Cleaning</option>
+              <option>Post-Party Cleanup</option>
               <option>Other / Not Sure</option>
             </select>
 
@@ -77,7 +81,7 @@ export default function QuoteForm() {
 
             <textarea
               name="message"
-              placeholder="Tell us a little about the space..."
+              placeholder="Tell us a little about the space and what you need help with..."
               rows={5}
               className="input-style sm:col-span-2"
             />

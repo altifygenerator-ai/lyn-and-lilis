@@ -66,6 +66,10 @@ export function localBusinessSchema() {
       "Rental Turnover Cleaning",
       "Office Cleaning",
       "Professional Building Cleaning",
+      "Home Organization and Decluttering",
+      "Senior Home Cleaning and Household Help",
+      "Holiday Cleaning",
+      "Post-Party Cleaning",
     ],
   };
 }
@@ -82,7 +86,7 @@ export function serviceSchema(service: Service, location?: Location) {
       : service.title,
     serviceType: service.title,
     description: location
-      ? `${service.title} for homes, rentals, vacation rentals, and properties in ${location.city}, ${location.state}.`
+      ? `${service.title} in ${location.city}, ${location.state}. ${service.description}`
       : service.metaDescription,
     provider: {
       "@type": "CleaningService",

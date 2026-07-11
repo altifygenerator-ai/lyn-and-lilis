@@ -35,6 +35,21 @@ export const faqs = [
       "Yes. We offer cleaning for small offices, professional buildings, common areas, bathrooms, and breakrooms.",
   },
   {
+    question: "Do you offer home organization or decluttering?",
+    answer:
+      "Yes. We help organize closets, pantries, cabinets, laundry rooms, and other everyday spaces that need sorting, shelf cleaning, and a more practical setup.",
+  },
+  {
+    question: "Do you provide household cleaning help for seniors?",
+    answer:
+      "Yes. We offer non-medical senior home cleaning and light household help such as laundry, bedding changes, bathrooms, kitchens, floors, trash, and simple organization.",
+  },
+  {
+    question: "Can I book holiday or post-party cleaning?",
+    answer:
+      "Yes, depending on availability. We offer guest-ready cleaning before holidays and gatherings, after-party cleanup, and post-holiday household resets.",
+  },
+  {
     question: "Do I need to be home during the cleaning?",
     answer:
       "That is up to you. Some customers prefer to be home, and others make arrangements for access. We can talk through what works best for you.",

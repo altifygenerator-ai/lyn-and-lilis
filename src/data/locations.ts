@@ -296,23 +296,26 @@ export const locations = [
     href: "/house-cleaning-hot-springs-ar",
     city: "Hot Springs",
     state: "AR",
-    headline: "House Cleaning Services in Hot Springs, Arkansas",
+    headline: "Cleaning & Home Services in Hot Springs, Arkansas",
     pageFocus:
-      "full-time homes, lake homes, Airbnb rentals, move-out cleaning, deep cleaning, and small office spaces",
+      "full-time homes, lake homes, Airbnb rentals, home organization, senior household help, holiday cleaning, move-out cleaning, deep cleaning, and small office spaces",
     intro:
-      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
+      "Lyn & Lili’s provides house cleaning, home organization, senior household help, holiday and post-party cleaning, move-in and move-out cleaning, Airbnb turnovers, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
     localAngle:
-      "Hot Springs has a mix of full-time homes, lake houses, short-term rentals, apartments, small offices, and weekend properties. Some customers need recurring house cleaning to keep up with everyday mess. Others need a deep clean before company comes in, a move-out clean after a tenant leaves, or a fast rental reset between guests.",
+      "Hot Springs has a mix of full-time homes, lake houses, short-term rentals, apartments, seniors, small offices, and weekend properties. Some customers need recurring house cleaning to keep up with everyday mess. Others need a closet or pantry reset, a little household help for an older loved one, a holiday clean before family arrives, or a fast rental turnover between guests.",
 
     uniqueSectionTitle:
-      "Cleaning help for Hot Springs homes, lake houses, rentals, and busy families",
+      "Cleaning, organization, and household help for Hot Springs homes",
     uniqueSectionBody:
-      "Around Hot Springs, cleaning needs can look different from one property to the next. A family home near town may need regular upkeep. A Lake Hamilton or Lake Catherine property may need a stronger reset after guests or a busy weekend. A short-term rental may need to be cleaned, checked, and guest-ready on a tighter schedule. We help homeowners, hosts, landlords, rental owners, and small businesses get dependable cleaning without a big-company feel.",
+      "Around Hot Springs, household needs can look different from one property to the next. A family home near town may need regular cleaning or help getting a pantry back in order. A senior in Hot Springs Village may need dependable help with floors, laundry, bedding, and light organization. A Lake Hamilton or Lake Catherine property may need a guest-ready clean before a family gathering or a reset after everyone leaves. We help homeowners, families, hosts, landlords, and small businesses get practical local help without a big-company feel.",
 
     priorityServiceSlugs: [
       "standard-cleaning",
       "deep-cleaning",
       "airbnb-cleaning",
+      "home-organization",
+      "senior-home-help",
+      "holiday-special-occasion-cleaning",
     ],
 
     nearbyAreas: [
@@ -334,6 +337,9 @@ export const locations = [
       "Airbnb and vacation rental cleaning helps Hot Springs hosts, cabin owners, lake-house owners, and rental owners get spaces cleaned and guest-ready between stays.",
       "Move-in and move-out cleaning helps renters, landlords, sellers, buyers, and property owners get a space cleaned before the next person arrives.",
       "Small office and professional building cleaning is available for local spaces that need bathrooms, waiting areas, breakrooms, and customer-facing areas kept clean.",
+      "Home organization and decluttering can help with closets, pantries, cabinets, laundry rooms, downsizing, and rooms that have become hard to manage.",
+      "Senior home cleaning and light household help can include laundry, bedding, bathrooms, kitchens, floors, trash, and simple organization while keeping the service non-medical.",
+      "Holiday and special occasion cleaning is available for guest-ready homes, lake-house gatherings, family visits, post-party cleanup, and post-holiday resets.",
     ],
 
     internalLinks: [
@@ -361,6 +367,18 @@ export const locations = [
         text: "office cleaning in Hot Springs AR",
         href: "/locations/hot-springs-ar/professional-building-cleaning",
       },
+      {
+        text: "home organization in Hot Springs AR",
+        href: "/locations/hot-springs-ar/home-organization",
+      },
+      {
+        text: "senior home cleaning in Hot Springs AR",
+        href: "/locations/hot-springs-ar/senior-home-help",
+      },
+      {
+        text: "holiday and post-party cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/holiday-special-occasion-cleaning",
+      },
     ],
 
     localKeywords: [
@@ -376,6 +394,13 @@ export const locations = [
       "Lake Hamilton cleaning service",
       "Lake Catherine house cleaning",
       "office cleaning Hot Springs AR",
+      "home organization Hot Springs AR",
+      "closet organization Hot Springs AR",
+      "pantry organization Hot Springs AR",
+      "senior house cleaning Hot Springs AR",
+      "household help for seniors Hot Springs",
+      "holiday cleaning Hot Springs AR",
+      "post party cleaning Hot Springs AR",
     ],
 
     layoutOrder: ["unique", "services", "details", "faq", "links"],
@@ -383,7 +408,7 @@ export const locations = [
     faq: [
       {
         q: "Do you offer house cleaning in Hot Springs, AR?",
-        a: "Yes. We offer house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs and nearby lake-area communities.",
+        a: "Yes. We offer house cleaning, home organization, senior household help, holiday and post-party cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnovers, and small office cleaning in Hot Springs and nearby lake-area communities.",
       },
       {
         q: "Do you clean homes around Lake Hamilton or Lake Catherine?",
@@ -400,6 +425,18 @@ export const locations = [
       {
         q: "Do you offer move-out cleaning in Hot Springs?",
         a: "Yes. We offer move-in and move-out cleaning for renters, landlords, sellers, homeowners, and property owners who need a space cleaned before the next person moves in.",
+      },
+      {
+        q: "Do you organize closets and pantries in Hot Springs?",
+        a: "Yes. We offer practical home organization and decluttering for closets, pantries, cabinets, laundry rooms, downsizing, and everyday household spaces.",
+      },
+      {
+        q: "Do you provide household cleaning help for seniors?",
+        a: "Yes. We provide non-medical senior home cleaning and light household help such as laundry, bedding changes, floors, kitchens, bathrooms, trash, and simple organization.",
+      },
+      {
+        q: "Can I book holiday or post-party cleaning?",
+        a: "Yes, depending on availability. We offer guest-ready cleaning before holidays and gatherings, after-party cleanup, and post-holiday household resets.",
       },
     ],
   },

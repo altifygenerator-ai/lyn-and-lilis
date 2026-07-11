@@ -53,9 +53,13 @@ export default function Home() {
                   "Vacation Rental Cleaning",
                   "Residential Cleaning",
                   "Professional Building Cleaning",
+                  "Home Organization and Decluttering",
+                  "Senior Home Cleaning and Household Help",
+                  "Holiday Cleaning",
+                  "Post-Party Cleaning",
                 ],
                 description:
-                  "House cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning services in Hot Springs, Lake Hamilton, Lake Catherine, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
+                  "House cleaning, home organization, senior household help, holiday cleaning, post-party cleanup, Airbnb turnover cleaning, and small office cleaning services in Hot Springs, Lake Hamilton, Lake Catherine, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
               },
               {
                 "@context": "https://schema.org",

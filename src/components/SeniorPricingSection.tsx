@@ -37,13 +37,13 @@ export default function SeniorPricingSection() {
               We know a clean home matters, but keeping up with everything can
               get harder over time. Lyn & Lili’s Tidy House offers senior
               pricing for customers who need dependable help with regular home
-              cleaning, deeper resets, bathrooms, kitchens, dusting, floors, and
-              the everyday cleaning that makes home feel better.
+              cleaning, laundry, bedding, light organization, bathrooms, kitchens,
+              floors, and the everyday household work that makes home feel better.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a href="#quote" className="btn-primary">
-                Ask About Senior Pricing
+              <a href="/services/senior-home-help" className="btn-primary">
+                View Senior Home Help
               </a>
 
               <a href="tel:8702604536" className="btn-secondary">

@@ -10,7 +10,7 @@ export default function SeoJsonLd({ data }: { data: JsonLdItem | JsonLdItem[] })
           key={index}
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(item),
+            __html: JSON.stringify(item).replace(/</g, "\\u003c"),
           }}
         />
       ))}

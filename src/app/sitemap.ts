@@ -87,6 +87,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.76,
     },
+    {
+      url: `${baseUrl}/services/home-organization`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/services/senior-home-help`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${baseUrl}/services/holiday-special-occasion-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
 
     // Hardcoded Hot Springs service pages.
     {
@@ -118,6 +136,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.86,
+    },
+    {
+      url: `${baseUrl}/locations/hot-springs-ar/home-organization`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/hot-springs-ar/senior-home-help`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/locations/hot-springs-ar/holiday-special-occasion-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.88,
     },
 
     // Hardcoded Glenwood service pages.

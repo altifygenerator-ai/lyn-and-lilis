@@ -21,12 +21,13 @@ export default function ServicesSection() {
           </p>
 
           <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)] md:text-5xl">
-            Cleaning services made simple.
+            Cleaning, organizing, and home help made simple.
           </h2>
 
           <p className="mt-4 text-black/65">
-            From regular upkeep to deep cleaning and rental turnovers, Lyn &
-            Lili’s keeps things clear, honest, and easy to schedule.
+            From regular upkeep and deep cleaning to home organization, senior
+            household help, and special occasion cleanup, Lyn & Lili’s keeps
+            things clear, honest, and easy to schedule.
           </p>
         </motion.div>
 

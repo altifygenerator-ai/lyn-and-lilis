@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "House cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, vacation rental cleaning, and small office cleaning in Hot Springs, Amity, Glenwood, Arkadelphia, Malvern, and surrounding Arkansas areas.",
+    "House cleaning, home organization, senior household help, holiday cleaning, post-party cleanup, Airbnb turnovers, and small office cleaning in Hot Springs and nearby Southwest Arkansas areas.",
 
   keywords: [
     "home cleaning Amity AR",
@@ -83,6 +83,15 @@ export const metadata: Metadata = {
     "biweekly house cleaning Arkansas",
     "monthly house cleaning Arkansas",
     "spring cleaning Arkansas",
+    "home organization Hot Springs AR",
+    "closet organization Hot Springs AR",
+    "pantry organization Hot Springs AR",
+    "decluttering help Hot Springs Arkansas",
+    "senior house cleaning Hot Springs AR",
+    "household help for seniors Hot Springs",
+    "holiday cleaning Hot Springs AR",
+    "post party cleaning Hot Springs AR",
+    "after party cleanup Hot Springs Arkansas",
 
     "house cleaners near me",
     "cleaning company near me",
@@ -128,7 +137,7 @@ export const metadata: Metadata = {
     title:
       "Lyn & Lili’s Tidy House Home Services | Cleaning Services in Southwest Arkansas",
     description:
-      "Reliable local cleaning services for homes, rentals, vacation properties, and small businesses in Hot Springs, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
+      "Local cleaning, home organization, senior household help, holiday cleanup, rental turnovers, and small business cleaning in Hot Springs and nearby Southwest Arkansas areas.",
     url: "https://www.lynandlilistidyhouse.com",
     siteName: "Lyn & Lili’s Tidy House Home Services",
     locale: "en_US",
@@ -139,7 +148,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lyn & Lili’s Cleaning Services",
     description:
-      "Home cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and rental cleaning in Hot Springs, Amity, Glenwood, and Arkadelphia.",
+      "Home cleaning, organization, senior household help, holiday cleanup, Airbnb turnovers, and rental cleaning in Hot Springs and nearby Arkansas areas.",
   },
 
   robots: {
