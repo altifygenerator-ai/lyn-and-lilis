@@ -83,6 +83,13 @@ export default function Footer() {
               </Link>
 
               <Link
+                href="/services/tobacco-residue-wall-cleaning"
+                className="block hover:text-[var(--pink)]"
+              >
+                Tobacco-Stained Wall Cleaning
+              </Link>
+
+              <Link
                 href="/services/move-in-move-out-cleaning"
                 className="block hover:text-[var(--pink)]"
               >
@@ -171,6 +178,13 @@ export default function Footer() {
                   className="block hover:text-[var(--pink)]"
                 >
                   Deep Cleaning in Hot Springs
+                </Link>
+
+                <Link
+                  href="/locations/hot-springs-ar/tobacco-residue-wall-cleaning"
+                  className="block hover:text-[var(--pink)]"
+                >
+                  Nicotine-Stained Wall Cleaning
                 </Link>
 
                 <Link

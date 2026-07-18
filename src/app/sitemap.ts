@@ -70,6 +70,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.82,
     },
     {
+      url: `${baseUrl}/services/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
       url: `${baseUrl}/services/move-in-move-out-cleaning`,
       lastModified,
       changeFrequency: "monthly",
@@ -118,6 +124,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.92,
+    },
+    {
+      url: `${baseUrl}/locations/hot-springs-ar/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.93,
     },
     {
       url: `${baseUrl}/locations/hot-springs-ar/move-in-move-out-cleaning`,
@@ -170,6 +182,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.78,
     },
     {
+      url: `${baseUrl}/locations/glenwood-ar/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/locations/glenwood-ar/move-in-move-out-cleaning`,
       lastModified,
       changeFrequency: "monthly",
@@ -200,6 +218,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.76,
+    },
+    {
+      url: `${baseUrl}/locations/arkadelphia-ar/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.78,
     },
     {
       url: `${baseUrl}/locations/arkadelphia-ar/move-in-move-out-cleaning`,
@@ -234,6 +258,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.74,
     },
     {
+      url: `${baseUrl}/locations/amity-ar/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.76,
+    },
+    {
       url: `${baseUrl}/locations/amity-ar/move-in-move-out-cleaning`,
       lastModified,
       changeFrequency: "monthly",
@@ -264,6 +294,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: "monthly",
       priority: 0.72,
+    },
+    {
+      url: `${baseUrl}/locations/malvern-ar/tobacco-residue-wall-cleaning`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.74,
     },
     {
       url: `${baseUrl}/locations/malvern-ar/move-in-move-out-cleaning`,

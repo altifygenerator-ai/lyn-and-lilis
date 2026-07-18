@@ -12,6 +12,7 @@ import { faqs } from "@/data/faqs";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import SeniorPricingSection from "@/components/SeniorPricingSection";
+import TobaccoWallCleaningFeature from "@/components/TobaccoWallCleaningFeature";
 export default function Home() {
   return (
     <>
@@ -47,6 +48,7 @@ export default function Home() {
                   "House Cleaning",
                   "Standard Cleaning",
                   "Deep Cleaning",
+                  "Tobacco Residue and Nicotine-Stained Wall Cleaning",
                   "Move-Out Cleaning",
                   "Move-In Cleaning",
                   "Airbnb Turnover Cleaning",
@@ -59,7 +61,7 @@ export default function Home() {
                   "Post-Party Cleaning",
                 ],
                 description:
-                  "House cleaning, home organization, senior household help, holiday cleaning, post-party cleanup, Airbnb turnover cleaning, and small office cleaning services in Hot Springs, Lake Hamilton, Lake Catherine, Amity, Glenwood, Arkadelphia, and nearby Arkansas areas.",
+                  "House cleaning, tobacco residue and nicotine-stained wall cleaning, home organization, senior household help, holiday cleaning, post-party cleanup, Airbnb turnover cleaning, and small office cleaning services in Hot Springs, Lake Hamilton, Lake Catherine, Amity, Glenwood, Arkadelphia, Malvern, and nearby Arkansas areas.",
               },
               {
                 "@context": "https://schema.org",
@@ -81,6 +83,7 @@ export default function Home() {
      
 <TrustBar />
 <ServicesSection />
+<TobaccoWallCleaningFeature />
 <AddOnsSection />
 <SeniorPricingSection />
 <GallerySection />

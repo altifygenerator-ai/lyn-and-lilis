@@ -7,6 +7,7 @@ import {
   FaBoxOpen,
   FaHeart,
   FaChampagneGlasses,
+  FaSoap,
 } from "react-icons/fa6";
 
 export const services = [
@@ -269,6 +270,153 @@ export const services = [
       {
         q: "Is deep cleaning good before starting weekly or biweekly cleaning?",
         a: "Yes. If the home has buildup or has not been cleaned professionally in a while, starting with a deep clean makes recurring cleaning much easier to maintain.",
+      },
+    ],
+  },
+
+  {
+    slug: "tobacco-residue-wall-cleaning",
+    title: "Tobacco Residue & Stained-Wall Cleaning",
+    price: "Starting at $250",
+    icon: FaSoap,
+
+    seoHeadline:
+      "Nicotine-Stained Wall & Tobacco Residue Cleaning in Southwest Arkansas",
+
+    description:
+      "Hands-on cleaning for yellow tobacco film and smoke residue on washable walls, trim, doors, ceilings, and other hard surfaces.",
+
+    metaTitle:
+      "Nicotine-Stained Wall Cleaning in Hot Springs, Glenwood & Arkadelphia AR",
+    metaDescription:
+      "Tobacco residue and nicotine-stained wall cleaning for homes, rentals, inherited properties, and pre-paint preparation in Hot Springs, Glenwood, Arkadelphia, Amity, and Malvern, Arkansas.",
+
+    heroText:
+      "Detailed manual wall washing for homes with visible yellow tobacco film, sticky residue, and smoke staining on washable surfaces. We use practical cleaning tools, careful surface testing, and plenty of hands-on work rather than presenting this as full smoke-damage restoration.",
+
+    pageFocus:
+      "nicotine-stained walls, tobacco residue, smoke film, trim, doors, ceilings, rental turnovers, inherited homes, and pre-paint wall washing",
+
+    intro:
+      "Indoor smoking can leave a yellow or brown film across walls, trim, doors, ceilings, cabinets, and fixtures. This specialty service focuses on washing that visible residue from surfaces that can safely be cleaned. It is a good middle-ground option when a home needs far more than an ordinary deep clean but does not require a full restoration company.",
+
+    uniqueSectionTitle:
+      "Real wall washing for the sticky film regular cleaning does not touch",
+    uniqueSectionBody:
+      "Tobacco residue clings to painted surfaces and often takes repeated washing, fresh water, hand wiping, and careful detail around trim and corners. Our three-person crew works through the affected rooms by hand. We test the finish first, clean the surfaces that can be safely washed, and give a clear quote based on how much buildup is present and which parts of the home are included.",
+
+    whoItsFor: [
+      "Landlords cleaning a home after an indoor-smoking tenant",
+      "Families preparing an inherited or estate property",
+      "Homeowners getting walls ready for stain-blocking primer and paint",
+      "Sellers and real estate investors preparing a property for market",
+      "Buyers who purchased a home that was smoked in",
+      "People who have stopped smoking indoors and want the visible residue cleaned away",
+    ],
+
+    localProblems: [
+      "Yellow or brown film on white and light-colored walls",
+      "Sticky residue around doors, trim, crown molding, and corners",
+      "Smoke staining above doorways and near ceilings",
+      "Rental or inherited homes that need wall washing before painting",
+      "Cabinet fronts, switches, fixtures, and hard surfaces collecting tobacco film",
+      "Older homes where the paint finish must be tested before heavy washing",
+    ],
+
+    bestFor: [
+      "Smoker homes and rental turnovers",
+      "Visible yellow wall staining",
+      "Pre-paint surface cleaning",
+      "Inherited, estate, and investment properties",
+    ],
+
+    includes: [
+      "Washable painted walls",
+      "Baseboards and trim",
+      "Interior doors and frames",
+      "Visible tobacco film",
+      "Careful surface testing",
+      "Repeated washing as quoted",
+      "Rinsing and hand-detail work",
+      "Room-by-room progress checks",
+    ],
+
+    details: [
+      "Smaller areas start at $250. Most full 3-bedroom, 2-bath wall-cleaning projects fall around $900 to $1,500 when the staining is light to moderate and the scope is mainly walls and trim.",
+      "Heavy long-term buildup, ceilings, cabinets, detailed doors, fixtures, and multiple cleaning passes can raise the price. We require photos or a walkthrough before giving a firm whole-home quote.",
+      "Our crew recently completed most of a full house in about six hours with three cleaners. That real production time is what we use to keep pricing practical while still accounting for eighteen crew labor-hours, supplies, travel, and the difficulty of the job.",
+      "This service removes visible residue from washable surfaces. It does not include ozone treatment, duct cleaning, carpet extraction, drywall replacement, painting, or a guarantee that every smoke odor will be removed.",
+      "Flat paint, old paint, damaged finishes, and poorly bonded paint can streak or rub off during washing. We test an out-of-the-way section before moving forward and will explain when cleaning is likely to cause damage or when painting is the better option.",
+    ],
+
+    comparison: {
+      title: "Surface Cleaning vs Full Smoke-Damage Restoration",
+      body: "Lyn & Lili’s focuses on manual cleaning of visible tobacco residue from washable walls and hard surfaces. Restoration companies may use air scrubbers, hydroxyl equipment, duct cleaning, material removal, sealing, and other specialized methods. We do not claim to provide those services or guarantee complete odor removal from drywall, insulation, flooring, furniture, or HVAC systems.",
+    },
+
+    notUsuallyIncluded: [
+      "Ozone or hydroxyl treatment",
+      "HVAC or duct cleaning",
+      "Carpet and upholstery extraction",
+      "Painting or stain-blocking primer",
+      "Drywall, flooring, or insulation removal",
+      "Guaranteed whole-home odor elimination",
+    ],
+
+    relatedLocationAnchors: [
+      {
+        text: "nicotine-stained wall cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/tobacco-residue-wall-cleaning",
+      },
+      {
+        text: "tobacco residue cleaning in Glenwood",
+        href: "/locations/glenwood-ar/tobacco-residue-wall-cleaning",
+      },
+      {
+        text: "smoke-stained wall cleaning in Arkadelphia",
+        href: "/locations/arkadelphia-ar/tobacco-residue-wall-cleaning",
+      },
+      {
+        text: "tobacco wall cleaning in Malvern",
+        href: "/locations/malvern-ar/tobacco-residue-wall-cleaning",
+      },
+    ],
+
+    relatedServiceSlugs: ["deep-cleaning", "move-in-move-out-cleaning"],
+
+    localKeywords: [
+      "nicotine stained wall cleaning",
+      "tobacco residue cleaning",
+      "smoke stained wall cleaning",
+      "cigarette smoke wall cleaning",
+      "wall washing before painting",
+      "smoker house cleaning Hot Springs AR",
+      "nicotine wall cleaning Glenwood AR",
+      "tobacco residue cleaning Arkadelphia AR",
+    ],
+
+    layoutOrder: ["unique", "details", "includes", "bestFor", "links", "faq"],
+
+    faq: [
+      {
+        q: "Can you remove yellow nicotine stains from walls?",
+        a: "We can often remove a large amount of visible yellow tobacco film from washable painted walls, trim, doors, and other hard surfaces. Results depend on the paint, surface condition, and how long the home was smoked in.",
+      },
+      {
+        q: "How much does tobacco residue wall cleaning cost?",
+        a: "Smaller jobs start at $250. A typical 3-bedroom, 2-bath wall-cleaning job often falls around $900 to $1,500, while heavy whole-home buildup, ceilings, cabinets, and repeated passes are quoted higher after photos or a walkthrough.",
+      },
+      {
+        q: "Will cleaning completely remove the cigarette smell?",
+        a: "We do not guarantee complete odor removal. Washing can remove a large amount of visible residue and may improve the smell, but odor can remain in drywall, flooring, insulation, furniture, carpet, and HVAC systems.",
+      },
+      {
+        q: "Do you clean walls before painting?",
+        a: "Yes. This service is often used before stain-blocking primer and paint. We clean the washable surface residue, but painting and primer are not included.",
+      },
+      {
+        q: "Do you use restoration equipment?",
+        a: "No. We use a three-person cleaning crew, mops, cloths, buckets, cleaning solutions, fresh rinse water, and hands-on detail work. We are offering specialty surface cleaning, not full smoke-damage restoration.",
       },
     ],
   },

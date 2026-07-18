@@ -46,6 +46,11 @@ const hotSpringsNeedCards = [
     text: "A stronger reset for homes, lake houses, rentals, and lived-in spaces that need extra time, detail, and attention.",
   },
   {
+    title: "Nicotine-Stained Wall Cleaning",
+    href: "/locations/hot-springs-ar/tobacco-residue-wall-cleaning",
+    text: "Hands-on washing for visible tobacco film and yellow staining on suitable walls, trim, doors, and hard surfaces.",
+  },
+  {
     title: "Airbnb Cleaning in Hot Springs",
     href: "/locations/hot-springs-ar/airbnb-cleaning",
     text: "Turnover cleaning for short-term rentals, guest spaces, lake-area properties, and hosts who need spaces ready between stays.",
@@ -119,6 +124,7 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
     serviceType: [
       "House Cleaning",
       "Deep Cleaning",
+      "Tobacco Residue and Nicotine-Stained Wall Cleaning",
       "Move-In Cleaning",
       "Move-Out Cleaning",
       "Airbnb Turnover Cleaning",

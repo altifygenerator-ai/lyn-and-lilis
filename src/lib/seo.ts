@@ -59,6 +59,7 @@ export function localBusinessSchema() {
       "House Cleaning",
       "Standard Cleaning",
       "Deep Cleaning",
+      "Tobacco Residue and Nicotine-Stained Wall Cleaning",
       "Move-Out Cleaning",
       "Move-In Cleaning",
       "Airbnb Turnover Cleaning",

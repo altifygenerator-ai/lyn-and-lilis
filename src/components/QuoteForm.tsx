@@ -66,6 +66,7 @@ export default function QuoteForm() {
               <option value="">Service needed</option>
               <option>Standard Cleaning</option>
               <option>Deep Cleaning</option>
+              <option>Tobacco Residue / Nicotine-Stained Wall Cleaning</option>
               <option>Move-In / Move-Out Cleaning</option>
               <option>Airbnb / Rental Turnover</option>
               <option>Professional Building Cleaning</option>

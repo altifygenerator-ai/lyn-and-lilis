@@ -7,7 +7,7 @@ export const locations = [
     headline: "House Cleaning Services in Amity, Arkansas",
     pageFocus: "small-town homes, rural properties, and move-out cleaning",
     intro:
-      "Lyn & Lili’s provides house cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and small building cleaning for homes and properties in Amity, Arkansas and nearby areas.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, tobacco residue wall cleaning, move-out cleaning, Airbnb turnover cleaning, and small building cleaning for homes and properties in Amity, Arkansas and nearby areas.",
     localAngle:
       "In a small town like Amity, people usually choose cleaning help through trust, referrals, and word of mouth. We keep the process simple for homeowners, families, landlords, and property owners who want reliable help without a big-company feel.",
 
@@ -18,6 +18,7 @@ export const locations = [
     priorityServiceSlugs: [
       "standard-cleaning",
       "deep-cleaning",
+      "tobacco-residue-wall-cleaning",
       "move-in-move-out-cleaning",
     ],
 
@@ -27,6 +28,7 @@ export const locations = [
       "Standard house cleaning is a good fit for Amity families who just need help staying ahead of bathrooms, kitchens, floors, dusting, and regular upkeep.",
       "Deep cleaning works well when a home has gotten behind or needs a stronger reset before starting regular service.",
       "Move-out cleaning is useful for landlords, renters, sellers, and property owners who need a home cleaned up before someone else moves in.",
+      "Tobacco residue wall cleaning helps with inherited homes, rentals, and properties that need visible smoke film washed away before painting or move-in.",
     ],
 
     internalLinks: [
@@ -39,6 +41,10 @@ export const locations = [
         href: "/services/deep-cleaning",
       },
       {
+        text: "nicotine-stained wall cleaning in Amity",
+        href: "/locations/amity-ar/tobacco-residue-wall-cleaning",
+      },
+      {
         text: "move-out cleaning in Amity",
         href: "/services/move-in-move-out-cleaning",
       },
@@ -47,6 +53,7 @@ export const locations = [
     localKeywords: [
       "house cleaning Amity AR",
       "deep cleaning Amity Arkansas",
+      "nicotine stained wall cleaning Amity AR",
       "move out cleaning Amity AR",
       "cleaning service near Amity Arkansas",
     ],
@@ -77,7 +84,7 @@ export const locations = [
     headline: "House Cleaning Services in Glenwood, Arkansas",
     pageFocus: "family homes, rental properties, and lake-area cleaning",
     intro:
-      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Glenwood, Arkansas and surrounding areas.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, tobacco residue wall cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Glenwood, Arkansas and surrounding areas.",
     localAngle:
       "Glenwood has a mix of everyday homes, rental properties, weekend visitors, and nearby lake-area places. We help homeowners and property owners keep things clean without making them chase down help or deal with confusing pricing.",
 
@@ -89,6 +96,7 @@ export const locations = [
       "standard-cleaning",
       "airbnb-cleaning",
       "deep-cleaning",
+      "tobacco-residue-wall-cleaning",
     ],
 
     nearbyAreas: ["Caddo Gap", "Bonnerdale", "Amity", "Mount Ida", "Lake Greeson"],
@@ -97,6 +105,7 @@ export const locations = [
       "Routine cleaning is common for Glenwood homes where families want help keeping kitchens, bathrooms, floors, and main living areas under control.",
       "Rental and Airbnb turnover cleaning helps property owners get spaces guest-ready without scrambling between stays.",
       "Deep cleaning is useful for homes, cabins, and part-time properties that need extra attention beyond a regular cleaning.",
+      "Tobacco residue and nicotine-stained wall cleaning is available for Glenwood homes, rentals, and inherited properties that need hands-on wall washing.",
     ],
 
     internalLinks: [
@@ -112,12 +121,17 @@ export const locations = [
         text: "deep cleaning in Glenwood AR",
         href: "/services/deep-cleaning",
       },
+      {
+        text: "tobacco residue wall cleaning in Glenwood",
+        href: "/locations/glenwood-ar/tobacco-residue-wall-cleaning",
+      },
     ],
 
     localKeywords: [
       "house cleaning Glenwood AR",
       "Airbnb cleaning Glenwood Arkansas",
       "deep cleaning Glenwood AR",
+      "tobacco residue cleaning Glenwood AR",
       "rental cleaning Glenwood Arkansas",
     ],
 
@@ -147,7 +161,7 @@ export const locations = [
     headline: "House Cleaning Services in Malvern, Arkansas",
     pageFocus: "homes, rentals, move-out cleaning, and small business cleaning",
     intro:
-      "Lyn & Lili’s provides house cleaning, deep cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Malvern, Arkansas and nearby areas.",
+      "Lyn & Lili’s provides house cleaning, deep cleaning, tobacco residue wall cleaning, move-in and move-out cleaning, Airbnb turnover cleaning, and small business cleaning for homes and properties in Malvern, Arkansas and nearby areas.",
     localAngle:
       "Malvern has a mix of family homes, rentals, apartments, small businesses, and people who just need dependable cleaning help without making it complicated. We keep quoting simple, talk through what the space actually needs, and build the cleaning around the job instead of pretending every home is the same.",
 
@@ -158,6 +172,7 @@ export const locations = [
     priorityServiceSlugs: [
       "standard-cleaning",
       "deep-cleaning",
+      "tobacco-residue-wall-cleaning",
       "move-in-move-out-cleaning",
     ],
 
@@ -173,6 +188,7 @@ export const locations = [
       "Standard house cleaning is a good fit for Malvern homeowners who want help keeping bathrooms, kitchens, floors, dusting, and main living areas under control.",
       "Deep cleaning works well when a home needs a stronger reset, especially before starting regular cleaning or after things have gotten behind.",
       "Move-in and move-out cleaning is useful for renters, landlords, sellers, buyers, and property owners who need a space cleaned before the next person moves in.",
+      "Nicotine-stained wall cleaning is available for Malvern homes and rentals with visible tobacco film on suitable walls, doors, and trim.",
     ],
 
     internalLinks: [
@@ -185,6 +201,10 @@ export const locations = [
         href: "/services/deep-cleaning",
       },
       {
+        text: "nicotine-stained wall cleaning in Malvern",
+        href: "/locations/malvern-ar/tobacco-residue-wall-cleaning",
+      },
+      {
         text: "move-out cleaning in Malvern AR",
         href: "/services/move-in-move-out-cleaning",
       },
@@ -193,6 +213,7 @@ export const locations = [
     localKeywords: [
       "house cleaning Malvern AR",
       "deep cleaning Malvern Arkansas",
+      "nicotine stained wall cleaning Malvern AR",
       "move out cleaning Malvern AR",
       "cleaning service near Malvern Arkansas",
     ],
@@ -223,7 +244,7 @@ export const locations = [
     headline: "House Cleaning Services in Arkadelphia, Arkansas",
     pageFocus: "apartments, rentals, student housing, and small offices",
     intro:
-      "Lyn & Lili’s offers house cleaning, apartment cleaning, deep cleaning, move-out cleaning, rental turnover cleaning, and office cleaning in Arkadelphia, Arkansas and nearby areas.",
+      "Lyn & Lili’s offers house cleaning, apartment cleaning, deep cleaning, tobacco residue wall cleaning, move-out cleaning, rental turnover cleaning, and office cleaning in Arkadelphia, Arkansas and nearby areas.",
     localAngle:
       "Arkadelphia has families, students, rentals, apartments, and small businesses, so cleaning needs can look different from one job to the next. We offer flexible cleaning help without making the process harder than it needs to be.",
 
@@ -233,6 +254,7 @@ export const locations = [
 
     priorityServiceSlugs: [
       "move-in-move-out-cleaning",
+      "tobacco-residue-wall-cleaning",
       "standard-cleaning",
       "professional-building-cleaning",
     ],
@@ -249,6 +271,7 @@ export const locations = [
       "Apartment and rental cleaning is common in Arkadelphia, especially when people are moving in, moving out, or preparing a place for a new tenant.",
       "House cleaning helps busy families and working homeowners keep their main living spaces fresh and manageable.",
       "Small office and professional building cleaning helps local businesses keep bathrooms, waiting areas, breakrooms, and workspaces presentable.",
+      "Tobacco residue wall cleaning can help Arkadelphia landlords, sellers, and families prepare a smoker home for a new tenant, buyer, or paint job.",
     ],
 
     internalLinks: [
@@ -261,6 +284,10 @@ export const locations = [
         href: "/services/move-in-move-out-cleaning",
       },
       {
+        text: "smoke-stained wall cleaning in Arkadelphia",
+        href: "/locations/arkadelphia-ar/tobacco-residue-wall-cleaning",
+      },
+      {
         text: "office cleaning in Arkadelphia",
         href: "/services/professional-building-cleaning",
       },
@@ -270,6 +297,7 @@ export const locations = [
       "house cleaning Arkadelphia AR",
       "apartment cleaning Arkadelphia",
       "move out cleaning Arkadelphia AR",
+      "smoke stained wall cleaning Arkadelphia AR",
       "office cleaning Arkadelphia Arkansas",
     ],
 
@@ -300,7 +328,7 @@ export const locations = [
     pageFocus:
       "full-time homes, lake homes, Airbnb rentals, home organization, senior household help, holiday cleaning, move-out cleaning, deep cleaning, and small office spaces",
     intro:
-      "Lyn & Lili’s provides house cleaning, home organization, senior household help, holiday and post-party cleaning, move-in and move-out cleaning, Airbnb turnovers, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
+      "Lyn & Lili’s provides house cleaning, tobacco residue and nicotine-stained wall cleaning, home organization, senior household help, holiday and post-party cleaning, move-in and move-out cleaning, Airbnb turnovers, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
     localAngle:
       "Hot Springs has a mix of full-time homes, lake houses, short-term rentals, apartments, seniors, small offices, and weekend properties. Some customers need recurring house cleaning to keep up with everyday mess. Others need a closet or pantry reset, a little household help for an older loved one, a holiday clean before family arrives, or a fast rental turnover between guests.",
 
@@ -312,6 +340,7 @@ export const locations = [
     priorityServiceSlugs: [
       "standard-cleaning",
       "deep-cleaning",
+      "tobacco-residue-wall-cleaning",
       "airbnb-cleaning",
       "home-organization",
       "senior-home-help",
@@ -340,6 +369,7 @@ export const locations = [
       "Home organization and decluttering can help with closets, pantries, cabinets, laundry rooms, downsizing, and rooms that have become hard to manage.",
       "Senior home cleaning and light household help can include laundry, bedding, bathrooms, kitchens, floors, trash, and simple organization while keeping the service non-medical.",
       "Holiday and special occasion cleaning is available for guest-ready homes, lake-house gatherings, family visits, post-party cleanup, and post-holiday resets.",
+      "Tobacco residue and nicotine-stained wall cleaning is available for Hot Springs rentals, inherited homes, investment properties, and pre-paint cleaning projects.",
     ],
 
     internalLinks: [
@@ -350,6 +380,10 @@ export const locations = [
       {
         text: "deep cleaning in Hot Springs Arkansas",
         href: "/locations/hot-springs-ar/deep-cleaning",
+      },
+      {
+        text: "nicotine-stained wall cleaning in Hot Springs",
+        href: "/locations/hot-springs-ar/tobacco-residue-wall-cleaning",
       },
       {
         text: "Airbnb cleaning in Hot Springs AR",
@@ -388,6 +422,8 @@ export const locations = [
       "maid service Hot Springs AR",
       "cleaning service Hot Springs AR",
       "deep cleaning Hot Springs AR",
+      "nicotine stained wall cleaning Hot Springs AR",
+      "tobacco residue cleaning Hot Springs AR",
       "move out cleaning Hot Springs AR",
       "Airbnb cleaning Hot Springs AR",
       "vacation rental cleaning Hot Springs AR",

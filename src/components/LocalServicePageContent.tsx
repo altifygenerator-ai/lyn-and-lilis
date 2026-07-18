@@ -20,6 +20,7 @@ export default function LocalServicePageContent({
     "home-organization",
     "senior-home-help",
     "holiday-special-occasion-cleaning",
+    "tobacco-residue-wall-cleaning",
   ].includes(service.slug);
   const commonSituationItems = isSpecialtyHomeService
     ? service.localProblems.slice(0, 3)

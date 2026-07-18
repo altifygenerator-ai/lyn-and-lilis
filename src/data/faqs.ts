@@ -25,6 +25,11 @@ export const faqs = [
       "Pricing depends on the size of the home, the type of cleaning needed, the condition of the space, and any add-ons requested. We give clear quotes before starting.",
   },
   {
+    question: "Do you clean nicotine-stained walls or tobacco residue?",
+    answer:
+      "Yes. We clean visible tobacco film and yellow staining from suitable washable walls, trim, doors, and hard surfaces. Smaller areas start at $250, and whole-home projects are quoted from photos or a walkthrough. This is surface cleaning, not full smoke-damage restoration or guaranteed odor removal.",
+  },
+  {
     question: "Do you clean Airbnbs or rental properties?",
     answer:
       "Yes. We offer Airbnb and rental turnover cleaning for local property owners, hosts, and landlords.",

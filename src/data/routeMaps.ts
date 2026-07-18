@@ -42,6 +42,20 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
     { src: "/images/stove-clean.jpeg", alt: "Clean kitchen stove after holiday or party cleanup" },
     { src: "/images/after-2.png", alt: "Fresh bathroom ready for guests and special occasions" },
   ],
+  "tobacco-residue-wall-cleaning": [
+    {
+      src: "/images/tobacco-wall-cleaning/wall-after-cleaning.webp",
+      alt: "Clean white wall after tobacco residue and nicotine-stain washing",
+    },
+    {
+      src: "/images/tobacco-wall-cleaning/doorway-before.webp",
+      alt: "Yellow tobacco residue visible above a doorway before cleaning",
+    },
+    {
+      src: "/images/tobacco-wall-cleaning/doorway-after.webp",
+      alt: "Doorway and trim after hands-on tobacco residue cleaning",
+    },
+  ],
 };
 
 export const localServiceDetails: Record<string, Record<string, string[]>> = {
@@ -91,6 +105,39 @@ export const localServiceDetails: Record<string, Record<string, string[]>> = {
       "Because Hot Springs homes and lake properties often get busier around weekends, holidays, reunions, and events, booking early gives the best chance of securing the needed time.",
       "The service can be a one-time guest-ready clean, a cleanup after the gathering, or a two-visit package when the schedule allows. The quote is based on the home, timing, expected use, and the rooms that matter most.",
       "Private homes and lake houses are the main fit for this service. Large venue teardown, outdoor grounds cleanup, catering breakdown, and heavy hauling would need separate discussion before being accepted.",
+    ],
+    "tobacco-residue-wall-cleaning": [
+      "Tobacco residue wall cleaning in Hot Springs is useful for rental turnovers, inherited homes, investment properties, and houses being prepared for sale or repainting.",
+      "We focus on the visible yellow film and sticky buildup left on washable walls, trim, doors, and other hard surfaces. Whole-home pricing is based on the affected rooms, ceiling height, surface condition, and whether ceilings, cabinets, or detailed trim are included.",
+      "This is hands-on surface cleaning rather than full smoke-damage restoration. Homes with odor trapped in HVAC systems, carpet, insulation, or drywall may still need additional work from painters or restoration specialists.",
+    ],
+  },
+  "glenwood-ar": {
+    "tobacco-residue-wall-cleaning": [
+      "In Glenwood and nearby lake communities, this service is a practical option for older homes, rentals, inherited properties, and houses that need wall washing before new paint.",
+      "Our crew cleans visible tobacco film from washable walls, trim, doors, and hard surfaces using hands-on washing and repeated rinse water rather than specialized restoration equipment.",
+      "Photos or a walkthrough help us quote the job honestly, especially when ceilings, cabinets, crown molding, or long-term heavy staining are involved.",
+    ],
+  },
+  "arkadelphia-ar": {
+    "tobacco-residue-wall-cleaning": [
+      "Arkadelphia landlords, rental owners, sellers, and families may need tobacco residue cleaning after a tenant moves out or before an older home is painted and listed.",
+      "The service focuses on visible residue across washable walls, doors, trim, and other hard surfaces. It can be combined with move-out cleaning when the rest of the empty property also needs attention.",
+      "We quote each project from photos or a walkthrough because apartment layouts, older paint, ceiling height, and years of indoor smoking can change the labor considerably.",
+    ],
+  },
+  "amity-ar": {
+    "tobacco-residue-wall-cleaning": [
+      "Around Amity, tobacco-stained wall cleaning can help with family homes, inherited houses, rentals, and properties being prepared for repairs or repainting.",
+      "The work is done by hand with a three-person cleaning crew, careful surface testing, wall mops, cloths, buckets, and fresh rinse water as the residue is lifted away.",
+      "We keep the quote practical, but heavy ceilings, cabinets, detailed trim, and long-term buildup are priced separately from a basic wall-only project.",
+    ],
+  },
+  "malvern-ar": {
+    "tobacco-residue-wall-cleaning": [
+      "Malvern homeowners, landlords, buyers, and investors can use this service when visible tobacco film needs to be cleaned from a house before move-in, resale, rental, or painting.",
+      "We clean suitable walls and hard surfaces manually and explain upfront when old paint, damaged finishes, or deeply embedded odor may require primer, repainting, or restoration work instead.",
+      "A smaller area starts at $250, while full-home quotes are based on the number of rooms, severity, surfaces included, and how many cleaning passes are likely to be needed.",
     ],
   },
 };
@@ -207,6 +254,27 @@ export function getLocalServiceFaq(locationSlug: string, serviceSlug: string) {
     ];
   }
 
+  if (serviceSlug === "tobacco-residue-wall-cleaning") {
+    return [
+      {
+        q: `Do you clean nicotine-stained walls in ${location.city}?`,
+        a: `Yes. We clean visible tobacco residue and yellow staining from suitable washable walls, trim, doors, and hard surfaces in ${location.city} and nearby areas.`,
+      },
+      {
+        q: "How is tobacco residue wall cleaning priced?",
+        a: "Smaller areas start at $250. Most 3-bedroom, 2-bath wall-cleaning projects fall around $900 to $1,500, with heavy buildup, ceilings, cabinets, and detailed trim quoted higher after photos or a walkthrough.",
+      },
+      {
+        q: "Does the service guarantee all smoke odor will be gone?",
+        a: "No. Surface washing removes visible residue and can improve the smell, but odor may remain in drywall, flooring, furniture, insulation, carpet, and HVAC systems.",
+      },
+      {
+        q: "Can you clean the walls before a painter starts?",
+        a: "Yes. Cleaning visible residue before stain-blocking primer and paint is one of the main reasons people book this service. Painting and primer are not included.",
+      },
+    ];
+  }
+
   return [
     {
       q: `Do you offer ${lowerService} in ${location.city}, ${location.state}?`,
@@ -235,6 +303,13 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
   }
 
   const cityState = `${location.city}, ${location.state}`;
+
+  if (serviceSlug === "tobacco-residue-wall-cleaning") {
+    return {
+      title: `Nicotine-Stained Wall Cleaning in ${cityState} | Lyn & Lili’s`,
+      description: `Tobacco residue and smoke-stained wall cleaning in ${cityState} for rentals, inherited homes, property turnovers, and pre-paint surface washing.`,
+    };
+  }
 
   if (locationSlug === "hot-springs-ar" && serviceSlug === "airbnb-cleaning") {
     return {
