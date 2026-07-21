@@ -1,31 +1,123 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { FaPaperPlane, FaPhone, FaEnvelope, FaClock } from "react-icons/fa6";
+
+type CaptchaChallenge = {
+  question: string;
+  token: string;
+};
 
 export default function QuoteForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [captcha, setCaptcha] = useState<CaptchaChallenge | null>(null);
+  const [captchaLoading, setCaptchaLoading] = useState(true);
+
+  const loadCaptcha = useCallback(async () => {
+    setCaptchaLoading(true);
+
+    try {
+      const response = await fetch("/api/quote", { cache: "no-store" });
+
+      if (!response.ok) {
+        throw new Error("Unable to load human check");
+      }
+
+      const challenge = (await response.json()) as CaptchaChallenge;
+      setCaptcha(challenge);
+    } catch (error) {
+      console.error("Captcha load error:", error);
+      setCaptcha(null);
+      setErrorMessage("The human check could not load. Please refresh the page or call or text us.");
+      setStatus("error");
+    } finally {
+      setCaptchaLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    fetch("/api/quote", { cache: "no-store", signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Unable to load human check");
+        }
+
+        return response.json() as Promise<CaptchaChallenge>;
+      })
+      .then((challenge) => {
+        setCaptcha(challenge);
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === "AbortError") {
+          return;
+        }
+
+        console.error("Captcha load error:", error);
+        setCaptcha(null);
+        setErrorMessage("The human check could not load. Please refresh the page or call or text us.");
+        setStatus("error");
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) {
+          setCaptchaLoading(false);
+        }
+      });
+
+    return () => controller.abort();
+  }, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    if (!captcha) {
+      setStatus("error");
+      setErrorMessage("The human check is not ready yet. Please refresh the page or call or text us.");
+      return;
+    }
+
     setStatus("loading");
+    setErrorMessage("");
 
     const form = event.currentTarget;
     const formData = new FormData(form);
+    const payload = {
+      ...Object.fromEntries(formData),
+      captchaToken: captcha.token,
+    };
 
-    const res = await fetch("/api/quote", {
-      method: "POST",
-      body: JSON.stringify(Object.fromEntries(formData)),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    try {
+      const res = await fetch("/api/quote", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-    if (res.ok) {
-      setStatus("sent");
-      form.reset();
-    } else {
+      const data = await res.json().catch(() => null);
+
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+        void loadCaptcha();
+        return;
+      }
+
+      if (data?.error === "captcha") {
+        setErrorMessage("Please check the math answer and try again.");
+        void loadCaptcha();
+      } else {
+        setErrorMessage("Something went wrong. Please call or text instead.");
+      }
+
       setStatus("error");
+    } catch (error) {
+      console.error("Quote submit error:", error);
+      setStatus("error");
+      setErrorMessage("Something went wrong. Please call or text instead.");
     }
   }
 
@@ -45,7 +137,7 @@ export default function QuoteForm() {
           <div className="mt-8 space-y-4 text-white/75">
             <p className="flex items-center gap-3">
               <FaPhone className="text-[var(--pink)]" /> Lili (870) 260-4536
-              <FaPhone className="text-[var(--pink)]" /> Lyn  (870) 997-7893
+              <FaPhone className="text-[var(--pink)]" /> Lyn (870) 997-7893
             </p>
             <p className="flex items-center gap-3">
               <FaEnvelope className="text-[var(--pink)]" /> lynandlilistidyhouse@gmail.com
@@ -86,9 +178,42 @@ export default function QuoteForm() {
               rows={5}
               className="input-style sm:col-span-2"
             />
+
+            <div className="sm:col-span-2 rounded-2xl border border-black/10 bg-black/[0.03] p-4">
+              <label htmlFor="captchaAnswer" className="block text-sm font-bold">
+                Quick human check: {captchaLoading ? "Loading..." : captcha?.question}
+              </label>
+              <input
+                id="captchaAnswer"
+                name="captchaAnswer"
+                type="number"
+                inputMode="numeric"
+                required
+                disabled={captchaLoading || !captcha}
+                placeholder="Your answer"
+                className="input-style mt-2 w-full"
+              />
+              <p className="mt-2 text-xs text-black/55">
+                This helps us keep automated quote spam out of the inbox.
+              </p>
+            </div>
+
+            <div className="absolute left-[-10000px] top-auto h-px w-px overflow-hidden" aria-hidden="true">
+              <label htmlFor="companyWebsite">Leave this field empty</label>
+              <input
+                id="companyWebsite"
+                name="companyWebsite"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
           </div>
 
-          <button disabled={status === "loading"} className="btn-primary mt-5 w-full">
+          <button
+            disabled={status === "loading" || captchaLoading || !captcha}
+            className="btn-primary mt-5 w-full disabled:cursor-not-allowed disabled:opacity-60"
+          >
             {status === "loading" ? "Sending..." : <>Request Quote <FaPaperPlane /></>}
           </button>
 
@@ -100,7 +225,7 @@ export default function QuoteForm() {
 
           {status === "error" && (
             <p className="mt-4 text-sm font-bold text-red-700">
-              Something went wrong. Please call or text instead.
+              {errorMessage || "Something went wrong. Please call or text instead."}
             </p>
           )}
         </form>
