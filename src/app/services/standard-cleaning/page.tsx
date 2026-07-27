@@ -16,14 +16,14 @@ import {
 const service = getService("standard-cleaning");
 
 export const metadata: Metadata = {
-  title: "Standard House Cleaning in Glenwood, Amity, Arkadelphia & Hot Springs AR | Lyn & Lili’s",
+  title: "Standard House Cleaning in Southwest Arkansas",
   description:
     "Weekly, biweekly, and routine house cleaning for busy homeowners in Glenwood, Amity, Arkadelphia, Hot Springs, and nearby Arkansas areas.",
   alternates: {
     canonical: absoluteUrl("/services/standard-cleaning"),
   },
   openGraph: {
-    title: "Standard House Cleaning in Glenwood, Amity, Arkadelphia & Hot Springs AR | Lyn & Lili’s",
+    title: "Standard House Cleaning in Southwest Arkansas",
     description:
       "Weekly, biweekly, and routine house cleaning for busy homeowners in Glenwood, Amity, Arkadelphia, Hot Springs, and nearby Arkansas areas.",
     url: absoluteUrl("/services/standard-cleaning"),

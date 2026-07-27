@@ -38,7 +38,7 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Deep Cleaning Services in Hot Springs, AR | Lyn & Lili’s",
+  title: "Deep Cleaning Services in Hot Springs, AR",
   description:
     "Detailed deep cleaning services in Hot Springs, Arkansas for homes, lake houses, rentals, vacation properties, move-ins, and one-time cleaning resets.",
   alternates: {

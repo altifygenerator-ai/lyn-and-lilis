@@ -11,9 +11,12 @@ import {
 } from "react-icons/fa6";
 
 export const metadata: Metadata = {
-  title: "About Lyn & Lili’s | Tidy House Home Services",
+  title: "About Our Family-Run Cleaning Service",
   description:
     "Learn about Lyn & Lili’s Tidy House Home Services, a local family-run cleaning service serving Amity, Glenwood, Arkadelphia, Hot Springs, and surrounding Arkansas areas.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const values = [

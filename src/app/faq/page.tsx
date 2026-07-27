@@ -6,9 +6,12 @@ import { faqs } from "@/data/faqs";
 import { FaArrowLeft, FaCircleQuestion } from "react-icons/fa6";
 
 export const metadata: Metadata = {
-  title: "FAQ | Lyn & Lili’s Tidy House Home Services",
+  title: "Cleaning Service FAQ",
   description:
     "Frequently asked questions about Lyn & Lili’s home cleaning, deep cleaning, move-out cleaning, Airbnb cleaning, and professional building cleaning services.",
+  alternates: {
+    canonical: "/faq",
+  },
 };
 
 export default function FAQPage() {

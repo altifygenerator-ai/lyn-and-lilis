@@ -297,7 +297,7 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
 
   if (!location || !service) {
     return {
-      title: "Cleaning Services | Lyn & Lili’s",
+      title: "Cleaning Services",
       description: "Local cleaning services for homes, rentals, and small businesses.",
     };
   }
@@ -306,7 +306,7 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
 
   if (serviceSlug === "tobacco-residue-wall-cleaning") {
     return {
-      title: `Nicotine-Stained Wall Cleaning in ${cityState} | Lyn & Lili’s`,
+      title: `Nicotine-Stained Wall Cleaning in ${cityState}`,
       description: `Tobacco residue and smoke-stained wall cleaning in ${cityState} for rentals, inherited homes, property turnovers, and pre-paint surface washing.`,
     };
   }
@@ -321,7 +321,7 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
 
   if (locationSlug === "hot-springs-ar" && serviceSlug === "deep-cleaning") {
     return {
-      title: "Deep Cleaning Services in Hot Springs, AR | Lyn & Lili’s",
+      title: "Deep Cleaning Services in Hot Springs, AR",
       description:
         "Detailed deep cleaning services in Hot Springs, Arkansas for homes, lake houses, rentals, vacation properties, move-ins, and one-time cleaning resets.",
     };
@@ -376,7 +376,7 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
   }
 
   return {
-    title: `${service.title} in ${cityState} | Lyn & Lili’s`,
+    title: `${service.title} in ${cityState}`,
     description: `${service.title} for homes, rentals, and properties in ${cityState}. Local cleaning help for ${location.pageFocus}.`,
   };
 }

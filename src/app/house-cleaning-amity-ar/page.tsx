@@ -6,7 +6,7 @@ import { locations } from "@/data/locations";
 const location = locations.find((item) => item.slug === "amity-ar");
 
 export const metadata: Metadata = {
-  title: "House Cleaning Services in Amity, AR | Lyn & Lili’s",
+  title: "House Cleaning Services in Amity, AR",
   description:
     "House cleaning, deep cleaning, move-out cleaning, Airbnb turnover cleaning, and small building cleaning in Amity, Arkansas and nearby areas.",
   alternates: {

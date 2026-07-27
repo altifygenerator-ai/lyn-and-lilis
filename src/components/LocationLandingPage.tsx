@@ -385,7 +385,7 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
         <section className="bg-[var(--pink-soft)] py-16">
           <div className="container-custom px-5">
             <h2 className="font-heading text-3xl font-bold text-[var(--gray-dark)]">
-              Popular cleaning searches for {location.city}
+              Cleaning help available around {location.city}
             </h2>
 
             <div className="mt-6 grid gap-3 md:grid-cols-3">
@@ -400,12 +400,13 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
               ))}
             </div>
 
-            {location.localKeywords?.length ? (
-              <p className="mt-6 max-w-3xl text-sm leading-6 text-black/55">
-                People in this area often look for help with{" "}
-                {location.localKeywords.join(", ")}.
-              </p>
-            ) : null}
+            <p className="mt-6 max-w-3xl text-sm leading-6 text-black/60">
+              We help homeowners, renters, landlords, and rental hosts in{" "}
+              {location.city} and nearby communities including{" "}
+              {location.nearbyAreas.join(", ")} with routine cleaning, deep
+              cleans, move-in and move-out work, and other practical home
+              services.
+            </p>
           </div>
         </section>
 

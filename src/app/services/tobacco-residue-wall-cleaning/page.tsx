@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     canonical: absoluteUrl(canonicalPath),
   },
   openGraph: {
-    title: "Tobacco Residue & Nicotine-Stained Wall Cleaning | Lyn & Lili’s",
+    title: "Tobacco Residue & Nicotine-Stained Wall Cleaning",
     description:
       "Hands-on cleaning for visible tobacco film and yellow staining on washable walls, trim, doors, ceilings, and hard surfaces.",
     url: absoluteUrl(canonicalPath),

@@ -16,14 +16,14 @@ import {
 const service = getService("airbnb-cleaning");
 
 export const metadata: Metadata = {
-  title: "Airbnb Cleaning in Hot Springs, Glenwood & Lake Areas AR | Lyn & Lili’s",
+  title: "Airbnb & Vacation Rental Cleaning in Southwest Arkansas",
   description:
     "Airbnb cleaning and vacation rental turnover cleaning for short-term rentals, cabins, lake homes, and guest-ready properties in Hot Springs, Glenwood, Lake Hamilton, and nearby Arkansas areas.",
   alternates: {
     canonical: absoluteUrl("/services/airbnb-cleaning"),
   },
   openGraph: {
-    title: "Airbnb Cleaning in Hot Springs, Glenwood & Lake Areas AR | Lyn & Lili’s",
+    title: "Airbnb & Vacation Rental Cleaning in Southwest Arkansas",
     description:
       "Airbnb cleaning and vacation rental turnover cleaning for short-term rentals, cabins, lake homes, and guest-ready properties in Hot Springs, Glenwood, Lake Hamilton, and nearby Arkansas areas.",
     url: absoluteUrl("/services/airbnb-cleaning"),

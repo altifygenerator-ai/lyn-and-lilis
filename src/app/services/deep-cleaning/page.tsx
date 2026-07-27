@@ -16,14 +16,14 @@ import {
 const service = getService("deep-cleaning");
 
 export const metadata: Metadata = {
-  title: "Deep Cleaning Services in Hot Springs, Glenwood, Arkadelphia & Amity AR | Lyn & Lili’s",
+  title: "Deep Cleaning Services in Southwest Arkansas",
   description:
     "Detailed deep cleaning for homes, cabins, rentals, lake homes, and lived-in spaces in Hot Springs, Glenwood, Arkadelphia, Amity, and nearby Arkansas areas.",
   alternates: {
     canonical: absoluteUrl("/services/deep-cleaning"),
   },
   openGraph: {
-    title: "Deep Cleaning Services in Hot Springs, Glenwood, Arkadelphia & Amity AR | Lyn & Lili’s",
+    title: "Deep Cleaning Services in Southwest Arkansas",
     description:
       "Detailed deep cleaning for homes, cabins, rentals, lake homes, and lived-in spaces in Hot Springs, Glenwood, Arkadelphia, Amity, and nearby Arkansas areas.",
     url: absoluteUrl("/services/deep-cleaning"),

@@ -23,9 +23,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.lynandlilistidyhouse.com"),
 
   title: {
-    default:
-      "Lyn & Lili’s Tidy House Home Services | Cleaning Services in Southwest Arkansas",
-    template: "%s | Lyn & Lili’s Cleaning Services",
+    default: "House Cleaning in Southwest Arkansas | Lyn & Lili’s Tidy House",
+    template: "%s | Lyn & Lili’s",
   },
 
   description:
@@ -161,10 +160,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-
-  alternates: {
-    canonical: "https://www.lynandlilistidyhouse.com",
   },
 };
 
