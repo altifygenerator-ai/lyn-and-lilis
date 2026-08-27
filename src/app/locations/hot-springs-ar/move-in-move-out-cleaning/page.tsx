@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ServicePricingSection from "@/components/ServicePricingSection";
 import { notFound } from "next/navigation";
 import {
   absoluteUrl,
@@ -19,6 +20,10 @@ const service = getService("move-in-move-out-cleaning");
 const canonicalPath = "/locations/hot-springs-ar/move-in-move-out-cleaning";
 
 const faqs = [
+  {
+    q: "How much does move-in or move-out cleaning cost in Hot Springs?",
+    a: "Move-in and move-out cleaning starts at $300. Typical 3-bedroom homes often fall around $325–$350, 4-bedroom homes around $375–$400, and 5-bedroom homes around $425–$475. Larger or heavily soiled properties can be $500 or more.",
+  },
   {
     q: "Do you offer move-out cleaning in Hot Springs, AR?",
     a: "Yes. We offer move-out cleaning for renters, landlords, sellers, homeowners, and property owners in Hot Springs and nearby areas.",
@@ -132,12 +137,14 @@ export default function HotSpringsMoveOutCleaningPage() {
                 </p>
 
                 <p className="mt-5 font-semibold">
-                  Starting around $250–$450 depending on size and condition.
+                  Move-in and move-out cleaning starts at $300. Larger homes, extra bathrooms, appliances, cabinets, and heavier condition can increase the quote.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
+        <ServicePricingSection serviceSlug={service.slug} />
 
         <section className="section section-soft">
           <div className="container">

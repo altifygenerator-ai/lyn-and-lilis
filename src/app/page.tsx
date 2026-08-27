@@ -13,6 +13,7 @@ import BeforeAfterSection from "@/components/BeforeAfterSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import SeniorPricingSection from "@/components/SeniorPricingSection";
 import TobaccoWallCleaningFeature from "@/components/TobaccoWallCleaningFeature";
+import BookingPaymentSection from "@/components/BookingPaymentSection";
 
 export const metadata: Metadata = {
   alternates: {
@@ -83,6 +84,7 @@ export default function Home() {
         <ReviewsSection />
         <AboutPreview />
         <ServiceAreas />
+        <BookingPaymentSection />
         <QuoteForm />
       </main>
 

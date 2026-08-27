@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa6";
 import { getServiceImages } from "@/data/routeMaps";
 import type { Service } from "@/data/services";
+import ServicePricingSection from "@/components/ServicePricingSection";
 
 export default function ServicePageContent({ service }: { service: Service }) {
   const Icon = service.icon;
@@ -270,6 +271,8 @@ export default function ServicePageContent({ service }: { service: Service }) {
           </div>
         </div>
       </section>
+
+      <ServicePricingSection serviceSlug={service.slug} />
 
       {service.comparison ? (
         <section className="section-padding bg-[var(--pink-soft)]">

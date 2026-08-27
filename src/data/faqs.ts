@@ -22,7 +22,17 @@ export const faqs = [
   {
     question: "How does pricing work?",
     answer:
-      "Pricing depends on the size of the home, the type of cleaning needed, the condition of the space, and any add-ons requested. We give clear quotes before starting.",
+      "Standard cleaning starts at $100, deep cleaning starts at $250, and move-in or move-out cleaning starts at $300. Bedroom count is only part of the quote. Square footage, bathrooms, condition, buildup, pet hair, add-ons, and the amount of work can move the price higher, especially in larger homes. We give a clear quote before starting.",
+  },
+  {
+    question: "Do you require a booking deposit?",
+    answer:
+      "One-time jobs of $200 or more may require a 25% booking deposit to reserve the appointment. The deposit is applied to the final balance. With at least 24 hours' notice, the deposit can be transferred to a new date. Late cancellations or no-shows may forfeit the deposit.",
+  },
+  {
+    question: "When is payment due after the cleaning?",
+    answer:
+      "Payment is due when the service is completed and must be received within one hour for every customer. If a balance is still unpaid after that one-hour window, a $15 late payment fee may be added. Any outstanding balance and applicable late fee must be cleared before another appointment is scheduled.",
   },
   {
     question: "Do you clean nicotine-stained walls or tobacco residue?",

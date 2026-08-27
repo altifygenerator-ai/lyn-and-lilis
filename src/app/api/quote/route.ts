@@ -145,7 +145,10 @@ export async function POST(request: Request) {
     const email = escapeHtml(body.email);
     const service = escapeHtml(body.service);
     const location = escapeHtml(body.location);
-    const homeSize = escapeHtml(body.homeSize);
+    const bedrooms = escapeHtml(body.bedrooms);
+    const bathrooms = escapeHtml(body.bathrooms);
+    const squareFeet = escapeHtml(body.squareFeet);
+    const condition = escapeHtml(body.condition);
     const message = escapeHtml(body.message);
 
     if (!name || !phone || !service) {
@@ -167,7 +170,10 @@ export async function POST(request: Request) {
         <p><strong>Email:</strong> ${email || "Not provided"}</p>
         <p><strong>Service:</strong> ${service}</p>
         <p><strong>Location:</strong> ${location || "Not provided"}</p>
-        <p><strong>Home Size / Details:</strong> ${homeSize || "Not provided"}</p>
+        <p><strong>Bedrooms:</strong> ${bedrooms || "Not provided"}</p>
+        <p><strong>Bathrooms:</strong> ${bathrooms || "Not provided"}</p>
+        <p><strong>Approx. Square Footage:</strong> ${squareFeet || "Not provided"}</p>
+        <p><strong>Current Condition:</strong> ${condition || "Not provided"}</p>
         <p><strong>Message:</strong></p>
         <p>${message || "No message provided"}</p>
       `,

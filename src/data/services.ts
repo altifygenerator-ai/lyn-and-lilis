@@ -14,7 +14,7 @@ export const services = [
   {
     slug: "standard-cleaning",
     title: "Standard Cleaning",
-    price: "Starting around $100–$140",
+    price: "Starting at $100",
     icon: FaBroom,
 
     seoHeadline: "Weekly & Biweekly House Cleaning for Busy Arkansas Homes",
@@ -120,6 +120,10 @@ export const services = [
 
     faq: [
       {
+        q: "How much does standard house cleaning cost?",
+        a: "Standard cleaning starts at $100. Typical maintained homes may fall around $100 for a small 1–2 bedroom home, $125 for a typical 3 bedroom, $150 for a typical 4 bedroom, and $175 for a typical 5 bedroom. Larger square footage, extra bathrooms, pet hair, buildup, and other added work can increase the quote.",
+      },
+      {
         q: "What is included in standard house cleaning?",
         a: "Standard cleaning usually includes bathrooms, kitchen wipe-downs, dusting, floors, trash removal, high-touch surfaces, and main living areas. The exact details depend on the home and what is agreed on before the cleaning.",
       },
@@ -141,7 +145,7 @@ export const services = [
   {
     slug: "deep-cleaning",
     title: "Deep Cleaning",
-    price: "Starting around $220–$350",
+    price: "Starting at $250",
     icon: FaSprayCanSparkles,
 
     seoHeadline: "Detailed Deep Cleaning for Homes That Need a Real Reset",
@@ -255,6 +259,10 @@ export const services = [
     layoutOrder: ["unique", "details", "includes", "bestFor", "faq", "links"],
 
     faq: [
+      {
+        q: "How much does a deep cleaning cost?",
+        a: "Deep cleaning starts at $250. A typical 3-bedroom home starts around $250, a typical 4-bedroom around $300, and a typical 5-bedroom around $350. Square footage and condition still matter, so a large 3-bedroom home can be quoted above the normal starting point.",
+      },
       {
         q: "When should I book a deep cleaning?",
         a: "Deep cleaning is best when the home needs more than routine upkeep, such as before guests, after a busy season, before recurring cleaning starts, or when buildup has collected.",
@@ -424,7 +432,7 @@ export const services = [
   {
     slug: "move-in-move-out-cleaning",
     title: "Move-In / Move-Out Cleaning",
-    price: "Starting around $250–$450",
+    price: "Starting at $300",
     icon: FaHouseChimney,
 
     seoHeadline:
@@ -543,6 +551,10 @@ export const services = [
     layoutOrder: ["unique", "bestFor", "details", "includes", "links", "faq"],
 
     faq: [
+      {
+        q: "How much does move-in or move-out cleaning cost?",
+        a: "Move-in and move-out cleaning starts at $300. Typical 3-bedroom homes often fall around $325–$350, 4-bedroom homes around $375–$400, and 5-bedroom homes around $425–$475. Larger or heavily soiled properties can be $500 or more.",
+      },
       {
         q: "Do you clean empty homes after someone moves out?",
         a: "Yes. We clean empty homes, apartments, and rentals after move-out or before the next person moves in.",
@@ -684,6 +696,10 @@ export const services = [
 
     faq: [
       {
+        q: "How much does Airbnb or rental turnover cleaning cost?",
+        a: "Pricing is based on the property, bed count, laundry, turnover window, and travel. A normal 1-bedroom turnover may start around $100–$125, 2 bedrooms around $125–$150, 3 bedrooms around $150–$190, and 4 bedrooms around $185–$225. Larger cabins and properties with 5 or more beds usually start around $225.",
+      },
+      {
         q: "Do you clean Airbnbs between guests?",
         a: "Yes. We clean short-term rentals between guest stays and help reset the space for the next booking.",
       },
@@ -812,6 +828,10 @@ export const services = [
 
     faq: [
       {
+        q: "How much does office or professional building cleaning cost?",
+        a: "Small office visits often start around $100. Medium professional spaces commonly fall around $125–$200 per visit, while larger or higher-traffic buildings are quoted around the actual space and cleaning schedule.",
+      },
+      {
         q: "Do you clean small offices?",
         a: "Yes. We clean small offices, professional spaces, waiting areas, bathrooms, breakrooms, and common areas.",
       },
@@ -833,7 +853,7 @@ export const services = [
   {
     slug: "home-organization",
     title: "Home Organization & Decluttering",
-    price: "Starting around $175",
+    price: "Starting at $175",
     icon: FaBoxOpen,
 
     seoHeadline: "Home Organization & Decluttering for Closets, Pantries & Busy Homes",
@@ -939,6 +959,10 @@ export const services = [
 
     faq: [
       {
+        q: "How much does home organization cost?",
+        a: "Home organization starts at $175. Small pantries and closets often fall around $175–$225, two or three organizing areas around $250–$325, and larger multi-room projects around $350 or more depending on the amount of sorting, folding, and resetting involved.",
+      },
+      {
         q: "Do you organize closets and pantries?",
         a: "Yes. We help organize closets, pantries, cabinets, laundry rooms, and other everyday spaces that need sorting, cleaning, and a more practical setup.",
       },
@@ -960,7 +984,7 @@ export const services = [
   {
     slug: "senior-home-help",
     title: "Senior Home Cleaning & Household Help",
-    price: "Starting around $100–$140",
+    price: "Starting at $100",
     icon: FaHeart,
 
     seoHeadline: "Senior Home Cleaning & Light Household Help with a Personal Touch",
@@ -1065,6 +1089,10 @@ export const services = [
 
     faq: [
       {
+        q: "How much does senior home cleaning and household help cost?",
+        a: "Senior home cleaning and household help starts at $100. Smaller routine visits often fall around $100–$140, while longer visits that combine cleaning, laundry, bedding, or organization may be $150–$200 or more. Recurring service is quoted around the home and schedule.",
+      },
+      {
         q: "What kind of help do you provide for seniors?",
         a: "We provide non-medical household help such as house cleaning, laundry and folding, bedding changes, trash removal, and light organization based on what the home needs.",
       },
@@ -1086,7 +1114,7 @@ export const services = [
   {
     slug: "holiday-special-occasion-cleaning",
     title: "Holiday & Special Occasion Cleaning",
-    price: "Starting around $175",
+    price: "Starting at $175",
     icon: FaChampagneGlasses,
 
     seoHeadline: "Holiday, Guest-Ready & Post-Party Cleaning for Arkansas Homes",
@@ -1191,6 +1219,10 @@ export const services = [
     layoutOrder: ["unique", "includes", "details", "bestFor", "links", "faq"],
 
     faq: [
+      {
+        q: "How much does holiday or special occasion cleaning cost?",
+        a: "Holiday and special occasion cleaning starts at $175. Typical guest-ready whole-home cleaning often falls around $200–$300, while larger or deeper event preparation can be $300 or more. Post-party cleanup is quoted around the condition, timing, and amount of work.",
+      },
       {
         q: "Can I book cleaning before and after a party?",
         a: "Yes, depending on availability. You can request a guest-ready cleaning before the gathering, an after-party reset, or a two-visit package for both.",

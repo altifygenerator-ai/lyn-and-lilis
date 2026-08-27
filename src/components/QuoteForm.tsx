@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useCallback, useEffect, useState } from "react";
 import { FaPaperPlane, FaPhone, FaEnvelope, FaClock } from "react-icons/fa6";
 
@@ -170,7 +172,17 @@ export default function QuoteForm() {
             </select>
 
             <input name="location" placeholder="City / area" className="input-style" />
-            <input name="homeSize" placeholder="Home size or details" className="input-style" />
+            <input name="bedrooms" type="number" min="0" step="1" placeholder="Bedrooms" className="input-style" />
+            <input name="bathrooms" type="number" min="0" step="0.5" placeholder="Bathrooms" className="input-style" />
+            <input name="squareFeet" type="number" min="0" step="1" placeholder="Approx. square footage" className="input-style" />
+
+            <select name="condition" className="input-style sm:col-span-2">
+              <option value="">Current condition (optional)</option>
+              <option>Maintained / routine upkeep</option>
+              <option>Needs some extra attention</option>
+              <option>Pretty behind / noticeable buildup</option>
+              <option>Not sure</option>
+            </select>
 
             <textarea
               name="message"
@@ -216,6 +228,14 @@ export default function QuoteForm() {
           >
             {status === "loading" ? "Sending..." : <>Request Quote <FaPaperPlane /></>}
           </button>
+
+          <p className="mt-4 text-xs leading-6 text-black/55">
+            For one-time jobs of $200 or more, a 25% booking deposit may be
+            required. For all customers, payment is due when service is complete
+            and must be received within one hour. If payment is still unpaid after
+            that one-hour window, a $15 late fee may be added. If you choose to
+            book, our <Link href="/policies" className="font-bold underline underline-offset-2">booking and payment policies</Link> apply.
+          </p>
 
           {status === "sent" && (
             <p className="mt-4 text-sm font-bold text-green-700">

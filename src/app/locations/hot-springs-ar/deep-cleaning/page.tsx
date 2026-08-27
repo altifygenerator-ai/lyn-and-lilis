@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ServicePricingSection from "@/components/ServicePricingSection";
 import { notFound } from "next/navigation";
 import {
   absoluteUrl,
@@ -19,6 +20,10 @@ const service = getService("deep-cleaning");
 const canonicalPath = "/locations/hot-springs-ar/deep-cleaning";
 
 const faqs = [
+  {
+    q: "How much does deep cleaning cost in Hot Springs?",
+    a: "Deep cleaning starts at $250. A typical 3-bedroom home starts around $250, a typical 4-bedroom around $300, and a typical 5-bedroom around $350. Larger square footage, extra bathrooms, and heavier condition can raise the quote.",
+  },
   {
     q: "Do you offer deep cleaning in Hot Springs, AR?",
     a: "Yes. We offer detailed deep cleaning for homes, rentals, lake houses, move-in spaces, and one-time cleaning resets in Hot Springs and nearby areas.",
@@ -133,12 +138,14 @@ export default function HotSpringsDeepCleaningPage() {
                 </p>
 
                 <p className="mt-5 font-semibold">
-                  Starting around $220–$350 depending on size and condition.
+                  Deep cleaning starts at $250. Bedroom count is a starting point, but square footage and condition can move the quote higher.
                 </p>
               </div>
             </div>
           </div>
         </section>
+
+        <ServicePricingSection serviceSlug={service.slug} />
 
         <section className="section section-soft">
           <div className="container">

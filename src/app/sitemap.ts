@@ -18,6 +18,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.68,
     },
+    {
+      url: `${baseUrl}/policies`,
+      changeFrequency: "monthly",
+      priority: 0.62,
+    },
 
     // Hardcoded city landing pages.
     {

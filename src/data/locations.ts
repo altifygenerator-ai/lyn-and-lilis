@@ -63,7 +63,7 @@ export const locations = [
     faq: [
       {
         q: "How much does house cleaning cost in Amity, AR?",
-        a: "Most homes fall somewhere between $100 and $350 depending on the size, condition, and type of cleaning needed. We give a clear quote based on your space.",
+        a: "Standard cleaning starts at $100 and deep cleaning starts at $250. Final pricing depends on square footage, bedrooms, bathrooms, condition, and the type of cleaning needed, so larger homes can be quoted higher.",
       },
       {
         q: "Do you offer move-out cleaning in Amity?",
@@ -227,7 +227,7 @@ export const locations = [
       },
       {
         q: "How much does cleaning cost in Malvern?",
-        a: "Most homes fall somewhere between $100 and $350 depending on the size, condition, and type of cleaning needed. We give a clear quote based on the actual space.",
+        a: "Standard cleaning starts at $100 and deep cleaning starts at $250. Final pricing depends on square footage, bedrooms, bathrooms, condition, and the type of cleaning needed, so larger homes can be quoted higher.",
       },
       {
         q: "Can I book a one-time clean in Malvern?",

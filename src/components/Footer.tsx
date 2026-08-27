@@ -53,6 +53,10 @@ export default function Footer() {
                 FAQ
               </Link>
 
+              <Link href="/policies" className="block hover:text-[var(--pink)]">
+                Booking & Payment Policies
+              </Link>
+
               <Link href="/#services" className="block hover:text-[var(--pink)]">
                 Services
               </Link>

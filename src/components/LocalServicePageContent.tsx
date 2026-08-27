@@ -3,6 +3,7 @@ import { FaArrowRight, FaCheck } from "react-icons/fa6";
 import { getLocalServiceDetails, getServiceImages } from "@/data/routeMaps";
 import type { Location } from "@/data/locations";
 import type { Service } from "@/data/services";
+import ServicePricingSection from "@/components/ServicePricingSection";
 
 export default function LocalServicePageContent({
   location,
@@ -137,6 +138,8 @@ export default function LocalServicePageContent({
           </div>
         </div>
       </section>
+
+      <ServicePricingSection serviceSlug={service.slug} />
 
       <section className="section-padding bg-white">
         <div className="container-custom px-5">
