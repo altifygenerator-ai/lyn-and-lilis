@@ -4,6 +4,7 @@ import type { Service } from "@/data/services";
 import type { Location } from "@/data/locations";
 
 export const siteUrl = "https://www.lynandlilistidyhouse.com";
+export const businessId = `${siteUrl}/#cleaningservice`;
 
 export function getService(slug: string) {
   return services.find((service) => service.slug === slug);
@@ -34,16 +35,37 @@ export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "CleaningService",
-    "@id": `${siteUrl}/#cleaningservice`,
+    "@id": businessId,
     name: "Lyn & Lili’s Tidy House Home Services",
+    alternateName: "Lyn & Lili’s Tidy House",
     url: siteUrl,
+    logo: absoluteUrl("/icon-512.png"),
+    image: absoluteUrl("/images/hero.png"),
     telephone: "+18702604536",
+    email: "lynandlilistidyhouse@gmail.com",
+    priceRange: "$$",
+    description:
+      "Locally owned house cleaning and home services serving Hot Springs, Arkadelphia, Malvern, Glenwood, Amity, and nearby Southwest Arkansas communities.",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "https://schema.org/Monday",
+          "https://schema.org/Tuesday",
+          "https://schema.org/Wednesday",
+          "https://schema.org/Thursday",
+          "https://schema.org/Friday",
+        ],
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
     areaServed: [
-      { "@type": "Place", name: "Amity, Arkansas" },
-      { "@type": "Place", name: "Glenwood, Arkansas" },
-      { "@type": "Place", name: "Arkadelphia, Arkansas" },
       { "@type": "Place", name: "Hot Springs, Arkansas" },
+      { "@type": "Place", name: "Arkadelphia, Arkansas" },
       { "@type": "Place", name: "Malvern, Arkansas" },
+      { "@type": "Place", name: "Glenwood, Arkansas" },
+      { "@type": "Place", name: "Amity, Arkansas" },
       { "@type": "Place", name: "Caddo Gap, Arkansas" },
       { "@type": "Place", name: "Lake Greeson" },
       { "@type": "Place", name: "Lake Hamilton" },
@@ -57,7 +79,9 @@ export function localBusinessSchema() {
     ],
     serviceType: [
       "House Cleaning",
-      "Standard Cleaning",
+      "Recurring House Cleaning",
+      "Weekly House Cleaning",
+      "Biweekly House Cleaning",
       "Deep Cleaning",
       "Tobacco Residue and Nicotine-Stained Wall Cleaning",
       "Move-Out Cleaning",
@@ -75,35 +99,72 @@ export function localBusinessSchema() {
   };
 }
 
+export function locationServiceSchema(location: Location) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${siteUrl}${location.href}#service`,
+    name: `House Cleaning Services in ${location.city}, ${location.state}`,
+    serviceType: "House Cleaning",
+    description: location.intro,
+    url: `${siteUrl}${location.href}`,
+    provider: {
+      "@type": "CleaningService",
+      "@id": businessId,
+    },
+    areaServed: {
+      "@type": "Place",
+      name: `${location.city}, ${location.state}`,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `Cleaning services in ${location.city}`,
+      itemListElement: location.priorityServiceSlugs.map((slug) => {
+        const service = services.find((item) => item.slug === slug);
+        return {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: service?.title ?? slug,
+          },
+        };
+      }),
+    },
+  };
+}
+
 export function serviceSchema(service: Service, location?: Location) {
+  const isRecurringLocal =
+    Boolean(location) && service.slug === "standard-cleaning";
+  const schemaName = isRecurringLocal
+    ? `Recurring House Cleaning in ${location!.city}, ${location!.state}`
+    : location
+      ? `${service.title} in ${location.city}, ${location.state}`
+      : service.title;
+
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": location
       ? `${siteUrl}/locations/${location.slug}/${service.slug}#service`
       : `${siteUrl}/services/${service.slug}#service`,
-    name: location
-      ? `${service.title} in ${location.city}, ${location.state}`
-      : service.title,
-    serviceType: service.title,
+    name: schemaName,
+    serviceType: isRecurringLocal ? "Recurring House Cleaning" : service.title,
     description: location
-      ? `${service.title} in ${location.city}, ${location.state}. ${service.description}`
+      ? `${schemaName}. ${service.description}`
       : service.metaDescription,
     provider: {
       "@type": "CleaningService",
-      "@id": `${siteUrl}/#cleaningservice`,
-      name: "Lyn & Lili’s Tidy House Home Services",
-      url: siteUrl,
-      telephone: "+18702604536",
+      "@id": businessId,
     },
     areaServed: location
       ? { "@type": "Place", name: `${location.city}, ${location.state}` }
       : [
-          { "@type": "Place", name: "Amity, Arkansas" },
-          { "@type": "Place", name: "Glenwood, Arkansas" },
-          { "@type": "Place", name: "Arkadelphia, Arkansas" },
           { "@type": "Place", name: "Hot Springs, Arkansas" },
+          { "@type": "Place", name: "Arkadelphia, Arkansas" },
           { "@type": "Place", name: "Malvern, Arkansas" },
+          { "@type": "Place", name: "Glenwood, Arkansas" },
+          { "@type": "Place", name: "Amity, Arkansas" },
         ],
   };
 }

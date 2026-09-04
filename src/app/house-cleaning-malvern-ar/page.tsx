@@ -6,9 +6,9 @@ import { locations } from "@/data/locations";
 const location = locations.find((item) => item.slug === "malvern-ar");
 
 export const metadata: Metadata = {
-  title: "House Cleaning Services in Malvern, AR",
+  title: "House Cleaning in Malvern, AR",
   description:
-    "House cleaning, deep cleaning, move-in and move-out cleaning, rental cleaning, and small business cleaning in Malvern, Arkansas and nearby areas.",
+    "Local house cleaning in Malvern, AR for homes, rentals, and busy households. Recurring cleaning, deep cleaning, move-in, move-out, and small office cleaning.",
   alternates: {
     canonical: "/house-cleaning-malvern-ar",
   },

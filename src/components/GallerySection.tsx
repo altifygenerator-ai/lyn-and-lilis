@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
@@ -193,16 +194,22 @@ export default function GallerySection() {
               aria-label="Click to view next gallery image"
             >
               <AnimatePresence mode="wait">
-                <motion.img
+                <motion.div
                   key={activeImage.src}
-                  src={activeImage.src}
-                  alt={activeImage.alt}
                   initial={{ opacity: 0, scale: 1.02 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.98 }}
                   transition={{ duration: 0.35 }}
-                  className="h-[360px] w-full object-contain sm:h-[500px] lg:h-[620px]"
-                />
+                  className="relative h-[360px] w-full sm:h-[500px] lg:h-[620px]"
+                >
+                  <Image
+                    src={activeImage.src}
+                    alt={activeImage.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1200px"
+                    className="object-contain"
+                  />
+                </motion.div>
               </AnimatePresence>
             </button>
 
@@ -224,9 +231,12 @@ export default function GallerySection() {
                     : "border-transparent opacity-70 hover:opacity-100"
                 }`}
               >
-                <img
+                <Image
                   src={image.src}
                   alt={image.alt}
+                  width={144}
+                  height={112}
+                  sizes="144px"
                   className="h-24 w-28 object-contain sm:h-28 sm:w-36"
                 />
               </button>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const beforeAfterItems = [
   {
     title: "Kitchen reset",
@@ -117,10 +119,12 @@ export default function BeforeAfterSection() {
                   </div>
 
                   <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
-                    <img
+                    <Image
                       src={item.before}
                       alt={`${item.title} before cleaning`}
-                      className="block h-full w-full object-contain"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain"
                     />
                   </div>
                 </div>
@@ -133,10 +137,12 @@ export default function BeforeAfterSection() {
                   </div>
 
                   <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
-                    <img
+                    <Image
                       src={item.after}
                       alt={`${item.title} after cleaning`}
-                      className="block h-full w-full object-contain"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-contain"
                     />
                   </div>
                 </div>

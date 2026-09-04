@@ -1,7 +1,5 @@
 "use client";
 
-"use client";
-
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { locations } from "@/data/locations";
@@ -75,7 +73,9 @@ export default function ServiceAreas() {
                           key={service.slug}
                           className="block hover:text-[var(--pink)]"
                         >
-                          {service.title} in {location.city}
+                          {service.slug === "standard-cleaning"
+                            ? `Weekly & Biweekly Cleaning in ${location.city}`
+                            : `${service.title} in ${location.city}`}
                         </span>
                       );
                     })}

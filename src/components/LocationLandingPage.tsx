@@ -1,44 +1,24 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SeoJsonLd from "@/components/SeoJsonLd";
+import { breadcrumbSchema, localBusinessSchema, locationServiceSchema } from "@/lib/seo";
 import { services } from "@/data/services";
+import type { Location } from "@/data/locations";
 import { reviews } from "@/data/reviews";
 import { FaArrowLeft, FaArrowRight, FaLocationDot } from "react-icons/fa6";
 
 type LocationPageProps = {
-  location: {
-    slug: string;
-    href: string;
-    city: string;
-    state: string;
-    headline: string;
-    pageFocus: string;
-    intro: string;
-    localAngle: string;
-    uniqueSectionTitle: string;
-    uniqueSectionBody: string;
-    priorityServiceSlugs: string[];
-    nearbyAreas: string[];
-    details: string[];
-    internalLinks: {
-      text: string;
-      href: string;
-    }[];
-    localKeywords: string[];
-    faq: {
-      q: string;
-      a: string;
-    }[];
-  };
+  location: Location;
 };
 
 const baseUrl = "https://www.lynandlilistidyhouse.com";
 
 const hotSpringsNeedCards = [
   {
-    title: "House Cleaning in Hot Springs",
+    title: "Weekly & Biweekly Cleaning in Hot Springs",
     href: "/locations/hot-springs-ar/standard-cleaning",
-    text: "Regular home cleaning for bathrooms, kitchens, floors, dusting, and the everyday mess that builds up in busy Hot Springs homes.",
+    text: "Recurring weekly, biweekly, and routine cleaning for bathrooms, kitchens, floors, dusting, and everyday upkeep in Hot Springs homes.",
   },
   {
     title: "Deep Cleaning in Hot Springs",
@@ -111,37 +91,7 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
   const orderedServices = [...priorityServices, ...otherServices];
   const hotSpringsReviews = reviews.slice(0, 3);
 
-  const locationSchema = {
-    "@context": "https://schema.org",
-    "@type": "CleaningService",
-    name: `Lyn & Lili’s Tidy House - ${location.city}, ${location.state}`,
-    url: `${baseUrl}${location.href}`,
-    telephone: "8702604536",
-    areaServed: {
-      "@type": "City",
-      name: `${location.city}, ${location.state}`,
-    },
-    serviceType: [
-      "House Cleaning",
-      "Deep Cleaning",
-      "Tobacco Residue and Nicotine-Stained Wall Cleaning",
-      "Move-In Cleaning",
-      "Move-Out Cleaning",
-      "Airbnb Turnover Cleaning",
-      "Professional Building Cleaning",
-      ...(isHotSprings
-        ? [
-            "Home Organization and Decluttering",
-            "Senior Home Cleaning and Household Help",
-            "Holiday Cleaning",
-            "Post-Party Cleaning",
-          ]
-        : []),
-    ],
-    description: location.intro,
-  };
-
-  const faqSchema = {
+  const visibleFaqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: location.faq.map((item) => ({
@@ -154,38 +104,20 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
     })),
   };
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: `${baseUrl}/`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Service Areas",
-        item: `${baseUrl}/#areas`,
-      },
-      {
-        "@type": "ListItem",
-        position: 3,
-        name: `${location.city}, ${location.state}`,
-        item: `${baseUrl}${location.href}`,
-      },
-    ],
-  };
+  const pageBreadcrumbSchema = breadcrumbSchema([
+    { name: "Home", url: `${baseUrl}/` },
+    { name: `${location.city}, ${location.state}`, url: `${baseUrl}${location.href}` },
+  ]);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify([locationSchema, faqSchema, breadcrumbSchema]),
-        }}
+      <SeoJsonLd
+        data={[
+          localBusinessSchema(),
+          locationServiceSchema(location),
+          visibleFaqSchema,
+          pageBreadcrumbSchema,
+        ]}
       />
 
       <Header />
@@ -287,7 +219,9 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
                   className="soft-card block bg-white p-6 transition hover:-translate-y-1 hover:border-[var(--pink)]"
                 >
                   <h3 className="font-heading text-2xl font-bold text-[var(--gray-dark)]">
-                    {service.title} in {location.city}, {location.state}
+                    {service.slug === "standard-cleaning"
+                      ? `Weekly & Biweekly Cleaning in ${location.city}`
+                      : `${service.title} in ${location.city}, ${location.state}`}
                   </h3>
 
                   <p className="mt-2 text-sm font-bold text-[var(--seafoam)]">
@@ -295,8 +229,9 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
                   </p>
 
                   <p className="mt-3 text-sm leading-6 text-black/60">
-                    Local {service.title.toLowerCase()} for{" "}
-                    {location.pageFocus} in {location.city} and nearby areas.
+                    {service.slug === "standard-cleaning"
+                      ? `Recurring weekly, biweekly, and routine cleaning for homes in ${location.city} and nearby areas.`
+                      : `Local ${service.title.toLowerCase()} for ${location.pageFocus} in ${location.city} and nearby areas.`}
                   </p>
 
                   <div className="mt-5 flex flex-wrap gap-2">
@@ -311,7 +246,9 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
                   </div>
 
                   <p className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[var(--gray-dark)]">
-                    View {service.title} in {location.city} <FaArrowRight />
+                    {service.slug === "standard-cleaning"
+                      ? `View recurring cleaning in ${location.city}`
+                      : `View ${service.title} in ${location.city}`} <FaArrowRight />
                   </p>
                 </Link>
               ))}

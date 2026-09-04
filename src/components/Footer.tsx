@@ -174,7 +174,7 @@ export default function Footer() {
                   href="/locations/hot-springs-ar/standard-cleaning"
                   className="block hover:text-[var(--pink)]"
                 >
-                  House Cleaning in Hot Springs
+                  Weekly & Biweekly Cleaning in Hot Springs
                 </Link>
 
                 <Link

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaArrowLeft, FaArrowRight, FaCheck } from "react-icons/fa6";
 import { getServiceImages } from "@/data/routeMaps";
 import type { Service } from "@/data/services";
@@ -52,11 +53,15 @@ export default function ServicePageContent({ service }: { service: Service }) {
             </div>
 
             <div className="soft-card overflow-hidden bg-white p-3">
-              <img
-                src={images[0].src}
-                alt={images[0].alt}
-                className="h-[360px] w-full rounded-[1.35rem] bg-neutral-50 object-contain"
-              />
+              <div className="relative h-[360px] w-full overflow-hidden rounded-[1.35rem] bg-neutral-50">
+                <Image
+                  src={images[0].src}
+                  alt={images[0].alt}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -184,11 +189,15 @@ export default function ServicePageContent({ service }: { service: Service }) {
                     key={image.src}
                     className="soft-card overflow-hidden bg-white p-3"
                   >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="h-72 w-full rounded-[1.15rem] bg-neutral-50 object-cover"
-                    />
+                    <div className="relative h-72 w-full overflow-hidden rounded-[1.15rem] bg-neutral-50">
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                    </div>
                     <figcaption className="px-2 pb-1 pt-3 text-sm font-bold text-[var(--gray-dark)]">
                       {image.label}
                     </figcaption>
@@ -207,11 +216,15 @@ export default function ServicePageContent({ service }: { service: Service }) {
                   key={image.src}
                   className="soft-card overflow-hidden bg-white p-3"
                 >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="h-64 w-full rounded-[1.15rem] bg-neutral-50 object-contain"
-                  />
+                  <div className="relative h-64 w-full overflow-hidden rounded-[1.15rem] bg-neutral-50">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-contain"
+                    />
+                  </div>
                 </div>
               ))}
             </div>

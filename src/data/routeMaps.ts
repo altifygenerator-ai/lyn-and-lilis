@@ -61,9 +61,9 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
 export const localServiceDetails: Record<string, Record<string, string[]>> = {
   "hot-springs-ar": {
     "standard-cleaning": [
-      "House cleaning in Hot Springs is a good fit for full-time homes, lake-area houses, apartments, and busy households that need help keeping bathrooms, kitchens, floors, dusting, and main living areas under control.",
-      "This service gives Hot Springs homeowners a dependable upkeep option without jumping straight into a full deep clean every visit.",
-      "For homes near Lake Hamilton, Lake Catherine, Oaklawn, Central Avenue, Rockwell, Piney, and nearby communities, routine cleaning can help keep outdoor traffic, pollen, pet hair, and everyday mess from piling up between heavier resets.",
+      "Recurring house cleaning in Hot Springs is built for homeowners who want dependable weekly, biweekly, or routine upkeep instead of waiting until the whole home needs another deep clean.",
+      "Regular visits can focus on bathrooms, kitchens, floors, dusting, trash, and the main living areas that get used every day, with the exact priorities agreed on before service.",
+      "For homes near Lake Hamilton, Lake Catherine, Oaklawn, Central Avenue, Rockwell, Piney, and nearby communities, recurring cleaning can help keep outdoor traffic, pollen, pet hair, and everyday mess from piling up between deeper resets.",
     ],
     "deep-cleaning": [
       "Deep cleaning is a strong fit for Hot Springs homes, rentals, lake houses, and part-time properties that need more than regular upkeep.",
@@ -254,6 +254,27 @@ export function getLocalServiceFaq(locationSlug: string, serviceSlug: string) {
     ];
   }
 
+  if (serviceSlug === "standard-cleaning") {
+    return [
+      {
+        q: `Do you offer weekly or biweekly house cleaning in ${location.city}?`,
+        a: `Yes. Lyn & Lili’s offers recurring weekly, biweekly, and routine house cleaning in ${location.city}, ${location.state} and nearby areas when scheduling allows.`,
+      },
+      {
+        q: `What is included in recurring cleaning in ${location.city}?`,
+        a: "Recurring cleaning usually focuses on bathrooms, kitchen wipe-downs, dusting, floors, trash, high-touch surfaces, and main living areas. The exact priorities are agreed on before service.",
+      },
+      {
+        q: "Should I start with a deep clean before recurring service?",
+        a: "If the home has heavy buildup or has not been professionally cleaned in a while, a deep clean is often the better first visit. Homes already in manageable condition can usually start with routine cleaning.",
+      },
+      {
+        q: "Can I schedule cleaning every other week?",
+        a: "Yes. Biweekly cleaning is a common option for households that want consistent help without booking every week.",
+      },
+    ];
+  }
+
   if (serviceSlug === "tobacco-residue-wall-cleaning") {
     return [
       {
@@ -335,11 +356,10 @@ export function getLocalServiceMeta(locationSlug: string, serviceSlug: string) {
     };
   }
 
-  if (locationSlug === "hot-springs-ar" && serviceSlug === "standard-cleaning") {
+  if (serviceSlug === "standard-cleaning") {
     return {
-      title: "House Cleaning in Hot Springs, AR | Standard Cleaning",
-      description:
-        "Routine house cleaning in Hot Springs, Arkansas for full-time homes, lake-area homes, families, and regular weekly or biweekly upkeep.",
+      title: `Recurring House Cleaning in ${cityState}`,
+      description: `Weekly, biweekly, and routine recurring house cleaning in ${cityState} for bathrooms, kitchens, floors, dusting, and regular home upkeep.`,
     };
   }
 

@@ -16,16 +16,16 @@ import {
 const service = getService("standard-cleaning");
 
 export const metadata: Metadata = {
-  title: "Standard House Cleaning in Southwest Arkansas",
+  title: "Weekly & Biweekly House Cleaning in Southwest Arkansas",
   description:
-    "Weekly, biweekly, and routine house cleaning for busy homeowners in Glenwood, Amity, Arkadelphia, Hot Springs, and nearby Arkansas areas.",
+    "Recurring weekly, biweekly, and routine house cleaning for busy homeowners across Southwest Arkansas, with local service pages for each city we serve.",
   alternates: {
     canonical: absoluteUrl("/services/standard-cleaning"),
   },
   openGraph: {
-    title: "Standard House Cleaning in Southwest Arkansas",
+    title: "Weekly & Biweekly House Cleaning in Southwest Arkansas",
     description:
-      "Weekly, biweekly, and routine house cleaning for busy homeowners in Glenwood, Amity, Arkadelphia, Hot Springs, and nearby Arkansas areas.",
+      "Recurring weekly, biweekly, and routine house cleaning for busy homeowners across Southwest Arkansas, with local service pages for each city we serve.",
     url: absoluteUrl("/services/standard-cleaning"),
     siteName: "Lyn & Lili’s Tidy House",
     type: "website",

@@ -33,8 +33,8 @@ export const locations = [
 
     internalLinks: [
       {
-        text: "standard house cleaning in Amity",
-        href: "/services/standard-cleaning",
+        text: "weekly and biweekly cleaning in Amity",
+        href: "/locations/amity-ar/standard-cleaning",
       },
       {
         text: "deep cleaning services in Amity",
@@ -110,8 +110,8 @@ export const locations = [
 
     internalLinks: [
       {
-        text: "routine house cleaning in Glenwood",
-        href: "/services/standard-cleaning",
+        text: "weekly and biweekly cleaning in Glenwood",
+        href: "/locations/glenwood-ar/standard-cleaning",
       },
       {
         text: "Airbnb cleaning in Glenwood",
@@ -193,8 +193,8 @@ export const locations = [
 
     internalLinks: [
       {
-        text: "house cleaning in Malvern",
-        href: "/services/standard-cleaning",
+        text: "weekly and biweekly cleaning in Malvern",
+        href: "/locations/malvern-ar/standard-cleaning",
       },
       {
         text: "deep cleaning services in Malvern",
@@ -276,8 +276,8 @@ export const locations = [
 
     internalLinks: [
       {
-        text: "apartment cleaning in Arkadelphia",
-        href: "/services/standard-cleaning",
+        text: "weekly and biweekly cleaning in Arkadelphia",
+        href: "/locations/arkadelphia-ar/standard-cleaning",
       },
       {
         text: "move-out cleaning Arkadelphia AR",
@@ -324,11 +324,11 @@ export const locations = [
     href: "/house-cleaning-hot-springs-ar",
     city: "Hot Springs",
     state: "AR",
-    headline: "Cleaning & Home Services in Hot Springs, Arkansas",
+    headline: "House Cleaning Services in Hot Springs, Arkansas",
     pageFocus:
-      "full-time homes, lake homes, Airbnb rentals, home organization, senior household help, holiday cleaning, move-out cleaning, deep cleaning, and small office spaces",
+      "full-time homes, lake-area homes, rentals, and households that need dependable local cleaning help",
     intro:
-      "Lyn & Lili’s provides house cleaning, tobacco residue and nicotine-stained wall cleaning, home organization, senior household help, holiday and post-party cleaning, move-in and move-out cleaning, Airbnb turnovers, and small office cleaning in Hot Springs, Arkansas and nearby lake-area communities.",
+      "Lyn & Lili’s provides local house cleaning in Hot Springs, Arkansas for full-time homes, lake properties, rentals, and busy households. We also offer deep cleaning, recurring cleaning, move-in and move-out cleaning, Airbnb turnovers, tobacco residue wall cleaning, home organization, senior household help, and small office cleaning around Hot Springs and nearby lake communities.",
     localAngle:
       "Hot Springs has a mix of full-time homes, lake houses, short-term rentals, apartments, seniors, small offices, and weekend properties. Some customers need recurring house cleaning to keep up with everyday mess. Others need a closet or pantry reset, a little household help for an older loved one, a holiday clean before family arrives, or a fast rental turnover between guests.",
 
@@ -374,7 +374,7 @@ export const locations = [
 
     internalLinks: [
       {
-        text: "house cleaning in Hot Springs AR",
+        text: "weekly and biweekly cleaning in Hot Springs",
         href: "/locations/hot-springs-ar/standard-cleaning",
       },
       {

@@ -6,9 +6,9 @@ import { locations } from "@/data/locations";
 const location = locations.find((item) => item.slug === "arkadelphia-ar");
 
 export const metadata: Metadata = {
-  title: "House Cleaning Services in Arkadelphia, AR",
+  title: "House Cleaning in Arkadelphia, AR",
   description:
-    "House cleaning, apartment cleaning, deep cleaning, move-out cleaning, rental turnover cleaning, and office cleaning in Arkadelphia, Arkansas.",
+    "Local house cleaning in Arkadelphia, AR for homes, apartments, rentals, and busy households. Recurring, deep, move-out, turnover, and office cleaning available.",
   alternates: {
     canonical: "/house-cleaning-arkadelphia-ar",
   },
