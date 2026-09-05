@@ -10,6 +10,7 @@ export default function ServicePageContent({ service }: { service: Service }) {
   const images = getServiceImages(service.slug);
   const isTobaccoWallCleaning =
     service.slug === "tobacco-residue-wall-cleaning";
+  const isHomeOrganization = service.slug === "home-organization";
   const isSpecialtyHomeService = [
     "home-organization",
     "senior-home-help",
@@ -207,6 +208,71 @@ export default function ServicePageContent({ service }: { service: Service }) {
             </div>
           </section>
         </>
+      ) : isHomeOrganization ? (
+        <section className="bg-[var(--seafoam-soft)] py-20">
+          <div className="container-custom px-5">
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="font-script text-4xl text-[var(--pink)]">Real organization work</p>
+              <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
+                Real before and after closet resets.
+              </h2>
+              <p className="mt-4 leading-8 text-black/65">
+                These are real decluttering and organization jobs. The goal is not a staged closet for a photo. It is a space that is easier to use when we are done.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-8 xl:grid-cols-2">
+              {[
+                {
+                  title: "Walk-in closet declutter",
+                  before: "/images/latest-work/closet-declutter-before.webp",
+                  after: "/images/latest-work/closet-declutter-after.webp",
+                },
+                {
+                  title: "Kids closet reset",
+                  before: "/images/latest-work/kids-closet-before.webp",
+                  after: "/images/latest-work/kids-closet-after.webp",
+                },
+              ].map((item) => (
+                <div key={item.title} className="soft-card overflow-hidden bg-white p-4">
+                  <h3 className="font-heading mb-4 text-2xl font-bold text-[var(--gray-dark)]">
+                    {item.title}
+                  </h3>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    <figure>
+                      <figcaption className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-black/50">
+                        Before
+                      </figcaption>
+                      <div className="relative h-72 overflow-hidden rounded-[1.15rem] bg-neutral-50">
+                        <Image
+                          src={item.before}
+                          alt={`${item.title} before organization`}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                          className="object-contain"
+                        />
+                      </div>
+                    </figure>
+                    <figure>
+                      <figcaption className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--pink)]">
+                        After
+                      </figcaption>
+                      <div className="relative h-72 overflow-hidden rounded-[1.15rem] bg-neutral-50">
+                        <Image
+                          src={item.after}
+                          alt={`${item.title} after organization`}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                          className="object-contain"
+                        />
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       ) : (
         <section className="bg-[var(--seafoam-soft)] py-20">
           <div className="container-custom px-5">

@@ -4,23 +4,23 @@ import { services } from "@/data/services";
 export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
   "standard-cleaning": [
     { src: "/images/after-3.png", alt: "Clean living room after routine house cleaning" },
-    { src: "/images/livingroom-1.png", alt: "Fresh living room after regular cleaning" },
-    { src: "/images/livingroom-2.png", alt: "Cleaned living area in an Arkansas home" },
+    { src: "/images/latest-work/window-sill-after.webp", alt: "Clean window sill after detailed routine cleaning" },
+    { src: "/images/latest-work/wall-spot-after.webp", alt: "Clean wall and doorway detail after house cleaning" },
   ],
   "deep-cleaning": [
-    { src: "/images/shower-clean.jpeg", alt: "Clean shower after detailed deep cleaning" },
-    { src: "/images/clean-tub.jpeg", alt: "Clean bathtub after detailed bathroom cleaning" },
-    { src: "/images/lazy-susan-clean.jpeg", alt: "Cleaned cabinet area after deep cleaning" },
+    { src: "/images/latest-work/bathroom-sink-after.webp", alt: "Clean bathroom sink and vanity after detailed deep cleaning" },
+    { src: "/images/latest-work/toilet-base-after.webp", alt: "Clean toilet base after detailed bathroom cleaning" },
+    { src: "/images/latest-work/window-sill-after.webp", alt: "Clean window sill after deep cleaning detail work" },
   ],
   "move-in-move-out-cleaning": [
-    { src: "/images/stove-clean.jpeg", alt: "Clean stove after move-in or move-out cleaning" },
-    { src: "/images/clean-shiney-dishwasher.jpeg", alt: "Clean appliance surface after empty-home cleaning" },
+    { src: "/images/latest-work/kitchen-sink-after.webp", alt: "Clean kitchen sink after move-in or move-out cleaning" },
+    { src: "/images/latest-work/bathroom-sink-after.webp", alt: "Clean bathroom sink after empty-home detail cleaning" },
     { src: "/images/fridge-open-clean.jpeg", alt: "Clean refrigerator interior after move-in or move-out cleaning" },
   ],
   "airbnb-cleaning": [
-    { src: "/images/after-2.png", alt: "Clean bathroom ready for guests" },
-    { src: "/images/shiney-clean-bathroom.jpeg", alt: "Fresh bathroom after vacation rental cleaning" },
-    { src: "/images/clean-sink.jpeg", alt: "Clean sink detail for a guest-ready rental" },
+    { src: "/images/latest-work/toilet-lid-after.webp", alt: "Clean bathroom toilet ready for rental guests" },
+    { src: "/images/latest-work/bathroom-sink-after.webp", alt: "Fresh bathroom sink and vanity after vacation rental cleaning" },
+    { src: "/images/latest-work/window-sill-after.webp", alt: "Clean window sill detail in a guest-ready home" },
   ],
   "professional-building-cleaning": [
     { src: "/images/after-1.png", alt: "Clean kitchen or break area after professional cleaning" },
@@ -28,14 +28,14 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
     { src: "/images/top-of-fridge-clean.jpeg", alt: "Clean high-dust surface after detail cleaning" },
   ],
   "home-organization": [
+    { src: "/images/latest-work/closet-declutter-after.webp", alt: "Organized walk-in closet after decluttering and home organization" },
+    { src: "/images/latest-work/kids-closet-after.webp", alt: "Kids closet after toys and everyday items were organized" },
     { src: "/images/lazy-susan-clean2.jpeg", alt: "Organized kitchen cabinet after a home organization reset" },
-    { src: "/images/cupboard-clean.jpeg", alt: "Clean and organized cupboard shelves" },
-    { src: "/images/fridge-open-clean.jpeg", alt: "Clean organized refrigerator and food storage area" },
   ],
   "senior-home-help": [
     { src: "/images/livingroom-2.png", alt: "Comfortable clean living room after senior home cleaning" },
-    { src: "/images/shiney-clean-bathroom.jpeg", alt: "Clean bathroom after dependable household help" },
-    { src: "/images/clean-sink.jpeg", alt: "Clean kitchen sink after light household cleaning" },
+    { src: "/images/latest-work/toilet-lid-after.webp", alt: "Clean bathroom after dependable household help" },
+    { src: "/images/latest-work/bathroom-sink-after.webp", alt: "Clean sink and vanity after light household cleaning" },
   ],
   "holiday-special-occasion-cleaning": [
     { src: "/images/after-3.png", alt: "Clean living area ready for holiday guests" },

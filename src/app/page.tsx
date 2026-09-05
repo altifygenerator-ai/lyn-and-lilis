@@ -37,8 +37,8 @@ export default function Home() {
         <TobaccoWallCleaningFeature />
         <AddOnsSection />
         <SeniorPricingSection />
-        <GallerySection />
         <BeforeAfterSection />
+        <GallerySection />
         <ReviewsSection />
         <AboutPreview />
         <ServiceAreas />

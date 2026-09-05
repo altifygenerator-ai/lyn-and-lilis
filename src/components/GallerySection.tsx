@@ -6,6 +6,38 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
   {
+    src: "/images/latest-work/closet-declutter-after.webp",
+    alt: "Organized walk-in closet after decluttering and home organization",
+  },
+  {
+    src: "/images/latest-work/kids-closet-after.webp",
+    alt: "Kids closet after toys and dress-up items were organized",
+  },
+  {
+    src: "/images/latest-work/window-sill-after.webp",
+    alt: "Clean window sill after detailed house cleaning",
+  },
+  {
+    src: "/images/latest-work/wall-spot-after.webp",
+    alt: "Wall and doorway area after spot cleaning",
+  },
+  {
+    src: "/images/latest-work/toilet-lid-after.webp",
+    alt: "Clean toilet after bathroom detail cleaning",
+  },
+  {
+    src: "/images/latest-work/toilet-base-after.webp",
+    alt: "Clean toilet base and floor edge after detail cleaning",
+  },
+  {
+    src: "/images/latest-work/bathroom-sink-after.webp",
+    alt: "Clean bathroom sink and vanity after detailed cleaning",
+  },
+  {
+    src: "/images/latest-work/kitchen-sink-after.webp",
+    alt: "Kitchen sink after cleaning",
+  },
+  {
     src: "/images/after-1.png",
     alt: "Clean kitchen after house cleaning",
   },
@@ -155,9 +187,7 @@ export default function GallerySection() {
           </h2>
 
           <p className="mt-4 text-black/65">
-            A look at finished details and cleaned-up spaces from real cleaning
-            work, from bathrooms and kitchens to cabinets, appliances, and main
-            living areas.
+            A look at recent finished details, decluttering projects, and cleaned-up spaces from real work, with older results kept in the gallery too.
           </p>
         </motion.div>
 

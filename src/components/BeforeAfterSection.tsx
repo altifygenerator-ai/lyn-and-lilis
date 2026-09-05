@@ -2,28 +2,52 @@ import Image from "next/image";
 
 const beforeAfterItems = [
   {
-    title: "Kitchen reset",
-    before: "/images/before-1.png",
-    after: "/images/after-1.png",
-    text: "Counters cleared, dishes handled, surfaces wiped down, and the kitchen brought back to a clean usable space.",
+    title: "Closet declutter and reset",
+    before: "/images/latest-work/closet-declutter-before.webp",
+    after: "/images/latest-work/closet-declutter-after.webp",
+    text: "Clothes, shoes, hangers, and loose items sorted back into a much more usable closet without trying to make the space feel staged or unrealistic.",
   },
   {
-    title: "Bathroom refresh",
-    before: "/images/before-2.png",
-    after: "/images/after-2.png",
-    text: "Sinks, mirrors, tubs, toilets, counters, and floors cleaned so the bathroom feels fresh again.",
+    title: "Kids closet reset",
+    before: "/images/latest-work/kids-closet-before.webp",
+    after: "/images/latest-work/kids-closet-after.webp",
+    text: "Toys, dress-up clothes, and everyday items gathered, sorted, and put back into a setup that is easier to use and keep up with.",
   },
   {
-    title: "Living room reset",
-    before: "/images/before-3.png",
-    after: "/images/after-3.png",
-    text: "Main living spaces picked up, straightened, and brought back to a calmer, guest-ready feel.",
+    title: "Window sill detail",
+    before: "/images/latest-work/window-sill-before.webp",
+    after: "/images/latest-work/window-sill-after.webp",
+    text: "Dust, hair, and buildup removed from the sill and track area so the whole window detail looks cleaner and more finished.",
   },
   {
-    title: "Sink detail clean",
-    before: "/images/dirty-sink.jpeg",
-    after: "/images/clean-sink.jpeg",
-    text: "A dirty sink area cleaned back up with attention to the basin, faucet area, and surrounding surface.",
+    title: "Wall spot clean-up",
+    before: "/images/latest-work/wall-spot-before.webp",
+    after: "/images/latest-work/wall-spot-after.webp",
+    text: "A visible wall mark cleaned down as part of the detail work around doors, walls, trim, and other spots that collect everyday grime.",
+  },
+  {
+    title: "Toilet base detail",
+    before: "/images/latest-work/toilet-base-before.webp",
+    after: "/images/latest-work/toilet-base-after.webp",
+    text: "The base, sides, hinges, and floor-edge areas cleaned with attention to the places that are easy to miss during a quick bathroom wipe-down.",
+  },
+  {
+    title: "Bathroom sink detail",
+    before: "/images/latest-work/bathroom-sink-before.webp",
+    after: "/images/latest-work/bathroom-sink-after.webp",
+    text: "The basin and surrounding vanity cleaned up so the sink area looks brighter and ready to use again.",
+  },
+  {
+    title: "Kitchen sink clean-up",
+    before: "/images/latest-work/kitchen-sink-before.webp",
+    after: "/images/latest-work/kitchen-sink-after.webp",
+    text: "A used kitchen sink cleaned and rinsed down with the drains and basin brought back to a much cleaner everyday condition.",
+  },
+  {
+    title: "Stove deep clean",
+    before: "/images/stove-dirty.jpeg",
+    after: "/images/stove-clean.jpeg",
+    text: "Stove tops can get really grimy, so we make sure to get into the nooks and crannies and bring the surface back to a cleaner state.",
   },
   {
     title: "Tub detail clean",
@@ -38,46 +62,16 @@ const beforeAfterItems = [
     text: "Shower walls, corners, and floor areas cleaned to help remove visible grime and brighten the space.",
   },
   {
-    title: "Stove deep clean",
-    before: "/images/stove-dirty.jpeg",
-    after: "/images/stove-clean.jpeg",
-    text: "Stove tops can get really grimy, but we make sure to get into the nooks and crannies to get it back to a cleaner state.",
-  },
-  {
-    title: "Dishwasher shine-up",
-    before: "/images/dirty-dishwasher.jpeg",
-    after: "/images/clean-shiney-dishwasher.jpeg",
-    text: "Exterior appliance surfaces wiped down and polished so the kitchen detail looks cleaner overall.",
-  },
-  {
     title: "Cabinet shelf clean-out",
     before: "/images/dirty-cupboard.jpeg",
     after: "/images/cupboard-clean.jpeg",
     text: "Cabinet and shelf areas cleaned out so stored items have a fresher place to go back into.",
   },
   {
-    title: "Cupboard detail clean",
-    before: "/images/dirty-cupboard2.jpeg",
-    after: "/images/cupboard-clean2.jpeg",
-    text: "Small storage areas and cabinet surfaces cleaned up where dust, crumbs, and everyday mess collect.",
-  },
-  {
-    title: "Lazy Susan cabinet clean",
-    before: "/images/lazy-susan-dirty.jpeg",
-    after: "/images/lazy-susan-clean.jpeg",
-    text: "Hard-to-reach cabinet areas cleaned with care so the inside looks and feels usable again.",
-  },
-  {
-    title: "Lazy Susan detail clean",
-    before: "/images/lazy-susan-dirty2.jpeg",
-    after: "/images/lazy-susan-clean2.jpeg",
-    text: "A closer cabinet detail showing the kind of small-area cleaning that can make a big difference.",
-  },
-  {
     title: "Top of fridge detail",
     before: "/images/top-of-fridge-dirty.jpeg",
     after: "/images/top-of-fridge-clean.jpeg",
-    text: "High-touch and high-dust areas like the top of the fridge cleaned so the kitchen feels more finished.",
+    text: "High-dust areas like the top of the fridge cleaned so the kitchen feels more finished from top to bottom.",
   },
 ];
 
@@ -86,17 +80,16 @@ export default function BeforeAfterSection() {
     <section className="section-padding bg-[var(--pink-soft)]">
       <div className="container-custom px-5">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-script text-4xl text-[var(--pink)]">
-            Real results
-          </p>
+          <p className="font-script text-4xl text-[var(--pink)]">Real results</p>
 
           <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)] md:text-5xl">
-            Before and after cleaning examples.
+            Before and after cleaning and organization.
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl leading-8 text-black/65">
-            Every home is different, but the goal is always the same — help make
-            the space feel clean, fresh, and taken care of again.
+            Real work from homes we have cleaned and helped get back under
+            control. Every job is different, but the goal is always a cleaner,
+            more usable space.
           </p>
         </div>
 
@@ -121,7 +114,7 @@ export default function BeforeAfterSection() {
                   <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
                     <Image
                       src={item.before}
-                      alt={`${item.title} before cleaning`}
+                      alt={`${item.title} before`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-contain"
@@ -139,7 +132,7 @@ export default function BeforeAfterSection() {
                   <div className="relative h-[260px] overflow-hidden rounded-[1.5rem] bg-neutral-50 md:h-[320px]">
                     <Image
                       src={item.after}
-                      alt={`${item.title} after cleaning`}
+                      alt={`${item.title} after`}
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-contain"
