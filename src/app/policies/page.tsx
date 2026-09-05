@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ShareClientAgreementButton from "@/components/ShareClientAgreementButton";
+import SharePoliciesButton from "@/components/SharePoliciesButton";
 import {
   FaArrowLeft,
   FaCalendarCheck,
@@ -67,11 +67,8 @@ export default function PoliciesPage() {
               As we&apos;ve grown, we&apos;ve put a few simple policies in writing so scheduling stays organized and fair for our clients and our cleaning team. Most of this is simply putting in writing how we already operate, with the goal of keeping expectations clear on both sides.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3">
-              <Link href="/client-agreement" className="btn-primary">
-                Review & Agree to Policies
-              </Link>
-              <ShareClientAgreementButton />
+            <div className="mt-7 flex flex-wrap items-center gap-4">
+              <SharePoliciesButton />
               <span className="text-sm text-black/45">
                 Version {CLIENT_POLICY_VERSION} · Effective {CLIENT_POLICY_EFFECTIVE_DATE}
               </span>
@@ -134,25 +131,23 @@ export default function PoliciesPage() {
         <section className="bg-white py-20">
           <div className="container-custom px-5">
             <div className="soft-card bg-[var(--pink-soft)] p-8 md:p-12">
-              <div className="grid gap-8 lg:grid-cols-[1fr_0.85fr] lg:items-end">
-                <div>
-                  <FaShieldHeart className="text-3xl text-[var(--pink)]" />
-                  <h2 className="font-heading mt-5 text-4xl font-bold text-[var(--gray-dark)]">
-                    New client or updating your agreement?
-                  </h2>
-                  <p className="mt-4 max-w-3xl leading-8 text-black/65">
-                    Use the client agreement page to review this exact policy version, enter your contact and service information, and create a record showing that you accepted it. You can also choose to continue to Stripe and keep a card securely on file.
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap gap-3 lg:justify-end">
-                  <Link href="/client-agreement" className="btn-primary">
-                    Open Client Agreement
-                  </Link>
-                  <a href="tel:8702604536" className="btn-secondary">
-                    Call or Text Us
-                  </a>
-                </div>
+              <FaShieldHeart className="text-3xl text-[var(--pink)]" />
+              <h2 className="font-heading mt-5 text-4xl font-bold text-[var(--gray-dark)]">
+                Questions about a policy?
+              </h2>
+              <p className="mt-4 max-w-3xl leading-8 text-black/65">
+                Give us a call or text if you are unsure how a policy applies to your appointment. We would rather clear something up ahead of time than have either side guessing.
+              </p>
+              <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+                <a href="tel:8702604536" className="btn-secondary">
+                  Call or Text Us
+                </a>
+                <Link
+                  href="/client-agreement"
+                  className="text-sm font-semibold text-black/45 underline underline-offset-4 transition hover:text-[var(--gray-dark)]"
+                >
+                  Client agreement form
+                </Link>
               </div>
             </div>
           </div>

@@ -57,9 +57,6 @@ export default function Footer() {
                 Client Policies
               </Link>
 
-              <Link href="/client-agreement" className="block hover:text-[var(--pink)]">
-                Client Agreement
-              </Link>
 
               <Link href="/#services" className="block hover:text-[var(--pink)]">
                 Services

@@ -51,7 +51,7 @@ export default function ServicePricingSection({
 
           <div className="rounded-2xl border border-black/10 bg-[var(--gray-dark)] p-5 text-sm leading-7 text-white/75">
             <strong className="text-white">Booking & payment: </strong>
-            Some first-time, deep-clean, move-in/move-out, or larger jobs may require a 25% booking deposit. Payment is due when service is complete, and balances left unpaid for more than 24 hours may receive a $15 late fee. <Link href="/policies" className="font-bold text-white underline underline-offset-4">Full policies</Link>.
+            Some first-time, deep-clean, move-in/move-out, or larger jobs may require a 25% booking deposit. Payment is due when service is complete, and we ask that it be submitted within one hour. Balances still unpaid after 24 hours may receive a $15 late fee. <Link href="/policies" className="font-bold text-white underline underline-offset-4">Full policies</Link>.
           </div>
         </div>
       </div>

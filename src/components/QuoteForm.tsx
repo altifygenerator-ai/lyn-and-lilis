@@ -232,7 +232,7 @@ export default function QuoteForm() {
           <p className="mt-4 text-xs leading-6 text-black/55">
             Some first-time, deep-clean, move-in/move-out, or larger jobs may
             require a 25% booking deposit. Payment is due when service is
-            complete, and balances left unpaid for more than 24 hours may receive
+            complete, and we ask that payment be submitted within one hour. Balances still unpaid after 24 hours may receive
             a $15 late fee. If you book, our <Link href="/policies" className="font-bold underline underline-offset-2">client policies</Link> apply.
           </p>
 

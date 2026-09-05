@@ -42,7 +42,7 @@ export const clientPolicies: ClientPolicy[] = [
     title: "Payment & late balances",
     shortTitle: "Payment",
     body:
-      "Payment is due when the scheduled cleaning is completed unless another arrangement has been approved in advance. If a balance remains unpaid for more than 24 hours after completion, a $15 late payment fee may be added. Future appointments may be paused until the account is current.",
+      "Payment is due upon completion of the scheduled cleaning unless another arrangement has been approved in advance. We ask that payment be submitted within one hour of completion so the appointment can be closed out and our records stay current. If payment has not been received within one hour, the balance is considered past due and we may send a payment reminder. Balances that remain unpaid for more than 24 hours may be subject to a $15 late payment fee. Future appointments may be paused until the account is current.",
   },
   {
     id: "card-on-file",

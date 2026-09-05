@@ -8,15 +8,11 @@ const items = [
   },
   {
     title: "Payment due when the cleaning is finished",
-    text: "Payment is due at completion unless another arrangement was approved ahead of time. Balances left unpaid for more than 24 hours may receive a $15 late fee.",
+    text: "Payment is due when the cleaning is finished. We ask that it be submitted within one hour of completion. Balances still unpaid after 24 hours may receive a $15 late fee.",
   },
   {
     title: "24-hour cancellation notice",
     text: "With at least 24 hours' notice there is no cancellation fee. Less than 24 hours may be charged 50%, and same-day travel/no-access situations may be charged up to the scheduled amount.",
-  },
-  {
-    title: "Simple client agreement",
-    text: "New clients can review the current policies, acknowledge them online, and optionally keep a card securely on file through Stripe.",
   },
 ];
 
@@ -34,7 +30,7 @@ export default function BookingPaymentSection() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
           {items.map((item) => (
             <div key={item.title} className="soft-card bg-white p-6">
               <FaCheck className="text-2xl text-[var(--pink)]" />
@@ -46,12 +42,9 @@ export default function BookingPaymentSection() {
           ))}
         </div>
 
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8">
           <Link href="/policies" className="btn-secondary">
             View Client Policies
-          </Link>
-          <Link href="/client-agreement" className="btn-primary">
-            Client Agreement
           </Link>
         </div>
       </div>

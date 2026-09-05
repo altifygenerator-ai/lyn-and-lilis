@@ -37,7 +37,7 @@ export const faqs = [
   {
     question: "When is payment due after the cleaning?",
     answer:
-      "Payment is due when the service is completed unless another arrangement was approved in advance. If a balance remains unpaid for more than 24 hours after completion, a $15 late payment fee may be added. Future appointments may be paused until the account is current.",
+      "Payment is due when the service is completed unless another arrangement was approved in advance. We ask that payment be submitted within one hour of completion. If it has not been received within one hour, the balance is considered past due and we may send a reminder. Balances still unpaid after 24 hours may be subject to a $15 late fee, and future appointments may be paused until the account is current.",
   },
   {
     question: "Do you clean nicotine-stained walls or tobacco residue?",
