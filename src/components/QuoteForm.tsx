@@ -230,11 +230,10 @@ export default function QuoteForm() {
           </button>
 
           <p className="mt-4 text-xs leading-6 text-black/55">
-            For one-time jobs of $200 or more, a 25% booking deposit may be
-            required. For all customers, payment is due when service is complete
-            and must be received within one hour. If payment is still unpaid after
-            that one-hour window, a $15 late fee may be added. If you choose to
-            book, our <Link href="/policies" className="font-bold underline underline-offset-2">booking and payment policies</Link> apply.
+            Some first-time, deep-clean, move-in/move-out, or larger jobs may
+            require a 25% booking deposit. Payment is due when service is
+            complete, and balances left unpaid for more than 24 hours may receive
+            a $15 late fee. If you book, our <Link href="/policies" className="font-bold underline underline-offset-2">client policies</Link> apply.
           </p>
 
           {status === "sent" && (

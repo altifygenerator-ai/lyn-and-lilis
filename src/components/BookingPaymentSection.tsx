@@ -3,20 +3,20 @@ import { FaCheck } from "react-icons/fa6";
 
 const items = [
   {
-    title: "25% deposit on larger one-time jobs",
-    text: "One-time services of $200 or more may require a 25% deposit to reserve the appointment. The deposit is applied to the final balance.",
+    title: "Deposits on some new or larger jobs",
+    text: "Some first-time, deep-clean, move-in/move-out, or larger appointments may require a 25% deposit to reserve the scheduled time. It is applied to the final balance.",
   },
   {
-    title: "Balance due within one hour",
-    text: "The remaining balance is due when the cleaning is finished and must be received within one hour of completion.",
-  },
-  {
-    title: "$15 late fee after one hour",
-    text: "Payment is expected within one hour of completion for every customer. If a balance is still unpaid after that one-hour window, a $15 late payment fee may be added.",
+    title: "Payment due when the cleaning is finished",
+    text: "Payment is due at completion unless another arrangement was approved ahead of time. Balances left unpaid for more than 24 hours may receive a $15 late fee.",
   },
   {
     title: "24-hour cancellation notice",
-    text: "With at least 24 hours' notice, a booking deposit can be transferred to a new date. Late cancellations or no-shows may forfeit the deposit.",
+    text: "With at least 24 hours' notice there is no cancellation fee. Less than 24 hours may be charged 50%, and same-day travel/no-access situations may be charged up to the scheduled amount.",
+  },
+  {
+    title: "Simple client agreement",
+    text: "New clients can review the current policies, acknowledge them online, and optionally keep a card securely on file through Stripe.",
   },
 ];
 
@@ -27,10 +27,10 @@ export default function BookingPaymentSection() {
         <div className="max-w-3xl">
           <p className="font-script text-4xl text-[var(--pink)]">Booking & payment</p>
           <h2 className="font-heading mt-2 text-4xl font-bold text-[var(--gray-dark)]">
-            Clear terms so there are no surprises after the job.
+            Clear terms so scheduling stays simple for everybody.
           </h2>
           <p className="mt-4 leading-8 text-black/65">
-            We keep payment simple and talk through the quote before work starts. Payment is due when the job is finished and must be received within one hour, no matter which payment method you use.
+            As the business has grown, we have put the basics in writing so clients and our cleaning team both know what to expect before the appointment.
           </p>
         </div>
 
@@ -46,9 +46,12 @@ export default function BookingPaymentSection() {
           ))}
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/policies" className="btn-secondary">
-            View Full Booking & Payment Policies
+            View Client Policies
+          </Link>
+          <Link href="/client-agreement" className="btn-primary">
+            Client Agreement
           </Link>
         </div>
       </div>

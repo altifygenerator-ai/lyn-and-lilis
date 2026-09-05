@@ -54,7 +54,11 @@ export default function Footer() {
               </Link>
 
               <Link href="/policies" className="block hover:text-[var(--pink)]">
-                Booking & Payment Policies
+                Client Policies
+              </Link>
+
+              <Link href="/client-agreement" className="block hover:text-[var(--pink)]">
+                Client Agreement
               </Link>
 
               <Link href="/#services" className="block hover:text-[var(--pink)]">
@@ -243,7 +247,7 @@ export default function Footer() {
           </span>
 
           <a
-            href="https://hometownwebservicesar.cc"
+            href="https://www.hometownwebservicesar.com"
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-[var(--pink)]"

@@ -27,12 +27,17 @@ export const faqs = [
   {
     question: "Do you require a booking deposit?",
     answer:
-      "One-time jobs of $200 or more may require a 25% booking deposit to reserve the appointment. The deposit is applied to the final balance. With at least 24 hours' notice, the deposit can be transferred to a new date. Late cancellations or no-shows may forfeit the deposit.",
+      "Some first-time, deep-clean, move-in/move-out, or larger appointments may require a 25% booking deposit to reserve the scheduled time. The deposit is applied to the final balance. If an appointment is canceled inside the late-cancellation window, some or all of the deposit may be applied toward the cancellation fee.",
+  },
+  {
+    question: "What is your cancellation policy?",
+    answer:
+      "Please give at least 24 hours' notice to cancel or reschedule. Cancellations with less than 24 hours' notice may be charged 50% of the scheduled service. If our team is already traveling to the property, has arrived, is turned away, or cannot access the property at the scheduled time, the appointment may be charged up to the full scheduled amount. We will always try to work with genuine emergencies.",
   },
   {
     question: "When is payment due after the cleaning?",
     answer:
-      "Payment is due when the service is completed and must be received within one hour for every customer. If a balance is still unpaid after that one-hour window, a $15 late payment fee may be added. Any outstanding balance and applicable late fee must be cleared before another appointment is scheduled.",
+      "Payment is due when the service is completed unless another arrangement was approved in advance. If a balance remains unpaid for more than 24 hours after completion, a $15 late payment fee may be added. Future appointments may be paused until the account is current.",
   },
   {
     question: "Do you clean nicotine-stained walls or tobacco residue?",
