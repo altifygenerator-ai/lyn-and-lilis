@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "House cleaning, home organization, senior household help, holiday cleaning, post-party cleanup, Airbnb turnovers, and small office cleaning in Hot Springs and nearby Southwest Arkansas areas.",
+    "House cleaning, deep cleaning, rental turnovers, home organization and senior household help in Hot Springs, Glenwood, Arkadelphia and Southwest Arkansas.",
 
   authors: [{ name: "Lyn & Lili’s Tidy House Home Services" }],
   creator: "Lyn & Lili’s",
