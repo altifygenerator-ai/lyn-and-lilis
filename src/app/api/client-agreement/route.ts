@@ -10,7 +10,6 @@ import {
 } from "@/lib/stripe";
 import { insertAgreement, updateAgreement } from "@/lib/supabase-admin";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://www.lynandlilistidyhouse.com";
 const notifyEmail =
@@ -143,7 +142,12 @@ export async function POST(request: Request) {
     }
 
     try {
-      await resend.emails.send({
+      const emailApiKey = process.env.RESEND_API_KEY;
+      if (!emailApiKey) {
+        console.error("RESEND_API_KEY is not configured for client agreement emails");
+      } else {
+        const resend = new Resend(emailApiKey);
+        await resend.emails.send({
         from: resendFrom,
         to: notifyEmail,
         replyTo: email,
@@ -177,6 +181,7 @@ export async function POST(request: Request) {
           <p><a href="${siteUrl}/policies">View the current client policies</a></p>
         `,
       });
+      }
     } catch (emailError) {
       console.error("Agreement email notification error:", emailError);
     }
