@@ -2,7 +2,6 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const CAPTCHA_TTL_MS = 10 * 60 * 1000;
 const CAPTCHA_MIN_AGE_MS = 1_500;
 
@@ -158,7 +157,18 @@ export async function POST(request: Request) {
       );
     }
 
-    await resend.emails.send({
+    const emailApiKey = process.env.RESEND_API_KEY;
+    if (!emailApiKey) {
+      console.error("RESEND_API_KEY is missing for quote delivery");
+      return NextResponse.json(
+        { error: "Quote email service is unavailable" },
+        { status: 503 }
+      );
+    }
+
+    // Instantiate only when a valid quote is being sent, not during Next.js build.
+    const resend = new Resend(emailApiKey);
+    const { error: sendError } = await resend.emails.send({
       from: "Lyn and Lilis Website <quotes@hometownwebservicesar.cc>",
       to: "Lynandlilistidyhouse@gmail.com",
       subject: `New quote request from ${name}`,
@@ -178,6 +188,14 @@ export async function POST(request: Request) {
         <p>${message || "No message provided"}</p>
       `,
     });
+
+    if (sendError) {
+      console.error("Quote email provider error:", sendError);
+      return NextResponse.json(
+        { error: "Failed to send quote request" },
+        { status: 502 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
