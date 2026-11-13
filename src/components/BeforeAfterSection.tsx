@@ -2,6 +2,36 @@ import Image from "next/image";
 
 const beforeAfterItems = [
   {
+    title: "Stovetop deep cleaning",
+    before: "/images/recent-cleaning/stovetop-before.webp",
+    after: "/images/recent-cleaning/stovetop-after.webp",
+    text: "Grease and cooking buildup cleaned from the stovetop and burner area during a detailed kitchen cleaning.",
+  },
+  {
+    title: "Bathroom toilet detail",
+    before: "/images/recent-cleaning/toilet-detail-before.webp",
+    after: "/images/recent-cleaning/toilet-detail-after.webp",
+    text: "Attention to the toilet seat, hinges, and bowl where everyday buildup can collect.",
+  },
+  {
+    title: "Bathroom sink cleaning",
+    before: "/images/recent-cleaning/bathroom-sink-before.webp",
+    after: "/images/recent-cleaning/bathroom-sink-after.webp",
+    text: "The basin and faucet area cleaned down for a fresher, more usable bathroom.",
+  },
+  {
+    title: "Bathroom floor cleaning",
+    before: "/images/recent-cleaning/bathroom-floor-before.webp",
+    after: "/images/recent-cleaning/bathroom-floor-after.webp",
+    text: "Visible dirt and marks worked down on this hard floor. Existing wear and floor damage remain.",
+  },
+  {
+    title: "Bathtub cleaning",
+    before: "/images/recent-cleaning/bathtub-before.webp",
+    after: "/images/recent-cleaning/bathtub-after.webp",
+    text: "A tub surface cleaned and brightened as part of a bathroom detail service.",
+  },
+  {
     title: "Closet declutter and reset",
     before: "/images/latest-work/closet-declutter-before.webp",
     after: "/images/latest-work/closet-declutter-after.webp",
@@ -24,36 +54,6 @@ const beforeAfterItems = [
     before: "/images/latest-work/wall-spot-before.webp",
     after: "/images/latest-work/wall-spot-after.webp",
     text: "A visible wall mark cleaned down as part of the detail work around doors, walls, trim, and other spots that collect everyday grime.",
-  },
-  {
-    title: "Toilet base detail",
-    before: "/images/latest-work/toilet-base-before.webp",
-    after: "/images/latest-work/toilet-base-after.webp",
-    text: "The base, sides, hinges, and floor-edge areas cleaned with attention to the places that are easy to miss during a quick bathroom wipe-down.",
-  },
-  {
-    title: "Bathroom sink detail",
-    before: "/images/latest-work/bathroom-sink-before.webp",
-    after: "/images/latest-work/bathroom-sink-after.webp",
-    text: "The basin and surrounding vanity cleaned up so the sink area looks brighter and ready to use again.",
-  },
-  {
-    title: "Kitchen sink clean-up",
-    before: "/images/latest-work/kitchen-sink-before.webp",
-    after: "/images/latest-work/kitchen-sink-after.webp",
-    text: "A used kitchen sink cleaned and rinsed down with the drains and basin brought back to a much cleaner everyday condition.",
-  },
-  {
-    title: "Stove deep clean",
-    before: "/images/stove-dirty.jpeg",
-    after: "/images/stove-clean.jpeg",
-    text: "Stove tops can get really grimy, so we make sure to get into the nooks and crannies and bring the surface back to a cleaner state.",
-  },
-  {
-    title: "Tub detail clean",
-    before: "/images/dirty-tub.jpeg",
-    after: "/images/clean-tub.jpeg",
-    text: "Tub buildup handled so the surface looks brighter, cleaner, and ready to use again.",
   },
   {
     title: "Shower clean-up",

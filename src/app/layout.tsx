@@ -23,12 +23,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.lynandlilistidyhouse.com"),
 
   title: {
-    default: "House Cleaning in Southwest Arkansas | Lyn & Lili’s Tidy House",
+    default: "House Cleaning in Hot Springs & Southwest Arkansas | Lyn & Lili’s",
     template: "%s | Lyn & Lili’s",
   },
 
   description:
-    "House cleaning, deep cleaning, rental turnovers, home organization and senior household help in Hot Springs, Glenwood, Arkadelphia and Southwest Arkansas.",
+    "House cleaning and deep cleaning in Hot Springs, AR, plus rental turnovers, move-out cleaning, home organization and senior household help across southwest Arkansas.",
 
   authors: [{ name: "Lyn & Lili’s Tidy House Home Services" }],
   creator: "Lyn & Lili’s",

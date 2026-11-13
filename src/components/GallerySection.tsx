@@ -6,6 +6,26 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
   {
+    src: "/images/recent-cleaning/stovetop-after.webp",
+    alt: "Stovetop deep cleaning after a cleaning job in southwest Arkansas",
+  },
+  {
+    src: "/images/recent-cleaning/toilet-detail-after.webp",
+    alt: "Bathroom toilet detail after a cleaning job in southwest Arkansas",
+  },
+  {
+    src: "/images/recent-cleaning/bathroom-sink-after.webp",
+    alt: "Bathroom sink cleaning after a cleaning job in southwest Arkansas",
+  },
+  {
+    src: "/images/recent-cleaning/bathroom-floor-after.webp",
+    alt: "Bathroom floor cleaning after a cleaning job in southwest Arkansas",
+  },
+  {
+    src: "/images/recent-cleaning/bathtub-after.webp",
+    alt: "Bathtub cleaning after a cleaning job in southwest Arkansas",
+  },
+  {
     src: "/images/latest-work/closet-declutter-after.webp",
     alt: "Organized walk-in closet after decluttering and home organization",
   },

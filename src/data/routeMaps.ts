@@ -8,9 +8,9 @@ export const serviceImageMap: Record<string, { src: string; alt: string }[]> = {
     { src: "/images/latest-work/wall-spot-after.webp", alt: "Clean wall and doorway detail after house cleaning" },
   ],
   "deep-cleaning": [
-    { src: "/images/latest-work/bathroom-sink-after.webp", alt: "Clean bathroom sink and vanity after detailed deep cleaning" },
-    { src: "/images/latest-work/toilet-base-after.webp", alt: "Clean toilet base after detailed bathroom cleaning" },
-    { src: "/images/latest-work/window-sill-after.webp", alt: "Clean window sill after deep cleaning detail work" },
+    { src: "/images/recent-cleaning/stovetop-after.webp", alt: "Clean stovetop after detailed kitchen cleaning" },
+    { src: "/images/recent-cleaning/toilet-detail-after.webp", alt: "Toilet seat and bowl after bathroom detail cleaning" },
+    { src: "/images/recent-cleaning/bathroom-sink-after.webp", alt: "Bathroom sink after detailed cleaning" },
   ],
   "move-in-move-out-cleaning": [
     { src: "/images/latest-work/kitchen-sink-after.webp", alt: "Clean kitchen sink after move-in or move-out cleaning" },

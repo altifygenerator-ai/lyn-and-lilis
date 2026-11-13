@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { FaPhone, FaArrowRight, FaWandMagicSparkles } from "react-icons/fa6";
 
 export default function Hero() {
@@ -26,7 +27,7 @@ export default function Hero() {
         >
           <p className="mb-5 inline-flex items-center gap-2 rounded-full bg-[var(--seafoam-soft)] px-4 py-2 text-sm font-bold text-[var(--gray-dark)]">
             <FaWandMagicSparkles className="text-[var(--seafoam)]" />
-            Serving Amity, Glenwood, Arkadelphia, Hot Springs & nearby areas
+            Serving Hot Springs, Glenwood, Amity, Arkadelphia & nearby areas
           </p>
 
           <h1 className="font-script text-6xl leading-none text-[var(--gray-dark)] md:text-8xl">
@@ -38,7 +39,7 @@ export default function Hero() {
           </p>
 
           <p className="mt-6 max-w-xl text-lg leading-8 text-black/70">
-            House cleaning, home organization, senior household help, Airbnb turnovers, and specialty cleaning across Amity, Glenwood, Arkadelphia, Hot Springs, and nearby Arkansas areas.
+            House cleaning, home organization, senior household help, Airbnb turnovers, and specialty cleaning across Hot Springs, Glenwood, Amity, Arkadelphia, and nearby Arkansas areas.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -49,6 +50,16 @@ export default function Hero() {
               <FaPhone /> Call or Text
             </a>
           </div>
+
+          <p className="mt-5 text-sm font-semibold text-[var(--gray-dark)]">
+            Looking for a house cleaner in Hot Springs?{" "}
+            <Link
+              href="/house-cleaning-hot-springs-ar"
+              className="underline decoration-[var(--pink)] underline-offset-4 hover:text-[var(--pink)]"
+            >
+              See our Hot Springs cleaning services
+            </Link>
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3 text-sm font-semibold text-black/60">
             <span>Locally owned</span>

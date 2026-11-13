@@ -6,6 +6,7 @@ import { breadcrumbSchema, localBusinessSchema, locationServiceSchema } from "@/
 import { services } from "@/data/services";
 import type { Location } from "@/data/locations";
 import { reviews } from "@/data/reviews";
+import HotSpringsCleaningProof from "@/components/HotSpringsCleaningProof";
 import { FaArrowLeft, FaArrowRight, FaLocationDot } from "react-icons/fa6";
 
 type LocationPageProps = {
@@ -149,9 +150,19 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
                 {location.intro}
               </p>
 
-              <Link href="/#quote" className="btn-primary mt-8">
-                Request a Quote <FaArrowRight />
-              </Link>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <Link href="/#quote" className="btn-primary">
+                  Request a Quote <FaArrowRight />
+                </Link>
+                {isHotSprings ? (
+                  <a
+                    href="sms:8702604536"
+                    className="font-bold text-[var(--gray-dark)] underline underline-offset-4"
+                  >
+                    Text photos for a Hot Springs estimate
+                  </a>
+                ) : null}
+              </div>
             </div>
           </div>
         </section>
@@ -196,6 +207,8 @@ export default function LocationLandingPage({ location }: LocationPageProps) {
             </div>
           </div>
         </section>
+
+        {isHotSprings ? <HotSpringsCleaningProof /> : null}
 
         <section className="section-padding bg-[var(--seafoam-soft)]">
           <div className="container-custom px-5">
