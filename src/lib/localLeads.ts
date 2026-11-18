@@ -15,14 +15,14 @@ export function cleanAttribution(input: Partial<Attribution>): Attribution {
 }
 export function leadChannel(input: Attribution): Channel {
   const s = (input.referrer + " " + input.utm_source).toLowerCase();
-  if (/chatgpt|openai|perplexity|copilot|gemini|claude\\.ai|you\\.com|poe\\.com|meta\\.ai/.test(s)) return "ai_search";
-  if (/google\\.|bing\\.|yahoo\\.|duckduckgo\\.|ecosia\\.|brave\\./.test(s)) return "organic_search";
-  if (/facebook|instagram|tiktok|nextdoor|reddit|pinterest|linkedin|threads\\./.test(s)) return "social";
+  if (/chatgpt|openai|perplexity|copilot|gemini|claude\.ai|you\.com|poe\.com|meta\.ai/.test(s)) return "ai_search";
+  if (/google\.|bing\.|yahoo\.|duckduckgo\.|ecosia\.|brave\./.test(s)) return "organic_search";
+  if (/facebook|instagram|tiktok|nextdoor|reddit|pinterest|linkedin|threads\./.test(s)) return "social";
   if (input.utm_source || input.utm_medium || input.utm_campaign) return "campaign";
   if (!input.referrer) return "direct";
   try {
     const u = new URL(input.referrer);
-    if (/reddirtpropertyservicesar\\.com|lynandlilistidyhouse\\.com/.test(u.hostname)) return "direct";
+    if (/reddirtpropertyservicesar\.com|lynandlilistidyhouse\.com/.test(u.hostname)) return "direct";
     return "referral";
   } catch { return "unknown"; }
 }
