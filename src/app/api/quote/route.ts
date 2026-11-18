@@ -1,6 +1,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { storeLead } from "@/lib/localLeads";
 
 const CAPTCHA_TTL_MS = 10 * 60 * 1000;
 const CAPTCHA_MIN_AGE_MS = 1_500;
@@ -157,13 +158,23 @@ export async function POST(request: Request) {
       );
     }
 
+    try {
+      await storeLead("lyn_lilis", {
+        name:String(body.name||""), phone:String(body.phone||""), email:String(body.email||""),
+        location:String(body.location||""), service:String(body.service||""),
+        details:String(body.message||""),
+        extra:{bedrooms:String(body.bedrooms||"").slice(0,30),bathrooms:String(body.bathrooms||"").slice(0,30),
+          squareFeet:String(body.squareFeet||"").slice(0,30),condition:String(body.condition||"").slice(0,180)},
+      },body.attribution && typeof body.attribution==="object"?body.attribution:{});
+    } catch(error) {
+      console.error("Lyn & Lili lead storage error",error);
+      return NextResponse.json({error:"Could not save your request. Please call or text us instead."},{status:503});
+    }
+
     const emailApiKey = process.env.RESEND_API_KEY;
     if (!emailApiKey) {
       console.error("RESEND_API_KEY is missing for quote delivery");
-      return NextResponse.json(
-        { error: "Quote email service is unavailable" },
-        { status: 503 }
-      );
+      return NextResponse.json({success:true,notificationSent:false,message:"Your quote request was saved. The email alert is unavailable, so call or text for the quickest reply."});
     }
 
     // Instantiate only when a valid quote is being sent, not during Next.js build.
@@ -191,13 +202,10 @@ export async function POST(request: Request) {
 
     if (sendError) {
       console.error("Quote email provider error:", sendError);
-      return NextResponse.json(
-        { error: "Failed to send quote request" },
-        { status: 502 }
-      );
+      return NextResponse.json({success:true,notificationSent:false,message:"Your quote request was saved, but the email alert could not send. Please call or text for the quickest reply."});
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, notificationSent: true });
   } catch (error) {
     console.error("Quote form error:", error);
 
