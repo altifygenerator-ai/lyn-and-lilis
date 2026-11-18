@@ -103,7 +103,7 @@ export default function HotSpringsAirbnbCleaningPage() {
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
-                  <Link href="/#quote" className="btn btn-primary">
+                  <Link href="/?service=Airbnb%20%2F%20Rental%20Turnover#quote" className="btn btn-primary">
                     Request a Quote
                   </Link>
 
@@ -286,7 +286,7 @@ export default function HotSpringsAirbnbCleaningPage() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <Link href="/#quote" className="btn btn-primary">
+                <Link href="/?service=Airbnb%20%2F%20Rental%20Turnover#quote" className="btn btn-primary">
                   Request a Quote
                 </Link>
 

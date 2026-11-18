@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Dancing_Script, Playfair_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import LeadTracker from "@/components/LeadTracker";
 import "./globals.css";
 
 const inter = Inter({
@@ -99,6 +100,7 @@ export default function RootLayout({
     >
       <body>
         {children}
+        <LeadTracker business="lyn_lilis" />
         <Analytics />
       </body>
     </html>
