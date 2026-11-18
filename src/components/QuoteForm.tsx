@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { readAttribution } from "@/components/LeadTracker";
 
 import { useCallback, useEffect, useState } from "react";
 import { FaPaperPlane, FaPhone, FaEnvelope, FaClock } from "react-icons/fa6";
@@ -88,6 +89,7 @@ export default function QuoteForm() {
     const payload = {
       ...Object.fromEntries(formData),
       captchaToken: captcha.token,
+      attribution: readAttribution(),
     };
 
     try {
