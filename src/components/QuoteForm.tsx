@@ -16,6 +16,8 @@ export default function QuoteForm() {
   const [errorMessage, setErrorMessage] = useState("");
   const [captcha, setCaptcha] = useState<CaptchaChallenge | null>(null);
   const [captchaLoading, setCaptchaLoading] = useState(true);
+  const [selectedService,setSelectedService] = useState("");
+  const [savedWithoutEmail,setSavedWithoutEmail] = useState(false);
 
   const loadCaptcha = useCallback(async () => {
     setCaptchaLoading(true);
@@ -39,6 +41,10 @@ export default function QuoteForm() {
     }
   }, []);
 
+  useEffect(()=>{
+    const requested=new URLSearchParams(window.location.search).get("service");
+    if(requested)setSelectedService(requested);
+  },[]);
   useEffect(() => {
     const controller = new AbortController();
 
@@ -104,6 +110,7 @@ export default function QuoteForm() {
       const data = await res.json().catch(() => null);
 
       if (res.ok) {
+        setSavedWithoutEmail(data?.notificationSent===false);
         setStatus("sent");
         form.reset();
         void loadCaptcha();
@@ -158,7 +165,7 @@ export default function QuoteForm() {
             <input name="phone" required placeholder="Phone" className="input-style" />
             <input name="email" type="email" placeholder="Email" className="input-style sm:col-span-2" />
 
-            <select name="service" required className="input-style sm:col-span-2">
+            <select name="service" required value={selectedService} onChange={e=>setSelectedService(e.target.value)} className="input-style sm:col-span-2">
               <option value="">Service needed</option>
               <option>Standard Cleaning</option>
               <option>Deep Cleaning</option>
@@ -240,7 +247,7 @@ export default function QuoteForm() {
 
           {status === "sent" && (
             <p className="mt-4 text-sm font-bold text-green-700">
-              Quote request sent. We’ll get back with you soon.
+              {savedWithoutEmail?"Your request is saved, but our email alert is delayed. Please call or text if it is urgent.":"Quote request received. We’ll get back with you soon."}
             </p>
           )}
 
